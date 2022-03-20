@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "tnunlimited:blocks/lemonstone",
+    "top": "tnunlimited:blocks/lemonstone",
+    "side": "tnunlimited:blocks/lemonstone"
+  }
+}

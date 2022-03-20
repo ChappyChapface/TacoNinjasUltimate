@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GoldenHamburger"
+      },
+      {
+        "value": "CUSTOM:GoldenCrown.helmet"
+      },
+      {
+        "value": "CUSTOM:GoldenCactusPet"
+      },
+      {
+        "value": "CUSTOM:EnchantedGoldenCactusPet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "piglin_loved",
+    "namespace": "minecraft"
+  }
+}

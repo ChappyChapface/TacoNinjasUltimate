@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "coffee",
+    "customModelName": "Normal",
+    "name": "Coffee",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "§aEffect: §7Increased speed and strength",
+      "§7Makes you hungry"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 6,
+    "saturation": 0.7999999999999999,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "CUSTOM:Mug"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "CoffeeEffect"
+    }
+  }
+}

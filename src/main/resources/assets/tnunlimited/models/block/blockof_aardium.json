@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tnunlimited:blocks/aardiumblock",
+    "up": "tnunlimited:blocks/aardiumblock",
+    "north": "tnunlimited:blocks/aardiumblock",
+    "east": "tnunlimited:blocks/aardiumblock",
+    "south": "tnunlimited:blocks/aardiumblock",
+    "west": "tnunlimited:blocks/aardiumblock",
+    "particle": "tnunlimited:blocks/aardiumblock"
+  }
+}

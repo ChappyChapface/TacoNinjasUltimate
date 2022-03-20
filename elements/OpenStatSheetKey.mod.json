@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "RSHIFT",
+    "keyBindingName": "Open Stat Sheet",
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "OpenStatSheet"
+    }
+  }
+}

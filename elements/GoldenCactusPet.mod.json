@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "pixil-frame-0_42",
+    "customModelName": "Normal",
+    "name": "Golden Pet Cactus",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:AccessoriesTab"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§aWhen Equipped:",
+      "§7Attackers take full recoil damage"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onEntitySwing": {
+      "name": "PetCactusEntitySwingsItem"
+    },
+    "hasDispenseBehavior": false
+  }
+}

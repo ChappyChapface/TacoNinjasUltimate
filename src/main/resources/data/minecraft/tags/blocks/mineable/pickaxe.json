@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "tnunlimited:aardiumore",
+    "tnunlimited:zinc_ore",
+    "tnunlimited:blockof_aardium",
+    "tnunlimited:lead_ore",
+    "tnunlimited:blockofrawlead",
+    "tnunlimited:block_of_lead",
+    "tnunlimited:zinc_deepslate_ore",
+    "tnunlimited:nubrium_ore"
+  ]
+}

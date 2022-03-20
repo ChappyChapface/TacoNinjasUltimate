@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "tnunlimited:aardiumingot"
+    },
+    "2": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "tnunlimited:aardiumingot"
+    },
+    "4": {
+      "item": "tnunlimited:aarduimsword"
+    },
+    "5": {
+      "item": "tnunlimited:aardiumingot"
+    },
+    "7": {
+      "item": "tnunlimited:aardiumingot"
+    }
+  },
+  "result": {
+    "item": "tnunlimited:reforgedaardium",
+    "count": 1
+  }
+}

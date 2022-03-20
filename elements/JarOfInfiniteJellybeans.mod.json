@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "jarofinfinitejellybeans",
+    "customModelName": "Normal",
+    "name": "Jar Of Infinite Jellybeans",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "§aAbility: §7Can be eaten infinitely",
+      "§cDebuff: §7Eating this consumes XP"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 1,
+    "saturation": 0.2,
+    "eatingSpeed": 16,
+    "resultItem": {
+      "value": "CUSTOM:JarOfInfiniteJellybeans"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "JarOfInfiniteJellybeansReduceXP"
+    }
+  }
+}

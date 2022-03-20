@@ -1,0 +1,36 @@
+{
+  "_fv": 24,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Buffing",
+    "type": "WEARABLE",
+    "rarity": "UNCOMMON",
+    "minLevel": 1,
+    "maxLevel": 3,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "VANISHING_CURSE"
+      }
+    ],
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:MiracleRune"
+      },
+      {
+        "value": "CUSTOM:PetCactus"
+      },
+      {
+        "value": "CUSTOM:GoldenCactusPet"
+      },
+      {
+        "value": "CUSTOM:EnchantedGoldenCactusPet"
+      }
+    ],
+    "isTreasureEnchantment": true,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

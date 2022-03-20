@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_shovel",
+    "minecraft:wooden_hoe",
+    "minecraft:diamond_hoe",
+    "tnunlimited:galvanized_hoe",
+    "minecraft:iron_hoe",
+    "minecraft:golden_shovel",
+    "minecraft:netherite_shovel",
+    "tnunlimited:done_hoe",
+    "minecraft:golden_hoe",
+    "tnunlimited:lead_shovel",
+    "minecraft:stone_hoe",
+    "tnunlimited:dark_warhammer",
+    "tnunlimited:galvanized_shovel",
+    "tnunlimited:lead_hoe",
+    "minecraft:stone_shovel",
+    "minecraft:netherite_hoe",
+    "minecraft:iron_shovel",
+    "minecraft:wooden_shovel",
+    "tnunlimited:done_shovel"
+  ]
+}

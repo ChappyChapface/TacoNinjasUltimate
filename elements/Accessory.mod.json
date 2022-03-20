@@ -1,0 +1,50 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PetCactus"
+      },
+      {
+        "value": "CUSTOM:GoldenCactusPet"
+      },
+      {
+        "value": "CUSTOM:EnchantedGoldenCactusPet"
+      },
+      {
+        "value": "CUSTOM:MiracleRune"
+      },
+      {
+        "value": "CUSTOM:FleurBand"
+      },
+      {
+        "value": "CUSTOM:RepulsiveFlowerReplica"
+      },
+      {
+        "value": "CUSTOM:HoneybeeIdol"
+      },
+      {
+        "value": "CUSTOM:SlothsPillow"
+      },
+      {
+        "value": "CUSTOM:Contract"
+      },
+      {
+        "value": "CUSTOM:CardialCharm"
+      },
+      {
+        "value": "CUSTOM:Heartcore"
+      },
+      {
+        "value": "CUSTOM:DecardialNecklace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "accessory",
+    "namespace": "mod"
+  }
+}

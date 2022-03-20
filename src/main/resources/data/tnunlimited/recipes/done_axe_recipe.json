@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "tnunlimited:done"
+    },
+    "1": {
+      "item": "tnunlimited:done"
+    },
+    "2": {
+      "item": "minecraft:bone"
+    },
+    "3": {
+      "item": "tnunlimited:done"
+    },
+    "4": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "tnunlimited:done_axe",
+    "count": 1
+  }
+}

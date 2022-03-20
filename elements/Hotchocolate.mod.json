@@ -1,0 +1,32 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "hotchoclate",
+    "customModelName": "Normal",
+    "name": "Hot chocolate",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "§aEffect: §7Increased regeneration and resistance",
+      "§7Decreases speed"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 6,
+    "saturation": 0.1,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "CUSTOM:Mug"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "HotchocolateEffect"
+    }
+  }
+}

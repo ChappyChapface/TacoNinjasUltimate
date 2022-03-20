@@ -1,0 +1,334 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "MAX HP:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "MAX HP:",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ARMOR:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ARMOR:",
+          "x": 141,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:HPDisplay>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:HPDisplay>",
+          "x": 213,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "MULTIPLIERS",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "MULTIPLIERS",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "MAIN STATS",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "MAIN STATS",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "STRENGTH:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "STRENGTH:",
+          "x": 141,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "SPEED:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "SPEED:",
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ARMOR:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ARMOR:",
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "SWIM SPD:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "SWIM SPD:",
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "SLASH STR:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "SLASH STR:",
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "BLUNT STR:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "BLUNT STR:",
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "GUN STR:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "GUN STR:",
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "FAMILIAR STR:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "FAMILIAR STR:",
+          "x": 141,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:ArmorIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:ArmorIncrease>",
+          "x": 213,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:OmniStrengthIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:OmniStrengthIncrease>",
+          "x": 213,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:familiarStrengthIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:familiarStrengthIncrease>",
+          "x": 213,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:movementSpeedIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:movementSpeedIncrease>",
+          "x": 213,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:swimSpeedIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:swimSpeedIncrease>",
+          "x": 213,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:slashStrengthIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:slashStrengthIncrease>",
+          "x": 213,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:bluntStrengthIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:bluntStrengthIncrease>",
+          "x": 213,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:gunStrengthIncrease>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:gunStrengthIncrease>",
+          "x": 213,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:ArmorDisplay>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:ArmorDisplay>",
+          "x": 213,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "SATURATION:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "SATURATION:",
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:SatDisplay>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:SatDisplay>",
+          "x": 213,
+          "y": 71
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

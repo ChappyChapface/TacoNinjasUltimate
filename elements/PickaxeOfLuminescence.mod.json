@@ -1,0 +1,43 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "pickaxe_of_luminescence",
+    "customModelName": "Normal",
+    "name": "Pickaxe Of Luminescence",
+    "specialInfo": [
+      "§aAbility: §7Use to blind enemies and grant self night vision.",
+      "§cCooldown: §71 Minute"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 6.0,
+    "attackSpeed": 1.0,
+    "enchantability": 20,
+    "damageVsEntity": 4.0,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "PickaxeOfLuminescenceBlinding"
+    },
+    "onRightClickedOnBlock": {
+      "name": "PickaxeOfLuminescenceBlinding"
+    },
+    "onItemInInventoryTick": {
+      "name": "CooldownWhenNotHeldInMain"
+    }
+  }
+}

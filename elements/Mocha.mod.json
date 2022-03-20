@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cup",
+    "customModelName": "Normal",
+    "name": "Mocha",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "§aEffect: §7 Increased regeneration, resistance, speed, and strength"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 8,
+    "saturation": 1.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "CUSTOM:Mug"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "MochaEffect"
+    }
+  }
+}

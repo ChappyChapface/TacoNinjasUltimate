@@ -1,0 +1,5318 @@
+{
+  "mod_elements": [
+    {
+      "name": "WoodenSickle",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_sickle"
+    },
+    {
+      "name": "StoneSickle",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sickle"
+    },
+    {
+      "name": "GoldSickle",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_sickle"
+    },
+    {
+      "name": "IronSickle",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_sickle"
+    },
+    {
+      "name": "DiamondSickle",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_sickle"
+    },
+    {
+      "name": "NetheriteSickle",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_sickle"
+    },
+    {
+      "name": "WoodenSickleRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_sickle_recipe"
+    },
+    {
+      "name": "StoneSickleRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sickle_recipe"
+    },
+    {
+      "name": "StoneSickleRecipe2",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sickle_recipe_2"
+    },
+    {
+      "name": "IronSickleRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_sickle_recipe"
+    },
+    {
+      "name": "GoldSickleRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_sickle_recipe"
+    },
+    {
+      "name": "DiamondSickleRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_sickle_recipe"
+    },
+    {
+      "name": "NetheriteSickleRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_sickle_recipe"
+    },
+    {
+      "name": "Harvesting",
+      "type": "enchantment",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "harvesting"
+    },
+    {
+      "name": "SickleHarvestProcedure",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sickle_harvest_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Buckler",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buckler"
+    },
+    {
+      "name": "BucklerRightClick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buckler_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Glowingice",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowingice"
+    },
+    {
+      "name": "RawAardium",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_aardium"
+    },
+    {
+      "name": "GlowingIceify",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowing_iceify"
+    },
+    {
+      "name": "BlockofAardium",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockof_aardium"
+    },
+    {
+      "name": "Aardiumore",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardiumore"
+    },
+    {
+      "name": "Aardiumingot",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardiumingot"
+    },
+    {
+      "name": "Smeltaardium",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smeltaardium"
+    },
+    {
+      "name": "GalvanizedPickaxe",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_pickaxe"
+    },
+    {
+      "name": "GalvanizedSickle",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_sickle"
+    },
+    {
+      "name": "ZincOre",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ore"
+    },
+    {
+      "name": "GalvanizedPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_pickaxe_recipe"
+    },
+    {
+      "name": "GalvanizedAxeRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_axe_recipe"
+    },
+    {
+      "name": "GalvanizedShovelRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_shovel_recipe"
+    },
+    {
+      "name": "GalvanizedAxe",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_axe"
+    },
+    {
+      "name": "ZincOreLoot",
+      "type": "loottable",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ore_loot"
+    },
+    {
+      "name": "GalvanizedSwordRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_sword_recipe"
+    },
+    {
+      "name": "GalvanizedShovel",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_shovel"
+    },
+    {
+      "name": "ZincSheet",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_sheet"
+    },
+    {
+      "name": "ZincIngotRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ingot_recipe"
+    },
+    {
+      "name": "GalvanizedHoeRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_hoe_recipe"
+    },
+    {
+      "name": "GalvanizedSword",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_sword"
+    },
+    {
+      "name": "GalvanizedHoe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_hoe"
+    },
+    {
+      "name": "AerialMovement",
+      "type": "enchantment",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aerial_movement"
+    },
+    {
+      "name": "ZincIngot",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ingot"
+    },
+    {
+      "name": "Lunging",
+      "type": "enchantment",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lunging"
+    },
+    {
+      "name": "GalvanizedSickleRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_sickle_recipe"
+    },
+    {
+      "name": "Craftaardiumblock",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaardiumblock"
+    },
+    {
+      "name": "Sunrise",
+      "type": "musicdisc",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunrise"
+    },
+    {
+      "name": "ZincBlock",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_block"
+    },
+    {
+      "name": "ZincBlockRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_block_recipe"
+    },
+    {
+      "name": "SnowballerCondition",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowballer_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SnowballerCooldown",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowballer_cooldown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Snowglove",
+      "type": "rangeditem",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowglove"
+    },
+    {
+      "name": "ZincBlockToZincIngotRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_block_to_zinc_ingot_recipe"
+    },
+    {
+      "name": "SnowgloveRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowglove_recipe"
+    },
+    {
+      "name": "SnowgloveProjectileParticles",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowglove_projectile_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AardiumSickle",
+      "type": "tool",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardium_sickle"
+    },
+    {
+      "name": "AardiumSickleRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardium_sickle_recipe"
+    },
+    {
+      "name": "JarOfInfiniteJellybeansReduceXP",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_of_infinite_jellybeans_reduce_xp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JarOfInfiniteJellybeans",
+      "type": "food",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_of_infinite_jellybeans"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet"
+    },
+    {
+      "name": "Craftmug",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftmug"
+    },
+    {
+      "name": "Revolver",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver"
+    },
+    {
+      "name": "BulletProjectile",
+      "type": "rangeditem",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile"
+    },
+    {
+      "name": "Hotchocolate",
+      "type": "food",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hotchocolate"
+    },
+    {
+      "name": "Crafthc",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafthc"
+    },
+    {
+      "name": "RevolverRightClickedInAir",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BulletProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "imediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mug",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mug"
+    },
+    {
+      "name": "DragonKillDetect",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_kill_detect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeadOreAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ore_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeadOre",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ore"
+    },
+    {
+      "name": "ContractEffect",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "contract_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamblersSwordEffect",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamblers_sword_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoffeePlantLoot",
+      "type": "loottable",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_plant_loot"
+    },
+    {
+      "name": "SinChestStructureRequirements",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sin_chest_structure_requirements",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coffee",
+      "type": "food",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee"
+    },
+    {
+      "name": "BleedingEffect",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CriticalSword",
+      "type": "tool",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "critical_sword"
+    },
+    {
+      "name": "Bleeding",
+      "type": "potioneffect",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding"
+    },
+    {
+      "name": "SinChestStructure",
+      "type": "structure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sin_chest_structure"
+    },
+    {
+      "name": "CoffeeBeans",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_beans"
+    },
+    {
+      "name": "CoffeeBeansRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_beans_recipe"
+    },
+    {
+      "name": "BloodyRapier",
+      "type": "tool",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloody_rapier"
+    },
+    {
+      "name": "GlassSkull",
+      "type": "armor",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_skull",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "CoffeeRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_recipe"
+    },
+    {
+      "name": "DrowsyEffect",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drowsy_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoffeeFruit",
+      "type": "food",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_fruit"
+    },
+    {
+      "name": "BloodyRapierEffect",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloody_rapier_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BleedingActivation",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_activation",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "amplifier",
+            "type": "number"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoffeePlant",
+      "type": "plant",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_plant"
+    },
+    {
+      "name": "Mocha",
+      "type": "food",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mocha"
+    },
+    {
+      "name": "SinChest",
+      "type": "loottable",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sin_chest"
+    },
+    {
+      "name": "GlassSkullRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_skull_recipe"
+    },
+    {
+      "name": "SlothsPillowEffect",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sloths_pillow_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlassSkullHitEffect",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_skull_hit_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MochaRecipe3",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mocha_recipe_3"
+    },
+    {
+      "name": "MochaRecipe2",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mocha_recipe_2"
+    },
+    {
+      "name": "MochaRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mocha_recipe"
+    },
+    {
+      "name": "Drowsy",
+      "type": "potioneffect",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drowsy"
+    },
+    {
+      "name": "SlothsPillow",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sloths_pillow"
+    },
+    {
+      "name": "Contract",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "contract"
+    },
+    {
+      "name": "Done",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done"
+    },
+    {
+      "name": "LeadOreLoottable",
+      "type": "loottable",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ore_loottable"
+    },
+    {
+      "name": "PepperoniFood",
+      "type": "food",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperoni_food"
+    },
+    {
+      "name": "PepperoniIngot",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperoni_ingot"
+    },
+    {
+      "name": "DoneBlockRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_block_recipe"
+    },
+    {
+      "name": "DoneHelmetRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_helmet_recipe"
+    },
+    {
+      "name": "RawLeadBlockRec",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_lead_block_rec"
+    },
+    {
+      "name": "LeadHoe",
+      "type": "tool",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_hoe"
+    },
+    {
+      "name": "DoneSword",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_sword"
+    },
+    {
+      "name": "DoneArmour",
+      "type": "armor",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_armour",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "DoneHoeRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_hoe_recipe"
+    },
+    {
+      "name": "DoneRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_recipe"
+    },
+    {
+      "name": "LeadShovel",
+      "type": "tool",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_shovel"
+    },
+    {
+      "name": "PepperoniArmourHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperoni_armour_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RevolverRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver_recipe"
+    },
+    {
+      "name": "PepperoniHelmetRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperoni_helmet_recipe"
+    },
+    {
+      "name": "LeadBlock",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_block"
+    },
+    {
+      "name": "DonePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_pickaxe_recipe"
+    },
+    {
+      "name": "PepperonisWillSlayYouForThisAdvancement",
+      "type": "achievement",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperonis_will_slay_you_for_this_advancement"
+    },
+    {
+      "name": "DoneShovel",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_shovel"
+    },
+    {
+      "name": "LeadIngo",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ingo"
+    },
+    {
+      "name": "LeadPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_pickaxe_recipe"
+    },
+    {
+      "name": "LeadSword",
+      "type": "tool",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_sword"
+    },
+    {
+      "name": "LeadShovelRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_shovel_recipe"
+    },
+    {
+      "name": "DoneShovelRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_shovel_recipe"
+    },
+    {
+      "name": "PepperoniArmour",
+      "type": "armor",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperoni_armour",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "BlastLeadIngotOre",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blast_lead_ingot_ore"
+    },
+    {
+      "name": "LeadPickaxe",
+      "type": "tool",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_pickaxe"
+    },
+    {
+      "name": "DoneAxeRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_axe_recipe"
+    },
+    {
+      "name": "Craftflamering",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftflamering"
+    },
+    {
+      "name": "DoneLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_leggings_recipe"
+    },
+    {
+      "name": "BlockToLead",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_to_lead"
+    },
+    {
+      "name": "BulletShell",
+      "type": "particle",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_shell"
+    },
+    {
+      "name": "DoneSwordRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_sword_recipe"
+    },
+    {
+      "name": "DoneAxe",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_axe"
+    },
+    {
+      "name": "LeadIngoOre",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ingo_ore"
+    },
+    {
+      "name": "LeadAxe",
+      "type": "tool",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_axe"
+    },
+    {
+      "name": "LeadSwordRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_sword_recipe"
+    },
+    {
+      "name": "Blockofrawlead",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockofrawlead"
+    },
+    {
+      "name": "LeadHit",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DonePickaxe",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_pickaxe"
+    },
+    {
+      "name": "BulletRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_recipe"
+    },
+    {
+      "name": "Blocktorawlead",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocktorawlead"
+    },
+    {
+      "name": "DoneChestplateRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_chestplate_recipe"
+    },
+    {
+      "name": "PepperoniIngotRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperoni_ingot_recipe"
+    },
+    {
+      "name": "BlastLeadIngot",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blast_lead_ingot"
+    },
+    {
+      "name": "DoneBootsRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_boots_recipe"
+    },
+    {
+      "name": "BlockOfLead",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_lead"
+    },
+    {
+      "name": "DoneBlock",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_block"
+    },
+    {
+      "name": "LeadAxeRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_axe_recipe"
+    },
+    {
+      "name": "LeadHoeRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_hoe_recipe"
+    },
+    {
+      "name": "LeadIngot",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ingot"
+    },
+    {
+      "name": "DoneRecipe2",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_recipe_2"
+    },
+    {
+      "name": "DoneHoe",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "done_hoe"
+    },
+    {
+      "name": "RawLead",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_lead"
+    },
+    {
+      "name": "Flamering",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamering"
+    },
+    {
+      "name": "Flameringeffect",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flameringeffect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeadSickle",
+      "type": "tool",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_sickle"
+    },
+    {
+      "name": "BomaindSickleRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomaind_sickle_recipe"
+    },
+    {
+      "name": "BomaindSickle",
+      "type": "tool",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomaind_sickle"
+    },
+    {
+      "name": "LeadSickleRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_sickle_recipe"
+    },
+    {
+      "name": "Craftaarhelm",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaarhelm"
+    },
+    {
+      "name": "Craftaarchest",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaarchest"
+    },
+    {
+      "name": "Craftaarpants",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaarpants"
+    },
+    {
+      "name": "Craftarrboot",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftarrboot"
+    },
+    {
+      "name": "Aardium",
+      "type": "armor",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardium",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "LemonstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemonstone_stairs_recipe"
+    },
+    {
+      "name": "Heatwave",
+      "type": "tool",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heatwave"
+    },
+    {
+      "name": "PolishedLemonstoneStonecutter",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_stonecutter"
+    },
+    {
+      "name": "LemonstoneSlabStonecutter",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemonstone_slab_stonecutter"
+    },
+    {
+      "name": "DarkWarhammerRecoil",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_warhammer_recoil",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PolishedLemonstoneStairs",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_stairs"
+    },
+    {
+      "name": "ArmorSetBonuses",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_set_bonuses",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZincArmor",
+      "type": "armor",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "ZincArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_armor_leggings_recipe"
+    },
+    {
+      "name": "PolishedLemonstone",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone"
+    },
+    {
+      "name": "PolishedLemonstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_slab_recipe"
+    },
+    {
+      "name": "HeatwaveSetFire",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heatwave_set_fire",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZincArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_armor_boots_recipe"
+    },
+    {
+      "name": "LemonstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemonstone_slab_recipe"
+    },
+    {
+      "name": "AntlionChestLoot",
+      "type": "loottable",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antlion_chest_loot"
+    },
+    {
+      "name": "RockCooldown",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_cooldown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChiseledLemonstoneStonecutter",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_lemonstone_stonecutter"
+    },
+    {
+      "name": "PolishedLemonstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_stairs_recipe"
+    },
+    {
+      "name": "ZincArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_armor_body_recipe"
+    },
+    {
+      "name": "GalvanizedHarpoon",
+      "type": "rangeditem",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_harpoon"
+    },
+    {
+      "name": "GalvanizedHarpoonRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_harpoon_recipe"
+    },
+    {
+      "name": "RockRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_recipe"
+    },
+    {
+      "name": "PolishedLemonstoneSlab",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_slab"
+    },
+    {
+      "name": "PolishedLemonstoneSlabStonecutter",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_slab_stonecutter"
+    },
+    {
+      "name": "Rock",
+      "type": "rangeditem",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock"
+    },
+    {
+      "name": "ZincArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_armor_helmet_recipe"
+    },
+    {
+      "name": "LemonstoneSlab",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemonstone_slab"
+    },
+    {
+      "name": "ZincDeepslateOre",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_deepslate_ore"
+    },
+    {
+      "name": "LemonstoneStairsStonecutter",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemonstone_stairs_stonecutter"
+    },
+    {
+      "name": "RockParticles",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PolishedLemonstoneRecipe",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_recipe"
+    },
+    {
+      "name": "PolishedLemonstoneStairsStonecutter",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_lemonstone_stairs_stonecutter"
+    },
+    {
+      "name": "AntlionStatue",
+      "type": "structure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antlion_statue"
+    },
+    {
+      "name": "ChiseledLemonstone",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_lemonstone"
+    },
+    {
+      "name": "PostDragSpawnCondition",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "post_drag_spawn_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lemonstone",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemonstone"
+    },
+    {
+      "name": "ChiseledLemonstoneRecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_lemonstone_recipe"
+    },
+    {
+      "name": "MochaAdvancement",
+      "type": "achievement",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mocha_advancement"
+    },
+    {
+      "name": "LemonstoneStairs",
+      "type": "block",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemonstone_stairs"
+    },
+    {
+      "name": "GalvanizedHarpoonCooldown",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galvanized_harpoon_cooldown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkWarhammer",
+      "type": "tool",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_warhammer"
+    },
+    {
+      "name": "Aarduimsword",
+      "type": "tool",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aarduimsword"
+    },
+    {
+      "name": "LeadArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armor_helmet_recipe"
+    },
+    {
+      "name": "Aardiumpickaxe",
+      "type": "tool",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardiumpickaxe"
+    },
+    {
+      "name": "LeadArmor",
+      "type": "armor",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "LeadArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armor_leggings_recipe"
+    },
+    {
+      "name": "LeadArmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armor_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Craftarrpick",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftarrpick"
+    },
+    {
+      "name": "LeadArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armor_boots_recipe"
+    },
+    {
+      "name": "LeadArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armor_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BleedingHeartCharm",
+      "type": "item",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_heart_charm"
+    },
+    {
+      "name": "UndergroundRuinChest",
+      "type": "loottable",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_ruin_chest"
+    },
+    {
+      "name": "LeadArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_armor_body_recipe"
+    },
+    {
+      "name": "AncientRuins",
+      "type": "structure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_ruins"
+    },
+    {
+      "name": "Craftarrsword",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftarrsword"
+    },
+    {
+      "name": "BleedingHeartCharmUse",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_heart_charm_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Craftaarsword",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaarsword"
+    },
+    {
+      "name": "ChainmailPickaxe",
+      "type": "tool",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_pickaxe"
+    },
+    {
+      "name": "DuneSpider",
+      "type": "livingentity",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dune_spider"
+    },
+    {
+      "name": "ChainmailHelmetRecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_helmet_recipe"
+    },
+    {
+      "name": "GildedChainmailPickaxe",
+      "type": "tool",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_chainmail_pickaxe"
+    },
+    {
+      "name": "ChainmailLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_leggings_recipe"
+    },
+    {
+      "name": "ChainmailChestplateRecipe",
+      "type": "recipe",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_chestplate_recipe"
+    },
+    {
+      "name": "GildedChainmailPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_chainmail_pickaxe_recipe"
+    },
+    {
+      "name": "ChainmailBoots",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_boots"
+    },
+    {
+      "name": "ChainmailPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_pickaxe_recipe"
+    },
+    {
+      "name": "BluntDamageIncrease",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blunt_damage_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SlashDamageIncrease",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slash_damage_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bluntweapon",
+      "type": "tag",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluntweapon"
+    },
+    {
+      "name": "SlashWeapon",
+      "type": "tag",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slash_weapon"
+    },
+    {
+      "name": "SerenityEffect",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "serenity_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesertIngotRecipe",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_ingot_recipe"
+    },
+    {
+      "name": "PickaxeOfLuminescenceBlinding",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickaxe_of_luminescence_blinding",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Serenity",
+      "type": "tool",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "serenity"
+    },
+    {
+      "name": "DesertChitin",
+      "type": "item",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_chitin"
+    },
+    {
+      "name": "DesertIngot",
+      "type": "item",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_ingot"
+    },
+    {
+      "name": "MiracleRuneEffect",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_rune_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MiracleRune",
+      "type": "item",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_rune"
+    },
+    {
+      "name": "PickaxeOfLuminescence",
+      "type": "tool",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickaxe_of_luminescence"
+    },
+    {
+      "name": "TorchOfWispsEffect",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torch_of_wisps_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZincDeepslateOreloot",
+      "type": "loottable",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_deepslate_oreloot"
+    },
+    {
+      "name": "DuneSpiderLoot",
+      "type": "loottable",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dune_spider_loot"
+    },
+    {
+      "name": "TorchOfGuidance",
+      "type": "item",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torch_of_guidance"
+    },
+    {
+      "name": "Craftaaraxe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaaraxe"
+    },
+    {
+      "name": "Craftaarhoe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaarhoe"
+    },
+    {
+      "name": "Craftaarshovel",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftaarshovel"
+    },
+    {
+      "name": "AardiumingoAxe",
+      "type": "tool",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardiumingo_axe"
+    },
+    {
+      "name": "AardiumingoHoe",
+      "type": "tool",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardiumingo_hoe"
+    },
+    {
+      "name": "AardiumingoShovel",
+      "type": "tool",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardiumingo_shovel"
+    },
+    {
+      "name": "Elytrarecipe",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elytrarecipe"
+    },
+    {
+      "name": "Desert_RoachArmor",
+      "type": "armor",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_roach_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "GildedBug",
+      "type": "livingentity",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_bug"
+    },
+    {
+      "name": "WastelandishHopper",
+      "type": "livingentity",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wastelandish_hopper"
+    },
+    {
+      "name": "Desert_RoachArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_roach_armor_body_recipe"
+    },
+    {
+      "name": "Desert_RoachArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_roach_armor_boots_recipe"
+    },
+    {
+      "name": "GildedBugCheck",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_bug_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Desert_RoachArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_roach_armor_leggings_recipe"
+    },
+    {
+      "name": "Desert_RoachArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_roach_armor_helmet_recipe"
+    },
+    {
+      "name": "CookieBlock",
+      "type": "block",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookie_block"
+    },
+    {
+      "name": "Hamburger",
+      "type": "food",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamburger"
+    },
+    {
+      "name": "CookieBlockRecipe",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookie_block_recipe"
+    },
+    {
+      "name": "GoldenHamburgerFoodEaten",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hamburger_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenHamburger",
+      "type": "food",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hamburger"
+    },
+    {
+      "name": "GoldenHamburgerRecipe",
+      "type": "recipe",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hamburger_recipe"
+    },
+    {
+      "name": "HamburderRecipe",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamburder_recipe"
+    },
+    {
+      "name": "Beaconbaseblocks",
+      "type": "tag",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaconbaseblocks"
+    },
+    {
+      "name": "CookieBlockToCookieRecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookie_block_to_cookie_recipe"
+    },
+    {
+      "name": "MochaEffect",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mocha_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HotchocolateEffect",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hotchocolate_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoffeeEffect",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntimonyArmorArmor",
+      "type": "armor",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimony_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "AntimonyArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimony_armor_armor_body_recipe"
+    },
+    {
+      "name": "AntimonyArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimony_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "AntimonyArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimony_armor_armor_boots_recipe"
+    },
+    {
+      "name": "Antimony",
+      "type": "item",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimony"
+    },
+    {
+      "name": "AntimonyArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimony_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "DuneSpiderSpawn",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dune_spider_spawn",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenCrownHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_crown_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenCrown",
+      "type": "armor",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_crown",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "GoldenCrownRecipe",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_crown_recipe"
+    },
+    {
+      "name": "PetCactus",
+      "type": "item",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pet_cactus"
+    },
+    {
+      "name": "PetCactusRecipe",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pet_cactus_recipe"
+    },
+    {
+      "name": "PetCactusEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pet_cactus_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedBugRespawn",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_bug_respawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SessionTimerReset",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "session_timer_reset",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FamiliarDamageModifier",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "familiar_damage_modifier",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedBugSummoning",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_bug_summoning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SessionTimer",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "session_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedBugBuff",
+      "type": "potioneffect",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_bug_buff"
+    },
+    {
+      "name": "Blastsmeltaardium",
+      "type": "recipe",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blastsmeltaardium"
+    },
+    {
+      "name": "PinacateBeetleLoot",
+      "type": "loottable",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pinacate_beetle_loot"
+    },
+    {
+      "name": "GoldenCactusPetRecipe",
+      "type": "recipe",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_cactus_pet_recipe"
+    },
+    {
+      "name": "PinacateBeetle",
+      "type": "livingentity",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pinacate_beetle"
+    },
+    {
+      "name": "GoldenCactusPet",
+      "type": "item",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_cactus_pet"
+    },
+    {
+      "name": "EnchantedGoldenCactusPet",
+      "type": "item",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_golden_cactus_pet"
+    },
+    {
+      "name": "EnchantedGoldenCactusPetRecipe",
+      "type": "recipe",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_golden_cactus_pet_recipe"
+    },
+    {
+      "name": "PinacateBeetleStench",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pinacate_beetle_stench",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reforgeaardiumsword",
+      "type": "recipe",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforgeaardiumsword"
+    },
+    {
+      "name": "Reforgedaardium",
+      "type": "tool",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforgedaardium"
+    },
+    {
+      "name": "AadriumoreLoot",
+      "type": "loottable",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aadriumore_loot"
+    },
+    {
+      "name": "Aardiumoreloot",
+      "type": "loottable",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aardiumoreloot"
+    },
+    {
+      "name": "Craftfrenchtoast",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftfrenchtoast"
+    },
+    {
+      "name": "Frenchtoast",
+      "type": "food",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frenchtoast"
+    },
+    {
+      "name": "CookedEggRecipe",
+      "type": "recipe",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_egg_recipe"
+    },
+    {
+      "name": "CookedEgg",
+      "type": "food",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_egg"
+    },
+    {
+      "name": "ShotgunPelletDecay",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgun_pellet_decay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "imediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PirateBarrel",
+      "type": "loottable",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_barrel"
+    },
+    {
+      "name": "BlunderbussRightClickedInAir",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blunderbuss_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PirateCrewman",
+      "type": "livingentity",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_crewman"
+    },
+    {
+      "name": "BulletProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FullMagicJacket",
+      "type": "enchantment",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_magic_jacket"
+    },
+    {
+      "name": "Cutlass",
+      "type": "tool",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutlass"
+    },
+    {
+      "name": "RecoilControl",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recoil_control",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TriggerHappy",
+      "type": "enchantment",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger_happy"
+    },
+    {
+      "name": "Sickle",
+      "type": "tag",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sickle"
+    },
+    {
+      "name": "PirateCaptain",
+      "type": "livingentity",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_captain"
+    },
+    {
+      "name": "Blunderbuss",
+      "type": "tool",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blunderbuss"
+    },
+    {
+      "name": "BuckshotPelletProjectile",
+      "type": "rangeditem",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buckshot_pellet_projectile"
+    },
+    {
+      "name": "Flintlock",
+      "type": "tool",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock"
+    },
+    {
+      "name": "SharpShooter",
+      "type": "enchantment",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharp_shooter"
+    },
+    {
+      "name": "Caliber",
+      "type": "enchantment",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caliber"
+    },
+    {
+      "name": "PirateShip",
+      "type": "structure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_ship"
+    },
+    {
+      "name": "NetherTower",
+      "type": "structure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tower"
+    },
+    {
+      "name": "PirateTreasure",
+      "type": "loottable",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_treasure"
+    },
+    {
+      "name": "NetherTowerCondition",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tower_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlintlockShoot",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_shoot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CaptainsHat",
+      "type": "armor",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "captains_hat",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Pirate",
+      "type": "armor",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "PirateCaptainShoot",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_captain_shoot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaddleRecipe",
+      "type": "recipe",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saddle_recipe"
+    },
+    {
+      "name": "PirateDeadeye",
+      "type": "livingentity",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_deadeye"
+    },
+    {
+      "name": "Cookedbacon",
+      "type": "food",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedbacon"
+    },
+    {
+      "name": "Craftbacon",
+      "type": "recipe",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftbacon"
+    },
+    {
+      "name": "Bacon",
+      "type": "food",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bacon"
+    },
+    {
+      "name": "NubriumLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_leggings_recipe"
+    },
+    {
+      "name": "NubriumHoeRecipe",
+      "type": "recipe",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_hoe_recipe"
+    },
+    {
+      "name": "NubriumShovel",
+      "type": "tool",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_shovel"
+    },
+    {
+      "name": "PrickPrick",
+      "type": "achievement",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prick_prick"
+    },
+    {
+      "name": "NubriumChestplateRecipe",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_chestplate_recipe"
+    },
+    {
+      "name": "NubriumHoe",
+      "type": "tool",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_hoe"
+    },
+    {
+      "name": "NubriumShovelRecipe",
+      "type": "recipe",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_shovel_recipe"
+    },
+    {
+      "name": "NubriumSword",
+      "type": "tool",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_sword"
+    },
+    {
+      "name": "NubriumSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nubrium",
+      "type": "item",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium"
+    },
+    {
+      "name": "NubriumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_pickaxe_recipe"
+    },
+    {
+      "name": "NubriumAxe",
+      "type": "tool",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_axe"
+    },
+    {
+      "name": "NubriumSwordRecipe",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_sword_recipe"
+    },
+    {
+      "name": "CookedEggSmokerRecipe",
+      "type": "recipe",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_egg_smoker_recipe"
+    },
+    {
+      "name": "EnderProtectorAI",
+      "type": "procedure",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_protector_ai",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NubriumHelmetRecipe",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_helmet_recipe"
+    },
+    {
+      "name": "NubriumPickaxe",
+      "type": "tool",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_pickaxe"
+    },
+    {
+      "name": "NubriumBootsRecipe",
+      "type": "recipe",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_boots_recipe"
+    },
+    {
+      "name": "NubriumAxeRecipe",
+      "type": "recipe",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_axe_recipe"
+    },
+    {
+      "name": "NubriumArmour",
+      "type": "armor",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_armour",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "EnderProtector",
+      "type": "livingentity",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_protector"
+    },
+    {
+      "name": "EnderProtectorSpawningCondition",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_protector_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrayStructure",
+      "type": "structure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stray_structure"
+    },
+    {
+      "name": "PirateDeadeyeShoot",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_deadeye_shoot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeechingProcedure",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leeching_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kickback",
+      "type": "enchantment",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kickback"
+    },
+    {
+      "name": "StenRightClick",
+      "type": "procedure",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sten_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Piglinloved",
+      "type": "tag",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piglinloved"
+    },
+    {
+      "name": "DeepslateZincSmelt1",
+      "type": "recipe",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_zinc_smelt_1"
+    },
+    {
+      "name": "AntimonySten",
+      "type": "tool",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimony_sten"
+    },
+    {
+      "name": "DeepslateZincSmelt2",
+      "type": "recipe",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_zinc_smelt_2"
+    },
+    {
+      "name": "MoveInDirection",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_in_direction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GunRecoilVector",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_recoil_vector",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZincSmelt2",
+      "type": "recipe",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_smelt_2"
+    },
+    {
+      "name": "Leeching",
+      "type": "enchantment",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leeching"
+    },
+    {
+      "name": "EXPBottle",
+      "type": "recipe",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_bottle"
+    },
+    {
+      "name": "ZincSmelt1",
+      "type": "recipe",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_smelt_1"
+    },
+    {
+      "name": "StoneThing",
+      "type": "structure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_thing"
+    },
+    {
+      "name": "FancyPants",
+      "type": "armor",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fancy_pants",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "FancyPantsRecipe",
+      "type": "recipe",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fancy_pants_recipe"
+    },
+    {
+      "name": "Fancy",
+      "type": "achievement",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fancy"
+    },
+    {
+      "name": "Buffing",
+      "type": "enchantment",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffing"
+    },
+    {
+      "name": "StatSheet",
+      "type": "gui",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_sheet"
+    },
+    {
+      "name": "FleurBand",
+      "type": "item",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fleur_band"
+    },
+    {
+      "name": "SPDChange",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spd_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenAccessoryMenu",
+      "type": "keybind",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_accessory_menu"
+    },
+    {
+      "name": "OpenAccessoryGUI",
+      "type": "procedure",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_accessory_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AccSet2",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acc_set_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AccSet1",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acc_set_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Accessories",
+      "type": "gui",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessories"
+    },
+    {
+      "name": "Accessory",
+      "type": "tag",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessory"
+    },
+    {
+      "name": "OpenStatSheet",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stat_sheet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PetCactusEffects",
+      "type": "procedure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pet_cactus_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenStatSheetKey",
+      "type": "keybind",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stat_sheet_key"
+    },
+    {
+      "name": "FleurBandRecipe",
+      "type": "recipe",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fleur_band_recipe"
+    },
+    {
+      "name": "Resisting",
+      "type": "enchantment",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resisting"
+    },
+    {
+      "name": "PirateCaptainDies",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pirate_captain_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ArmorChange",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RFRRecipe",
+      "type": "recipe",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rfr_recipe"
+    },
+    {
+      "name": "GunSTRChange",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_str_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "STRChange",
+      "type": "procedure",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "str_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CooldownWhenNotHeldInMain",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooldown_when_not_held_in_main",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetDisplayStats",
+      "type": "procedure",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_display_stats",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoneybeeIdol",
+      "type": "item",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honeybee_idol"
+    },
+    {
+      "name": "HoneybeeIdolRecipe",
+      "type": "recipe",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honeybee_idol_recipe"
+    },
+    {
+      "name": "Ransacked",
+      "type": "achievement",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ransacked"
+    },
+    {
+      "name": "AccessoriesTab",
+      "type": "tab",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessories_tab"
+    },
+    {
+      "name": "SlashSTRChange",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slash_str_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RFRStench",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rfr_stench",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwimSPDChange",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swim_spd_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RepulsiveFlowerReplica",
+      "type": "item",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repulsive_flower_replica"
+    },
+    {
+      "name": "NubriumOre",
+      "type": "block",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_ore"
+    },
+    {
+      "name": "NubriumOreLoottable",
+      "type": "loottable",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nubrium_ore_loottable"
+    },
+    {
+      "name": "Cookbacon",
+      "type": "recipe",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookbacon"
+    },
+    {
+      "name": "Blastcookbacon",
+      "type": "recipe",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blastcookbacon"
+    },
+    {
+      "name": "NetherTowerLimited",
+      "type": "structure",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tower_limited"
+    },
+    {
+      "name": "NetherTowerLimitedCondition",
+      "type": "procedure",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tower_limited_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetherTowerLimitedIncrease",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tower_limited_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeartcoreRecipe",
+      "type": "recipe",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartcore_recipe"
+    },
+    {
+      "name": "HeartcoreEffect",
+      "type": "procedure",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartcore_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DecardialNecklaceRecipe",
+      "type": "recipe",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decardial_necklace_recipe"
+    },
+    {
+      "name": "NerfedShield",
+      "type": "gamerule",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nerfedShield",
+      "metadata": {
+        "type": "logic"
+      }
+    },
+    {
+      "name": "Heartcore",
+      "type": "item",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartcore"
+    },
+    {
+      "name": "CardialCharm",
+      "type": "item",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cardial_charm"
+    },
+    {
+      "name": "DecardialNecklace",
+      "type": "item",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decardial_necklace"
+    },
+    {
+      "name": "HPChange",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShieldNerf",
+      "type": "procedure",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shield_nerf",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Decardial",
+      "type": "potioneffect",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decardial"
+    },
+    {
+      "name": "DecardialEffectExpires",
+      "type": "procedure",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decardial_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "dragon_killed",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "slashStrengthIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "bluntStrengthIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "gunStrengthIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "swimSpeedIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "movementSpeedIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "familiarStrengthIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SessionLength",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Acc01",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Acc02",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Acc00",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "OmniStrengthIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ArmorIncrease",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HPDisplay",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "STR",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ArmorDisplay",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "gunSTR",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "movementSPD",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "slashSTR",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "familiarSTR",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "armorMultDisplay",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "swimSPD",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SatDisplay",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "bluntSTR",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "NetherTowerLimitedCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "hpMult",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "sunrise",
+      "files": [
+        "untitled_song_5_1"
+      ],
+      "category": "record",
+      "subtitle": "Sunrise - pokeplaza"
+    },
+    {
+      "name": "revolver_reload",
+      "files": [
+        "revolverreload"
+      ],
+      "category": "player",
+      "subtitle": "Revolver Reloading"
+    },
+    {
+      "name": "revolver_shoot",
+      "files": [
+        "revolvershoot"
+      ],
+      "category": "player",
+      "subtitle": "Revolver Shot"
+    },
+    {
+      "name": "revolver_last_shot",
+      "files": [
+        "revolvershootlast"
+      ],
+      "category": "player",
+      "subtitle": "Revolver Shoots Last Bullet"
+    },
+    {
+      "name": "sunrise2",
+      "files": [
+        "sunrise"
+      ],
+      "category": "neutral",
+      "subtitle": "Now playing - Sunrise"
+    },
+    {
+      "name": "blunderbuss_reload",
+      "files": [
+        "blunderbussreload"
+      ],
+      "category": "neutral",
+      "subtitle": "Blunderbuss Reloading"
+    },
+    {
+      "name": "blunderbuss_shoot",
+      "files": [
+        "blunderbussshoot"
+      ],
+      "category": "player",
+      "subtitle": "Blunderbuss Shoot"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.tnunlimited.nubrium_hoe": "Nubrium Hoe",
+      "item.tnunlimited.aardiumingo_axe": "Aardium Axe",
+      "advancements.prick_prick.descr": "The Pricks of an Enchanted Golden Cactus",
+      "item.tnunlimited.serenity": "Serenity",
+      "item.tnunlimited.coffee_fruit": "Coffee Fruit",
+      "item.tnunlimited.golden_hamburger": "Golden Hamburger",
+      "item.tnunlimited.diamond_sickle": "Diamond Sickle",
+      "item.tnunlimited.lead_hoe": "Lead Hoe",
+      "item.tnunlimited.nubrium_armour_leggings": "Nubrium Leggings",
+      "item.tnunlimited.nubrium": "Nubrium",
+      "block.tnunlimited.coffee_plant": "Coffee Plant",
+      "effect.tnunlimited.decardial": "Time Until Refresh",
+      "item.tnunlimited.cardial_charm": "Cardial Necklace",
+      "block.tnunlimited.polished_lemonstone": "Polished Lemonstone",
+      "item.tnunlimited.zinc_armor_leggings": "Galvanized Leggings",
+      "item.tnunlimited.jar_of_infinite_jellybeans": "Jar Of Infinite Jellybeans",
+      "item.tnunlimited.honeybee_idol": "Honeybee Idol",
+      "item.tnunlimited.buckler": "Buckler",
+      "advancements.pepperonis_will_slay_you_for_this_advancement.title": "True Pepperoni Fashion",
+      "item.tnunlimited.galvanized_sword": "Galvanized Sword",
+      "block.tnunlimited.cookie_block": "Cookie Block",
+      "enchantment.tnunlimited.lunging": "Lunging",
+      "item.tnunlimited.done_armour_boots": "Bomeen Boots",
+      "block.tnunlimited.nubrium_ore": "Nubrium Ore",
+      "block.tnunlimited.zinc_deepslate_ore": "Deepslate Zinc Ore",
+      "item.tnunlimited.galvanized_harpoon": "Galvanized Harpoon",
+      "item.tnunlimited.aardiumingo_shovel": "Aardium Shovel",
+      "block.tnunlimited.polished_lemonstonewall": "Polished Lemonstone Wall",
+      "block.tnunlimited.chiseled_lemonstone": "Chiseled Lemonstone",
+      "item.tnunlimited.desert_chitin": "Desert Chitin",
+      "itemGroup.tabaccessories_tab": "Accessories",
+      "entity.tnunlimited.dune_spider": "Dune Spider",
+      "item.tnunlimited.done_armour_helmet": "Bomeen Helmet",
+      "item.tnunlimited.desert_ingot": "Desert Ingot",
+      "block.tnunlimited.nubrium_ore_block": "Nubrium Ore Block",
+      "block.tnunlimited.zinc_block": "Zinc Block",
+      "gamerule.nerfedShield.description": "When the shield is hit, it has a cooldown equal to half of the damage blocked (in seconds).",
+      "item.tnunlimited.aarduimsword": "Aarduim sword",
+      "item.tnunlimited.done_axe": "Bomeen Axe",
+      "item.tnunlimited.gilded_chainmail_pickaxe": "Gilded Chainmail Pickaxe",
+      "item.tnunlimited.pirate_leggings": "Pirate Leggings",
+      "item.tnunlimited.fancy_pants_leggings": "Fancy Pants",
+      "advancements.mocha_advancement.descr": "Make some Mocha.",
+      "item.tnunlimited.done_pickaxe": "Bomeen Pickaxe",
+      "block.tnunlimited.block_of_lead": "Block Of Lead",
+      "item.tnunlimited.zinc_ingot": "Zinc Ingot",
+      "item.tnunlimited.nubrium_pickaxe": "Nubrium Pickaxe",
+      "item.tnunlimited.pirate_helmet": "Pirate Bandanna",
+      "item.tnunlimited.rock": "Rock",
+      "item.tnunlimited.dune_spider_spawn_egg": "Dune Spider Spawn Egg",
+      "item.tnunlimited.aardiumingot": "Aardium ingot",
+      "subtitles.blunderbuss_reload": "Blunderbuss Reloading",
+      "advancements.prick_prick.title": "Prick Prick",
+      "item.tnunlimited.golden_crown_chestplate": "Golden Crown Body",
+      "item.tnunlimited.flamering": "Flame ring",
+      "item.tnunlimited.repulsive_flower_replica": "Repulsive Flower Replica",
+      "item.tnunlimited.nubrium_armour_helmet": "Nubrium Helmet",
+      "item.tnunlimited.bloody_rapier": "Bloody Rapier",
+      "item.tnunlimited.zinc_armor_chestplate": "Galvanized Chestplate",
+      "item.tnunlimited.done_sword": "Bomeen Sword",
+      "item.tnunlimited.revolver": "Lead Revolver",
+      "item.tnunlimited.done": "Bomeen",
+      "block.tnunlimited.blockofrawlead": "Block Of Raw Lead",
+      "item.tnunlimited.lead_ingot": "Lead Ingot",
+      "item.tnunlimited.galvanized_pickaxe": "Galvanized Pickaxe",
+      "item.tnunlimited.captains_hat_chestplate": "Captains Hat Body",
+      "entity.tnunlimited.pirate_crewman": "Pirate Crewman",
+      "advancements.mocha_advancement.title": "The Ultimate Brew!!",
+      "gamerule.nerfedShield": "Nerf Shield",
+      "effect.tnunlimited.bleeding": "Bleeding",
+      "block.tnunlimited.lemonstone_stairs": "Lemonstone Stairs",
+      "item.tnunlimited.done_armour_chestplate": "Bomeen Chestplate",
+      "item.tnunlimited.pepperoni_food": "Pepperoni",
+      "item.tnunlimited.glass_skull_boots": "Glass Skull Boots",
+      "item.tnunlimited.aardium_sickle": "Aardium Sickle",
+      "item.tnunlimited.lead_armor_helmet": "Lead Helmet",
+      "item.tnunlimited.pinacate_beetle_spawn_egg": "Pinacate Beetle Spawn Egg",
+      "item.tnunlimited.pepperoni_armour_leggings": "Pepperoni Armour Leggings",
+      "item.tnunlimited.glass_skull_helmet": "Glass Skull",
+      "item.tnunlimited.zinc_armor_boots": "Galvanized Boots",
+      "item.tnunlimited.golden_crown_leggings": "Golden Crown Leggings",
+      "item.tnunlimited.cutlass": "Cutlass",
+      "item.tnunlimited.blunderbuss": "Blunderbuss",
+      "item.tnunlimited.buckshot_pellet_projectile": "Buckshot Pellet Projectile",
+      "item.tnunlimited.snowglove": "Snowglove",
+      "item.tnunlimited.pickaxe_of_luminescence": "Pickaxe Of Luminescence",
+      "item.tnunlimited.aardium_helmet": "Aardium Helmet",
+      "item.tnunlimited.aardium_chestplate": "Aardium Chestplate",
+      "item.tnunlimited.heartcore": "Heartcore",
+      "item.tnunlimited.lead_armor_leggings": "Lead Leggings",
+      "item.tnunlimited.desert_roach_armor_boots": "Desert Roach Boots",
+      "item.tnunlimited.reforgedaardium": "Reforged Aardium Sword",
+      "item.tnunlimited.cookedbacon": "Cookedbacon",
+      "item.tnunlimited.miracle_rune": "Miracle Rune",
+      "item.tnunlimited.aardium_boots": "Aardium Boots",
+      "advancements.ransacked.title": "Ransack!",
+      "item.tnunlimited.gilded_bug_spawn_egg": "Gilded Bug Spawn Egg",
+      "item.tnunlimited.coffee_beans": "Coffee Beans",
+      "item.tnunlimited.mug": "Mug",
+      "entity.tnunlimited.ender_protector": "Enderprotector",
+      "enchantment.tnunlimited.resisting": "Resisting",
+      "block.tnunlimited.polished_lemonstone_slab": "Polished Lemonstone Slab",
+      "item.tnunlimited.nubrium_armour_chestplate": "Nubrium Chestplate",
+      "item.tnunlimited.sloths_pillow": "Sloth\u0027s Pillow",
+      "item.tnunlimited.raw_aardium": "Raw Aardium",
+      "item.tnunlimited.desert_roach_armor_helmet": "Desert Roach Helmet",
+      "entity.tnunlimited.pirate_captain": "Pirate Captain",
+      "item.tnunlimited.fancy_pants_helmet": "Fancy Pants Helmet",
+      "item.tnunlimited.flintlock": "Flintlock",
+      "item.tnunlimited.antimony": "Antimony Ingot",
+      "item.tnunlimited.ender_protector_spawn_egg": "Enderprotector Spawn Egg",
+      "item.tnunlimited.done_shovel": "Bomeen Shovel",
+      "item.tnunlimited.hotchocolate": "Hot chocolate",
+      "item.tnunlimited.bleeding_heart_charm": "Bleeding Heart Charm",
+      "item.tnunlimited.golden_cactus_pet": "Golden Pet Cactus",
+      "enchantment.tnunlimited.aerial_movement": "Aerial Movement",
+      "item.tnunlimited.iron_sickle": "Iron Sickle",
+      "key.tnunlimited.open_accessory_menu": "Open Accessory Menu",
+      "item.tnunlimited.lead_shovel": "Lead Shovel",
+      "enchantment.tnunlimited.harvesting": "Harvesting",
+      "item.tnunlimited.glass_skull_leggings": "Glass Skull Leggings",
+      "item.tnunlimited.wooden_sickle": "Wooden Sickle",
+      "item.tnunlimited.done_armour_leggings": "Bomeen Leggings",
+      "enchantment.tnunlimited.caliber": "Calibre",
+      "item.tnunlimited.galvanized_hoe": "Galvanized Hoe",
+      "item.tnunlimited.contract": "Contract With Greed",
+      "item.tnunlimited.lead_axe": "Lead Axe",
+      "item.tnunlimited.fancy_pants_chestplate": "Fancy Pants Body",
+      "item.tnunlimited.frenchtoast": "French toast",
+      "item.tnunlimited.nubrium_shovel": "Nubrium Shovel",
+      "item.tnunlimited.glass_skull_chestplate": "Glass Skull Body",
+      "item.tnunlimited.zinc_sheet": "Zinc Sheet",
+      "subtitles.sunrise": "Sunrise - pokeplaza",
+      "item.tnunlimited.pepperoni_armour_chestplate": "Pepperoni Armour Body",
+      "item.tnunlimited.done_hoe": "Bomeen Hoe",
+      "item.tnunlimited.pirate_captain_spawn_egg": "Pirate Captain Spawn Egg",
+      "block.tnunlimited.polished_lemonstone_stairs": "Polished Lemonstone Stairs",
+      "advancements.pepperonis_will_slay_you_for_this_advancement.descr": "Craft Pepperoni Helmet",
+      "item.tnunlimited.zinc_armor_helmet": "Galvanized Helmet",
+      "item.tnunlimited.galvanized_shovel": "Galvanized Shovel",
+      "block.tnunlimited.lemonstone_slab": "Lemonstone Slab",
+      "effect.tnunlimited.drowsy": "Drowsy",
+      "gamerule.doSpecialSpawning.description": "Allows a special method of spawning entities. The drawback is that it can mess with manual player spawning (Spawn eggs and commands). Turn on for purest survival experience, turn off for creative worlds.",
+      "item.tnunlimited.nubrium_axe": "Nubrium Axe",
+      "item.tnunlimited.pepperoni_armour_boots": "Pepperoni Armour Boots",
+      "item.tnunlimited.raw_lead": "Raw Lead",
+      "advancements.ransacked.descr": "Overthrow the pirates.",
+      "advancements.fancy.title": "That\u0027s Fancy",
+      "item.tnunlimited.aardiumpickaxe": "Aardium pickaxe",
+      "item.tnunlimited.enchanted_golden_cactus_pet": "Enchanted Golden Pet Cactus",
+      "item.tnunlimited.cooked_egg": "Cooked Egg",
+      "enchantment.tnunlimited.leeching": "Leeching",
+      "item.tnunlimited.desert_roach_armor_leggings": "Desert Roach Leggings",
+      "enchantment.tnunlimited.sharp_shooter": "Sharp Shooter",
+      "item.tnunlimited.desert_roach_armor_chestplate": "Desert Roach Chestplate",
+      "item.tnunlimited.pepperoni_armour_helmet": "Pepperoni Helmet",
+      "block.tnunlimited.lemonstone": "Lemonstone",
+      "item.tnunlimited.captains_hat_leggings": "Captains Hat Leggings",
+      "enchantment.tnunlimited.kickback": "Kickback",
+      "item.tnunlimited.pirate_chestplate": "Pirate Tunic",
+      "item.tnunlimited.dark_warhammer": "Dark Warhammer",
+      "block.tnunlimited.done_block": "Bomeen Block",
+      "item.tnunlimited.bomaind_sickle": "Bomaind Sickle",
+      "item.tnunlimited.torch_of_guidance": "Torch of Guidance",
+      "enchantment.tnunlimited.full_magic_jacket": "Full Magic Jacket",
+      "block.tnunlimited.blockof_aardium": "Block of Aardium",
+      "item.tnunlimited.decardial_necklace": "Decardial Necklace",
+      "item.tnunlimited.pepperoni_ingot": "Pepperoni Ingot",
+      "item.tnunlimited.aardiumingo_hoe": "Aardium Hoe",
+      "item.tnunlimited.lead_sword": "Lead Sword",
+      "item.tnunlimited.mocha": "Mocha",
+      "gamerule.doSpecialSpawning": "Special Spawning",
+      "item.tnunlimited.lead_sickle": "Lead Sickle",
+      "block.tnunlimited.aardiumore": "Aardium ore",
+      "entity.tnunlimited.gilded_bug": "Gilded Bug",
+      "item.tnunlimited.antimony_armor_armor_helmet": "Antimony Helmet",
+      "subtitles.blunderbuss_shoot": "Blunderbuss Shoot",
+      "item.tnunlimited.golden_crown_helmet": "Golden Crown",
+      "item.tnunlimited.aardium_leggings": "Aardium Leggings",
+      "item.tnunlimited.golden_crown_boots": "Golden Crown Boots",
+      "item.tnunlimited.pirate_crewman_spawn_egg": "Pirate Crewman Spawn Egg",
+      "enchantment.tnunlimited.buffing": "Buffing",
+      "item.tnunlimited.antimony_armor_armor_chestplate": "Antimony Chestplate",
+      "item.tnunlimited.fancy_pants_boots": "Fancy Pants Boots",
+      "advancements.fancy.descr": "The Most Fancy",
+      "item.tnunlimited.sunrise.desc": "Pokeplaza - Sunrise",
+      "item.tnunlimited.captains_hat_helmet": "Captain\u0027s Hat",
+      "item.tnunlimited.pirate_boots": "Pirate Boots",
+      "item.tnunlimited.wastelandish_hopper_spawn_egg": "Wastelandish Hopper Spawn Egg",
+      "item.tnunlimited.bacon": "Bacon",
+      "effect.tnunlimited.gilded_bug_buff": "Gilded Bug",
+      "item.tnunlimited.coffee": "Coffee",
+      "entity.tnunlimited.wastelandish_hopper": "Wastelandish Hopper",
+      "item.tnunlimited.netherite_sickle": "Netherite Sickle",
+      "item.tnunlimited.fleur_band": "Fleur Band",
+      "item.tnunlimited.pet_cactus": "Pet Cactus",
+      "item.tnunlimited.stone_sickle": "Stone Sickle",
+      "item.tnunlimited.lead_armor_chestplate": "Lead Chestplate",
+      "item.tnunlimited.galvanized_axe": "Galvanized Axe",
+      "key.tnunlimited.open_stat_sheet_key": "Open Stat Sheet",
+      "item.tnunlimited.lead_armor_boots": "Lead Boots",
+      "item.tnunlimited.captains_hat_boots": "Captains Hat Boots",
+      "block.tnunlimited.lead_ore": "Lead Ore",
+      "item.tnunlimited.nubrium_armour_boots": "Nubrium Boots",
+      "item.tnunlimited.antimony_armor_armor_leggings": "Antimony Leggings",
+      "item.tnunlimited.heatwave": "Heatwave",
+      "item.tnunlimited.antimony_armor_armor_boots": "Antimony Boots",
+      "item.tnunlimited.nubrium_sword": "Nubrium Sword",
+      "enchantment.tnunlimited.trigger_happy": "Trigger Happy",
+      "item.tnunlimited.lead_pickaxe": "Lead Pickaxe",
+      "entity.tnunlimited.pirate_deadeye": "Pirate Deadeye",
+      "item.tnunlimited.sunrise": "Music Disc",
+      "item.tnunlimited.critical_sword": "Critical Sword",
+      "item.tnunlimited.bullet_projectile": "Bullet Projectile",
+      "entity.tnunlimited.pinacate_beetle": "Pinacate Beetle",
+      "item.tnunlimited.antimony_sten": "Antimony Sten",
+      "block.tnunlimited.zinc_ore": "Zinc Ore",
+      "item.tnunlimited.galvanized_sickle": "Galvanized Sickle",
+      "item.tnunlimited.hamburger": "Hamburger",
+      "block.tnunlimited.glowingice": "Glowing ice",
+      "item.tnunlimited.bullet": "Bullet",
+      "item.tnunlimited.chainmail_pickaxe": "Chainmail Pickaxe",
+      "item.tnunlimited.pirate_deadeye_spawn_egg": "Pirate Deadeye Spawn Egg",
+      "block.tnunlimited.lemonstone_wall": "Lemonstone Wall",
+      "item.tnunlimited.gold_sickle": "Golden Sickle"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "tnunlimited",
+    "modName": "TNUnlimited",
+    "version": "1.0.0",
+    "author": "new owner, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.tnunlimited",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}

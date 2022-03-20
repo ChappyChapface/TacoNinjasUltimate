@@ -1,0 +1,72 @@
+{
+  "sunrise": {
+    "category": "record",
+    "subtitle": "subtitles.sunrise",
+    "sounds": [
+      {
+        "name": "tnunlimited:untitled_song_5_1",
+        "stream": true
+      }
+    ]
+  },
+  "revolver_reload": {
+    "category": "player",
+    "subtitle": "subtitles.revolver_reload",
+    "sounds": [
+      {
+        "name": "tnunlimited:revolverreload",
+        "stream": false
+      }
+    ]
+  },
+  "revolver_shoot": {
+    "category": "player",
+    "subtitle": "subtitles.revolver_shoot",
+    "sounds": [
+      {
+        "name": "tnunlimited:revolvershoot",
+        "stream": false
+      }
+    ]
+  },
+  "revolver_last_shot": {
+    "category": "player",
+    "subtitle": "subtitles.revolver_last_shot",
+    "sounds": [
+      {
+        "name": "tnunlimited:revolvershootlast",
+        "stream": false
+      }
+    ]
+  },
+  "sunrise2": {
+    "category": "neutral",
+    "subtitle": "subtitles.sunrise2",
+    "sounds": [
+      {
+        "name": "tnunlimited:sunrise",
+        "stream": false
+      }
+    ]
+  },
+  "blunderbuss_reload": {
+    "category": "neutral",
+    "subtitle": "subtitles.blunderbuss_reload",
+    "sounds": [
+      {
+        "name": "tnunlimited:blunderbussreload",
+        "stream": false
+      }
+    ]
+  },
+  "blunderbuss_shoot": {
+    "category": "player",
+    "subtitle": "subtitles.blunderbuss_shoot",
+    "sounds": [
+      {
+        "name": "tnunlimited:blunderbussshoot",
+        "stream": false
+      }
+    ]
+  }
+}
