@@ -37,6 +37,7 @@ import net.mcreator.tnunlimited.item.PepperoniIngotItem;
 import net.mcreator.tnunlimited.item.PepperoniFoodItem;
 import net.mcreator.tnunlimited.item.PepperoniArmourItem;
 import net.mcreator.tnunlimited.item.NubriumSwordItem;
+import net.mcreator.tnunlimited.item.NubriumSickleItem;
 import net.mcreator.tnunlimited.item.NubriumShovelItem;
 import net.mcreator.tnunlimited.item.NubriumPickaxeItem;
 import net.mcreator.tnunlimited.item.NubriumItem;
@@ -57,6 +58,7 @@ import net.mcreator.tnunlimited.item.LeadAxeItem;
 import net.mcreator.tnunlimited.item.LeadArmorItem;
 import net.mcreator.tnunlimited.item.JarOfInfiniteJellybeansItem;
 import net.mcreator.tnunlimited.item.IronSickleItem;
+import net.mcreator.tnunlimited.item.IronBandItem;
 import net.mcreator.tnunlimited.item.HotchocolateItem;
 import net.mcreator.tnunlimited.item.HoneybeeIdolItem;
 import net.mcreator.tnunlimited.item.HeatwaveItem;
@@ -304,6 +306,8 @@ public class TnunlimitedModItems {
 	public static final Item CARDIAL_CHARM = register(new CardialCharmItem());
 	public static final Item HEARTCORE = register(new HeartcoreItem());
 	public static final Item DECARDIAL_NECKLACE = register(new DecardialNecklaceItem());
+	public static final Item IRON_BAND = register(new IronBandItem());
+	public static final Item NUBRIUM_SICKLE = register(new NubriumSickleItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

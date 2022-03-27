@@ -6,7 +6,9 @@
     "texture": "nubriumsword",
     "customModelName": "Normal",
     "name": "Nubrium Sword",
-    "specialInfo": [],
+    "specialInfo": [
+      "§aAbility: §7Attacks inflict Slowness"
+    ],
     "creativeTab": {
       "value": "TOOLS"
     },

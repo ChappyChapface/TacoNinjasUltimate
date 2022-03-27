@@ -45,7 +45,7 @@ public class TorchOfWispsEffectProcedure {
 						.performCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 										_level.getServer(), null).withSuppressedOutput(),
-								"effect give @e[distance=0.3..20,type=!player] glowing 1 0");
+								"effect give @e[distance=0.3..15,type=!player] glowing 1 0");
 		}
 	}
 }

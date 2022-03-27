@@ -6,7 +6,9 @@
     "texture": "nurbiumshovel",
     "customModelName": "Normal",
     "name": "Nubrium Shovel",
-    "specialInfo": [],
+    "specialInfo": [
+      "§aAbility: §7Attacks inflict Slowness"
+    ],
     "creativeTab": {
       "value": "TOOLS"
     },
@@ -26,6 +28,9 @@
     ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "NubriumSwordLivingEntityIsHitWithTool"
+    }
   }
 }

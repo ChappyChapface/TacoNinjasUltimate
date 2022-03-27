@@ -21,7 +21,9 @@
     "bodyName": "Golden Crown Body",
     "leggingsName": "Golden Crown Leggings",
     "bootsName": "Golden Crown Boots",
-    "helmetSpecialInfo": [],
+    "helmetSpecialInfo": [
+      "§aAbility: §7Grants Resistance"
+    ],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
     "bootsSpecialInfo": [],

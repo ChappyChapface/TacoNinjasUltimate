@@ -3,28 +3,26 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "nubriumpickaxe",
+    "texture": "nubriumsickle",
     "customModelName": "Normal",
-    "name": "Nubrium Pickaxe",
-    "specialInfo": [],
+    "name": "Nubrium  Sickle",
+    "specialInfo": [
+      "§aAbility: §7Attacks inflict Slowness"
+    ],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "COMBAT"
     },
-    "toolType": "Pickaxe",
-    "harvestLevel": 5,
-    "efficiency": 10.0,
-    "attackSpeed": 1.0,
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 9.0,
+    "attackSpeed": 10.0,
     "enchantability": 15,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 9.0,
     "usageCount": 2531,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [
-      {
-        "value": "CUSTOM:Nubrium"
-      }
-    ],
-    "immuneToFire": false,
+    "repairItems": [],
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {
