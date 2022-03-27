@@ -10,7 +10,7 @@ import net.minecraft.world.food.FoodProperties;
 public class HamburgerItem extends Item {
 	public HamburgerItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(2f)
+				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(2.5f)
 
 						.meat().build()));
 		setRegistryName("hamburger");

@@ -14,7 +14,7 @@ import net.mcreator.tnunlimited.procedures.GoldenHamburgerFoodEatenProcedure;
 public class GoldenHamburgerItem extends Item {
 	public GoldenHamburgerItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(2.5f).alwaysEat().meat().build()));
+				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(3f).alwaysEat().meat().build()));
 		setRegistryName("golden_hamburger");
 	}
 
