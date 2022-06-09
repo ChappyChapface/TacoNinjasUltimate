@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "name": "Serenity",
     "specialInfo": [
-      "§aAbility: §7Use while under 3 hearts to heal and gain resistance",
-      "§cCooldown: §75 Minutes"
+      "ï¿½aAbility: ï¿½7Use while under 3 hearts to heal and gain resistance",
+      "ï¿½cCooldown: ï¿½75 Minutes"
     ],
     "creativeTab": {
       "value": "COMBAT"

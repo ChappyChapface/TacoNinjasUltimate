@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "name": "Pickaxe Of Luminescence",
     "specialInfo": [
-      "§aAbility: §7Use to blind enemies and grant self night vision.",
-      "§cCooldown: §71 Minute"
+      "ï¿½aAbility: ï¿½7Use to blind enemies and grant self night vision.",
+      "ï¿½cCooldown: ï¿½71 Minute"
     ],
     "creativeTab": {
       "value": "TOOLS"

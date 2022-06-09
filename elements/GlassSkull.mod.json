@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -19,7 +19,7 @@
     "leggingsName": "Glass Skull Leggings",
     "bootsName": "Glass Skull Boots",
     "helmetSpecialInfo": [
-      "§aAbility: §7Deal and take extra damage"
+      "ï¿½aAbility: ï¿½7Deal and take extra damage"
     ],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

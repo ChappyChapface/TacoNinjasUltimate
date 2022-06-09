@@ -23,8 +23,7 @@ public class HeartcoreEffectProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingHurtEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity.level, event.getSource().getEntity());
+			execute(event, event.getEntity().level, event.getSource().getEntity());
 		}
 	}
 
@@ -36,11 +35,11 @@ public class HeartcoreEffectProcedure {
 		if (sourceentity == null)
 			return;
 		if (world.getDifficulty() == Difficulty.HARD && (((sourceentity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.HEARTCORE
+				.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.HEARTCORE.get()
 				|| ((sourceentity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.HEARTCORE
+						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.HEARTCORE.get()
 				|| ((sourceentity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.HEARTCORE)) {
+						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.HEARTCORE.get())) {
 			if ((sourceentity instanceof LivingEntity _livEnt
 					? _livEnt.getHealth()
 					: -1) <= (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2
@@ -52,7 +51,7 @@ public class HeartcoreEffectProcedure {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 10, 10));
 				if (sourceentity instanceof Player _player)
-					_player.getCooldowns().addCooldown(TnunlimitedModItems.HEARTCORE, 36000);
+					_player.getCooldowns().addCooldown(TnunlimitedModItems.HEARTCORE.get(), 36000);
 				sourceentity.getPersistentData().putDouble("heartcoreCooldown", 36000);
 			}
 		}

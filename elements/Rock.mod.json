@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
@@ -7,9 +7,9 @@
     "customModelName": "Normal",
     "name": "Rock",
     "specialInfo": [
-      "§7When Thrown:",
-      "§2 3 Damage",
-      "§2 0.75 Attack Speed"
+      "ï¿½7When Thrown:",
+      "ï¿½2 3 Damage",
+      "ï¿½2 0.75 Attack Speed"
     ],
     "creativeTab": {
       "value": "COMBAT"

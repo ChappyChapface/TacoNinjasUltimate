@@ -21,7 +21,7 @@ public class MochaRecipe2BrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isInput(ItemStack input) {
-		return input.getItem() == TnunlimitedModItems.COFFEE;
+		return input.getItem() == TnunlimitedModItems.COFFEE.get();
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class MochaRecipe2BrewingRecipe implements IBrewingRecipe {
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(TnunlimitedModItems.MOCHA);
+			return new ItemStack(TnunlimitedModItems.MOCHA.get());
 		}
 		return ItemStack.EMPTY;
 	}

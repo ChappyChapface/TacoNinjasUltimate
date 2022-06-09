@@ -34,9 +34,8 @@ public class GalvanizedHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT.get()));
 			}
 		}, 0, 0f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
-		setRegistryName("galvanized_hoe");
 	}
 }

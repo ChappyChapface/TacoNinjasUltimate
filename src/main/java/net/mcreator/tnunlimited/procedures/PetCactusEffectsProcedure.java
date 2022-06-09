@@ -19,8 +19,7 @@ public class PetCactusEffectsProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity, event.getSource().getEntity(), event.getAmount());
+			execute(event, event.getEntity(), event.getSource().getEntity(), event.getAmount());
 		}
 	}
 
@@ -33,29 +32,29 @@ public class PetCactusEffectsProcedure {
 			return;
 		if (entity instanceof Player) {
 			if (((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.PET_CACTUS
+					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.PET_CACTUS.get()
 					|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.PET_CACTUS
+							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.PET_CACTUS.get()
 					|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.PET_CACTUS) {
+							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.PET_CACTUS.get()) {
 				sourceentity.hurt(DamageSource.CACTUS, Math.round(amount / 2));
 			}
 			if (((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET
+					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET.get()
 					|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET
+							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET.get()
 					|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET) {
+							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET.get()) {
 				sourceentity.hurt(DamageSource.CACTUS, Math.round(amount));
 			}
 			if (((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET
+					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET.get()
 					|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01)
-									.getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET
+							.getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET.get()
 					|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02)
-									.getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET) {
+							.getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET.get()) {
 				sourceentity.hurt(DamageSource.CACTUS, Math.round(amount * 2));
 			}
 		}

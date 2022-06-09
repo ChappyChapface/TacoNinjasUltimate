@@ -34,9 +34,8 @@ public class AardiumingoAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.AARDIUMINGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.AARDIUMINGOT.get()));
 			}
 		}, 1, -2.6f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-		setRegistryName("aardiumingo_axe");
 	}
 }

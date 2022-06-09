@@ -1,6 +1,7 @@
 
 package net.mcreator.tnunlimited.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -13,11 +14,15 @@ public class CookedEggItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.6f)
 
 						.build()));
-		setRegistryName("cooked_egg");
 	}
 
 	@Override
-	public int getUseDuration(ItemStack stack) {
+	public int getUseDuration(ItemStack itemstack) {
 		return 28;
+	}
+
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
 	}
 }

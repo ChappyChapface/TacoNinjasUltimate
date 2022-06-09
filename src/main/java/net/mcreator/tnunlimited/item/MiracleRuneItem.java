@@ -2,6 +2,7 @@
 package net.mcreator.tnunlimited.item;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -15,7 +16,11 @@ import java.util.List;
 public class MiracleRuneItem extends Item {
 	public MiracleRuneItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).fireResistant().rarity(Rarity.UNCOMMON));
-		setRegistryName("miracle_rune");
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 
 	@Override
@@ -26,8 +31,8 @@ public class MiracleRuneItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aWhen Equipped:"));
-		list.add(new TextComponent("\u00A77Grants Resistance II while sneaking"));
-		list.add(new TextComponent("\u00A77Also gives Slowness II and Weakness while sneaking"));
+		list.add(new TextComponent("\uFFFDaWhen Equipped:"));
+		list.add(new TextComponent("\uFFFD7Grants Resistance II while sneaking"));
+		list.add(new TextComponent("\uFFFD7Also gives Slowness II and Weakness while sneaking"));
 	}
 }

@@ -13,6 +13,5 @@ public class SunriseItem extends RecordItem {
 	public SunriseItem() {
 		super(0, TnunlimitedModSounds.REGISTRY.get(new ResourceLocation("tnunlimited:sunrise2")),
 				new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE));
-		setRegistryName("sunrise");
 	}
 }

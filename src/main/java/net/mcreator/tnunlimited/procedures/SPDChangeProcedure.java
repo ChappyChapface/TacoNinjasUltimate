@@ -29,8 +29,7 @@ public class SPDChangeProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
@@ -49,11 +48,11 @@ public class SPDChangeProcedure {
 			});
 		}
 		if (((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.FLEUR_BAND
+				.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.FLEUR_BAND.get()
 				|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.FLEUR_BAND
+						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.FLEUR_BAND.get()
 				|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.FLEUR_BAND) {
+						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.FLEUR_BAND.get()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).movementSpeedIncrease + 0.05;
@@ -64,7 +63,7 @@ public class SPDChangeProcedure {
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.AARDIUM_HELMET) {
+				.getItem() == TnunlimitedModItems.AARDIUM_HELMET.get()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).movementSpeedIncrease + 0.1;
@@ -75,7 +74,7 @@ public class SPDChangeProcedure {
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.AARDIUM_CHESTPLATE) {
+				.getItem() == TnunlimitedModItems.AARDIUM_CHESTPLATE.get()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).movementSpeedIncrease + 0.1;
@@ -86,7 +85,7 @@ public class SPDChangeProcedure {
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.AARDIUM_LEGGINGS) {
+				.getItem() == TnunlimitedModItems.AARDIUM_LEGGINGS.get()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).movementSpeedIncrease + 0.1;
@@ -97,7 +96,7 @@ public class SPDChangeProcedure {
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.AARDIUM_BOOTS) {
+				.getItem() == TnunlimitedModItems.AARDIUM_BOOTS.get()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).movementSpeedIncrease + 0.1;
@@ -108,15 +107,15 @@ public class SPDChangeProcedure {
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_HELMET
+				.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_HELMET.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_CHESTPLATE
+						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_CHESTPLATE.get()
 				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_LEGGINGS
+						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_LEGGINGS.get()
 						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS)
+								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS.get())
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_BOOTS) {
+						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_BOOTS.get()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
@@ -131,15 +130,15 @@ public class SPDChangeProcedure {
 			}
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.DONE_ARMOUR_HELMET
+				.getItem() == TnunlimitedModItems.DONE_ARMOUR_HELMET.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.DONE_ARMOUR_CHESTPLATE
+						.getItem() == TnunlimitedModItems.DONE_ARMOUR_CHESTPLATE.get()
 				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.DONE_ARMOUR_LEGGINGS
+						.getItem() == TnunlimitedModItems.DONE_ARMOUR_LEGGINGS.get()
 						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS)
+								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS.get())
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.DONE_ARMOUR_BOOTS) {
+						.getItem() == TnunlimitedModItems.DONE_ARMOUR_BOOTS.get()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 20, 0, (false), (false)));
 			{

@@ -47,7 +47,7 @@ public abstract class DoneArmourItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.DONE));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.DONE.get()));
 			}
 
 			@Override
@@ -70,14 +70,13 @@ public abstract class DoneArmourItem extends ArmorItem {
 	public static class Helmet extends DoneArmourItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("done_armour_helmet");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Grants Haste but lowers Movement Speed"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Grants Haste but lowers Movement Speed"));
 		}
 
 		@Override
@@ -89,14 +88,13 @@ public abstract class DoneArmourItem extends ArmorItem {
 	public static class Chestplate extends DoneArmourItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("done_armour_chestplate");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Grants Haste but lowers Movement Speed"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Grants Haste but lowers Movement Speed"));
 		}
 
 		@Override
@@ -108,14 +106,13 @@ public abstract class DoneArmourItem extends ArmorItem {
 	public static class Leggings extends DoneArmourItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("done_armour_leggings");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Grants Haste but lowers Movement Speed"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Grants Haste but lowers Movement Speed"));
 		}
 
 		@Override
@@ -127,14 +124,13 @@ public abstract class DoneArmourItem extends ArmorItem {
 	public static class Boots extends DoneArmourItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("done_armour_boots");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Grants Haste but lowers Movement Speed"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Grants Haste but lowers Movement Speed"));
 		}
 
 		@Override

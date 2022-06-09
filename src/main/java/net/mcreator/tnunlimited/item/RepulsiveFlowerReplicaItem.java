@@ -2,6 +2,7 @@
 package net.mcreator.tnunlimited.item;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -16,7 +17,11 @@ import java.util.List;
 public class RepulsiveFlowerReplicaItem extends Item {
 	public RepulsiveFlowerReplicaItem() {
 		super(new Item.Properties().tab(TnunlimitedModTabs.TAB_ACCESSORIES_TAB).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("repulsive_flower_replica");
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 
 	@Override
@@ -27,7 +32,7 @@ public class RepulsiveFlowerReplicaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aWhen Equipped:"));
-		list.add(new TextComponent("\u00A77Poisons nearby entities"));
+		list.add(new TextComponent("\uFFFDaWhen Equipped:"));
+		list.add(new TextComponent("\uFFFD7Poisons nearby entities"));
 	}
 }

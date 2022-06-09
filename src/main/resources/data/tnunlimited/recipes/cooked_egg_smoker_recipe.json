@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "minecraft:egg"
   },
-  "result": {
-    "item": "tnunlimited:cooked_egg"
-  }
+  "result": "tnunlimited:cooked_egg"
 }

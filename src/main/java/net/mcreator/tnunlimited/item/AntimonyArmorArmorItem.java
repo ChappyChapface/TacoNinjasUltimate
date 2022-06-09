@@ -41,7 +41,7 @@ public abstract class AntimonyArmorArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.ANTIMONY));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.ANTIMONY.get()));
 			}
 
 			@Override
@@ -64,7 +64,6 @@ public abstract class AntimonyArmorArmorItem extends ArmorItem {
 	public static class Helmet extends AntimonyArmorArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("antimony_armor_armor_helmet");
 		}
 
 		@Override
@@ -76,7 +75,6 @@ public abstract class AntimonyArmorArmorItem extends ArmorItem {
 	public static class Chestplate extends AntimonyArmorArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("antimony_armor_armor_chestplate");
 		}
 
 		@Override
@@ -88,7 +86,6 @@ public abstract class AntimonyArmorArmorItem extends ArmorItem {
 	public static class Leggings extends AntimonyArmorArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("antimony_armor_armor_leggings");
 		}
 
 		@Override
@@ -100,7 +97,6 @@ public abstract class AntimonyArmorArmorItem extends ArmorItem {
 	public static class Boots extends AntimonyArmorArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("antimony_armor_armor_boots");
 		}
 
 		@Override

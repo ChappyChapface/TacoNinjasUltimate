@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "tnunlimited:lead_ore"
   },
-  "result": {
-    "item": "tnunlimited:lead_ingot"
-  }
+  "result": "tnunlimited:lead_ingot"
 }

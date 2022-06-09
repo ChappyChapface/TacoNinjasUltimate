@@ -66,7 +66,6 @@ public abstract class NubriumArmourItem extends ArmorItem {
 	public static class Helmet extends NubriumArmourItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("nubrium_armour_helmet");
 		}
 
 		@Override
@@ -83,7 +82,6 @@ public abstract class NubriumArmourItem extends ArmorItem {
 	public static class Chestplate extends NubriumArmourItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("nubrium_armour_chestplate");
 		}
 
 		@Override
@@ -95,7 +93,6 @@ public abstract class NubriumArmourItem extends ArmorItem {
 	public static class Leggings extends NubriumArmourItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("nubrium_armour_leggings");
 		}
 
 		@Override
@@ -107,7 +104,6 @@ public abstract class NubriumArmourItem extends ArmorItem {
 	public static class Boots extends NubriumArmourItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("nubrium_armour_boots");
 		}
 
 		@Override

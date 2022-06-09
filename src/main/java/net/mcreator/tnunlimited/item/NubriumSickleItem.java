@@ -26,7 +26,6 @@ import com.google.common.collect.ImmutableMultimap;
 public class NubriumSickleItem extends Item {
 	public NubriumSickleItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(2531).fireResistant());
-		setRegistryName("nubrium_sickle");
 	}
 
 	@Override
@@ -35,19 +34,14 @@ public class NubriumSickleItem extends Item {
 	}
 
 	@Override
-	public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
-		stack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
+		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity sourceentity) {
-		stack.hurtAndBreak(2, sourceentity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		NubriumSwordLivingEntityIsHitWithToolProcedure.execute(entity);
 		return true;
 	}
@@ -74,6 +68,6 @@ public class NubriumSickleItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aAbility: \u00A77Attacks inflict Slowness"));
+		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Attacks inflict Slowness"));
 	}
 }

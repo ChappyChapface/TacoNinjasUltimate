@@ -4,9 +4,9 @@
  */
 package net.mcreator.tnunlimited.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.enchantment.Enchantment;
 
@@ -21,32 +21,20 @@ import net.mcreator.tnunlimited.enchantment.FullMagicJacketEnchantment;
 import net.mcreator.tnunlimited.enchantment.CaliberEnchantment;
 import net.mcreator.tnunlimited.enchantment.BuffingEnchantment;
 import net.mcreator.tnunlimited.enchantment.AerialMovementEnchantment;
+import net.mcreator.tnunlimited.TnunlimitedMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TnunlimitedModEnchantments {
-	private static final List<Enchantment> REGISTRY = new ArrayList<>();
-	public static final Enchantment HARVESTING = register("tnunlimited:harvesting", new HarvestingEnchantment());
-	public static final Enchantment LUNGING = register("tnunlimited:lunging", new LungingEnchantment());
-	public static final Enchantment AERIAL_MOVEMENT = register("tnunlimited:aerial_movement", new AerialMovementEnchantment());
-	public static final Enchantment CALIBER = register("tnunlimited:caliber", new CaliberEnchantment());
-	public static final Enchantment SHARP_SHOOTER = register("tnunlimited:sharp_shooter", new SharpShooterEnchantment());
-	public static final Enchantment FULL_MAGIC_JACKET = register("tnunlimited:full_magic_jacket", new FullMagicJacketEnchantment());
-	public static final Enchantment TRIGGER_HAPPY = register("tnunlimited:trigger_happy", new TriggerHappyEnchantment());
-	public static final Enchantment LEECHING = register("tnunlimited:leeching", new LeechingEnchantment());
-	public static final Enchantment KICKBACK = register("tnunlimited:kickback", new KickbackEnchantment());
-	public static final Enchantment BUFFING = register("tnunlimited:buffing", new BuffingEnchantment());
-	public static final Enchantment RESISTING = register("tnunlimited:resisting", new ResistingEnchantment());
-
-	private static Enchantment register(String registryname, Enchantment enchantment) {
-		REGISTRY.add(enchantment.setRegistryName(registryname));
-		return enchantment;
-	}
-
-	@SubscribeEvent
-	public static void registerEnchantments(RegistryEvent.Register<Enchantment> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Enchantment[0]));
-	}
+	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, TnunlimitedMod.MODID);
+	public static final RegistryObject<Enchantment> HARVESTING = REGISTRY.register("harvesting", () -> new HarvestingEnchantment());
+	public static final RegistryObject<Enchantment> LUNGING = REGISTRY.register("lunging", () -> new LungingEnchantment());
+	public static final RegistryObject<Enchantment> AERIAL_MOVEMENT = REGISTRY.register("aerial_movement", () -> new AerialMovementEnchantment());
+	public static final RegistryObject<Enchantment> CALIBER = REGISTRY.register("caliber", () -> new CaliberEnchantment());
+	public static final RegistryObject<Enchantment> SHARP_SHOOTER = REGISTRY.register("sharp_shooter", () -> new SharpShooterEnchantment());
+	public static final RegistryObject<Enchantment> FULL_MAGIC_JACKET = REGISTRY.register("full_magic_jacket",
+			() -> new FullMagicJacketEnchantment());
+	public static final RegistryObject<Enchantment> TRIGGER_HAPPY = REGISTRY.register("trigger_happy", () -> new TriggerHappyEnchantment());
+	public static final RegistryObject<Enchantment> LEECHING = REGISTRY.register("leeching", () -> new LeechingEnchantment());
+	public static final RegistryObject<Enchantment> KICKBACK = REGISTRY.register("kickback", () -> new KickbackEnchantment());
+	public static final RegistryObject<Enchantment> BUFFING = REGISTRY.register("buffing", () -> new BuffingEnchantment());
+	public static final RegistryObject<Enchantment> RESISTING = REGISTRY.register("resisting", () -> new ResistingEnchantment());
 }

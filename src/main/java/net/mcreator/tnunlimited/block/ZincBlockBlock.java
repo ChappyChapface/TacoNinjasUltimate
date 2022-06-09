@@ -17,7 +17,6 @@ import java.util.Collections;
 public class ZincBlockBlock extends Block {
 	public ZincBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(3f, 6f));
-		setRegistryName("zinc_block");
 	}
 
 	@Override

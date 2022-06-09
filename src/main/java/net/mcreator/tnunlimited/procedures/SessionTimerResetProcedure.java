@@ -6,7 +6,6 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
 
 import net.mcreator.tnunlimited.network.TnunlimitedModVariables;
 
@@ -16,8 +15,7 @@ import javax.annotation.Nullable;
 public class SessionTimerResetProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		Entity entity = event.getPlayer();
-		execute(event, entity.level);
+		execute(event, event.getPlayer().level);
 	}
 
 	public static void execute(LevelAccessor world) {

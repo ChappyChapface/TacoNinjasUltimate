@@ -4,10 +4,12 @@
  */
 package net.mcreator.tnunlimited.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -33,43 +35,32 @@ import net.mcreator.tnunlimited.block.BlockofrawleadBlock;
 import net.mcreator.tnunlimited.block.BlockofAardiumBlock;
 import net.mcreator.tnunlimited.block.BlockOfLeadBlock;
 import net.mcreator.tnunlimited.block.AardiumoreBlock;
+import net.mcreator.tnunlimited.TnunlimitedMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TnunlimitedModBlocks {
-	private static final List<Block> REGISTRY = new ArrayList<>();
-	public static final Block GLOWINGICE = register(new GlowingiceBlock());
-	public static final Block AARDIUMORE = register(new AardiumoreBlock());
-	public static final Block ZINC_ORE = register(new ZincOreBlock());
-	public static final Block BLOCKOF_AARDIUM = register(new BlockofAardiumBlock());
-	public static final Block DONE_BLOCK = register(new DoneBlockBlock());
-	public static final Block ZINC_BLOCK = register(new ZincBlockBlock());
-	public static final Block LEAD_ORE = register(new LeadOreBlock());
-	public static final Block COFFEE_PLANT = register(new CoffeePlantBlock());
-	public static final Block BLOCKOFRAWLEAD = register(new BlockofrawleadBlock());
-	public static final Block BLOCK_OF_LEAD = register(new BlockOfLeadBlock());
-	public static final Block ZINC_DEEPSLATE_ORE = register(new ZincDeepslateOreBlock());
-	public static final Block LEMONSTONE = register(new LemonstoneBlock());
-	public static final Block POLISHED_LEMONSTONE = register(new PolishedLemonstoneBlock());
-	public static final Block CHISELED_LEMONSTONE = register(new ChiseledLemonstoneBlock());
-	public static final Block LEMONSTONE_SLAB = register(new LemonstoneSlabBlock());
-	public static final Block LEMONSTONE_STAIRS = register(new LemonstoneStairsBlock());
-	public static final Block POLISHED_LEMONSTONE_SLAB = register(new PolishedLemonstoneSlabBlock());
-	public static final Block POLISHED_LEMONSTONE_STAIRS = register(new PolishedLemonstoneStairsBlock());
-	public static final Block COOKIE_BLOCK = register(new CookieBlockBlock());
-	public static final Block NUBRIUM_ORE = register(new NubriumOreBlock());
-
-	private static Block register(Block block) {
-		REGISTRY.add(block);
-		return block;
-	}
-
-	@SubscribeEvent
-	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
-	}
+	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, TnunlimitedMod.MODID);
+	public static final RegistryObject<Block> GLOWINGICE = REGISTRY.register("glowingice", () -> new GlowingiceBlock());
+	public static final RegistryObject<Block> AARDIUMORE = REGISTRY.register("aardiumore", () -> new AardiumoreBlock());
+	public static final RegistryObject<Block> ZINC_ORE = REGISTRY.register("zinc_ore", () -> new ZincOreBlock());
+	public static final RegistryObject<Block> BLOCKOF_AARDIUM = REGISTRY.register("blockof_aardium", () -> new BlockofAardiumBlock());
+	public static final RegistryObject<Block> DONE_BLOCK = REGISTRY.register("done_block", () -> new DoneBlockBlock());
+	public static final RegistryObject<Block> ZINC_BLOCK = REGISTRY.register("zinc_block", () -> new ZincBlockBlock());
+	public static final RegistryObject<Block> LEAD_ORE = REGISTRY.register("lead_ore", () -> new LeadOreBlock());
+	public static final RegistryObject<Block> COFFEE_PLANT = REGISTRY.register("coffee_plant", () -> new CoffeePlantBlock());
+	public static final RegistryObject<Block> BLOCKOFRAWLEAD = REGISTRY.register("blockofrawlead", () -> new BlockofrawleadBlock());
+	public static final RegistryObject<Block> BLOCK_OF_LEAD = REGISTRY.register("block_of_lead", () -> new BlockOfLeadBlock());
+	public static final RegistryObject<Block> ZINC_DEEPSLATE_ORE = REGISTRY.register("zinc_deepslate_ore", () -> new ZincDeepslateOreBlock());
+	public static final RegistryObject<Block> LEMONSTONE = REGISTRY.register("lemonstone", () -> new LemonstoneBlock());
+	public static final RegistryObject<Block> POLISHED_LEMONSTONE = REGISTRY.register("polished_lemonstone", () -> new PolishedLemonstoneBlock());
+	public static final RegistryObject<Block> CHISELED_LEMONSTONE = REGISTRY.register("chiseled_lemonstone", () -> new ChiseledLemonstoneBlock());
+	public static final RegistryObject<Block> LEMONSTONE_SLAB = REGISTRY.register("lemonstone_slab", () -> new LemonstoneSlabBlock());
+	public static final RegistryObject<Block> LEMONSTONE_STAIRS = REGISTRY.register("lemonstone_stairs", () -> new LemonstoneStairsBlock());
+	public static final RegistryObject<Block> POLISHED_LEMONSTONE_SLAB = REGISTRY.register("polished_lemonstone_slab",
+			() -> new PolishedLemonstoneSlabBlock());
+	public static final RegistryObject<Block> POLISHED_LEMONSTONE_STAIRS = REGISTRY.register("polished_lemonstone_stairs",
+			() -> new PolishedLemonstoneStairsBlock());
+	public static final RegistryObject<Block> COOKIE_BLOCK = REGISTRY.register("cookie_block", () -> new CookieBlockBlock());
+	public static final RegistryObject<Block> NUBRIUM_ORE = REGISTRY.register("nubrium_ore", () -> new NubriumOreBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

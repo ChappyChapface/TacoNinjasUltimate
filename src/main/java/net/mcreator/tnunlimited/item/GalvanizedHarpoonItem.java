@@ -25,7 +25,6 @@ import java.util.List;
 public class GalvanizedHarpoonItem extends Item {
 	public GalvanizedHarpoonItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(250));
-		setRegistryName("galvanized_harpoon");
 	}
 
 	@Override
@@ -37,9 +36,9 @@ public class GalvanizedHarpoonItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A77When Thrown:"));
-		list.add(new TextComponent("\u00A72 9 Damage"));
-		list.add(new TextComponent("\u00A72 0.33 Attack Speed"));
+		list.add(new TextComponent("\uFFFD7When Thrown:"));
+		list.add(new TextComponent("\uFFFD2 9 Damage"));
+		list.add(new TextComponent("\uFFFD2 0.33 Attack Speed"));
 	}
 
 	@Override

@@ -19,7 +19,6 @@ import java.util.Collections;
 public class NubriumOreBlock extends Block {
 	public NubriumOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4f, 10000f).requiresCorrectToolForDrops());
-		setRegistryName("nubrium_ore");
 	}
 
 	@Override
@@ -29,7 +28,7 @@ public class NubriumOreBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 4;
 		return false;
 	}

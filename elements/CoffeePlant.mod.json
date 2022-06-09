@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "plant",
   "definition": {
     "renderType": 120,
@@ -105,6 +105,7 @@
         "value": "mutated_jungle_edge"
       }
     ],
-    "patchSize": 6
+    "patchSize": 6,
+    "generateAtAnyHeight": false
   }
 }

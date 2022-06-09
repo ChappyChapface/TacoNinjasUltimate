@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "tnunlimited:raw_aardium"
   },
-  "result": {
-    "item": "tnunlimited:aardiumingot"
-  }
+  "result": "tnunlimited:aardiumingot"
 }

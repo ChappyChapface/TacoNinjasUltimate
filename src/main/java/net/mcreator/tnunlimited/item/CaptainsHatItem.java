@@ -73,7 +73,6 @@ public abstract class CaptainsHatItem extends ArmorItem {
 	public static class Helmet extends CaptainsHatItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("captains_hat_helmet");
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {

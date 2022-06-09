@@ -49,7 +49,7 @@ public abstract class ZincArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT.get()));
 			}
 
 			@Override
@@ -72,14 +72,13 @@ public abstract class ZincArmorItem extends ArmorItem {
 	public static class Helmet extends ZincArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-			setRegistryName("zinc_armor_helmet");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
 		}
 
 		@Override
@@ -96,14 +95,13 @@ public abstract class ZincArmorItem extends ArmorItem {
 	public static class Chestplate extends ZincArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-			setRegistryName("zinc_armor_chestplate");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
 		}
 
 		@Override
@@ -115,14 +113,13 @@ public abstract class ZincArmorItem extends ArmorItem {
 	public static class Leggings extends ZincArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-			setRegistryName("zinc_armor_leggings");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
 		}
 
 		@Override
@@ -134,14 +131,13 @@ public abstract class ZincArmorItem extends ArmorItem {
 	public static class Boots extends ZincArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-			setRegistryName("zinc_armor_boots");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
 		}
 
 		@Override

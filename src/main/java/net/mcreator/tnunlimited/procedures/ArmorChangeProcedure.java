@@ -26,8 +26,7 @@ public class ArmorChangeProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
@@ -45,13 +44,13 @@ public class ArmorChangeProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING,
+		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING.get(),
 				((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00)) != 0) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).ArmorIncrease
-						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING,
+						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING.get(),
 								((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00))
 								* 0.01;
@@ -61,13 +60,13 @@ public class ArmorChangeProcedure {
 				});
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING,
+		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING.get(),
 				((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01)) != 0) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).ArmorIncrease
-						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING,
+						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING.get(),
 								((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01))
 								* 0.01;
@@ -77,13 +76,13 @@ public class ArmorChangeProcedure {
 				});
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING,
+		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING.get(),
 				((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02)) != 0) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).ArmorIncrease
-						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING,
+						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.RESISTING.get(),
 								((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02))
 								* 0.01;
@@ -94,11 +93,11 @@ public class ArmorChangeProcedure {
 			}
 		}
 		if (((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.IRON_BAND
+				.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.IRON_BAND.get()
 				|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.IRON_BAND
+						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.IRON_BAND.get()
 				|| ((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.IRON_BAND) {
+						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.IRON_BAND.get()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).ArmorIncrease + 0.1;

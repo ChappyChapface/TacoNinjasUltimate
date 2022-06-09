@@ -34,6 +34,5 @@ public class DoneAxeItem extends AxeItem {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-		setRegistryName("done_axe");
 	}
 }

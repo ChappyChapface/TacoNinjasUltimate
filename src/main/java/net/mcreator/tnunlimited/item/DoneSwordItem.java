@@ -34,6 +34,5 @@ public class DoneSwordItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-		setRegistryName("done_sword");
 	}
 }

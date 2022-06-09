@@ -1,6 +1,7 @@
 
 package net.mcreator.tnunlimited.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
@@ -25,7 +26,6 @@ public class MochaItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(1f).alwaysEat()
 
 						.build()));
-		setRegistryName("mocha");
 	}
 
 	@Override
@@ -34,14 +34,24 @@ public class MochaItem extends Item {
 	}
 
 	@Override
+	public int getUseDuration(ItemStack itemstack) {
+		return 32;
+	}
+
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
+	}
+
+	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aEffect: \u00A77 Increased regeneration, resistance, speed, and strength"));
+		list.add(new TextComponent("\uFFFDaEffect: \uFFFD7 Increased regeneration, resistance, speed, and strength"));
 	}
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(TnunlimitedModItems.MUG);
+		ItemStack retval = new ItemStack(TnunlimitedModItems.MUG.get());
 		super.finishUsingItem(itemstack, world, entity);
 		double x = entity.getX();
 		double y = entity.getY();

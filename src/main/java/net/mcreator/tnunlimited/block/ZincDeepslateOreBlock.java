@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class ZincDeepslateOreBlock extends Block {
 	public ZincDeepslateOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 5.5f).requiresCorrectToolForDrops());
-		setRegistryName("zinc_deepslate_ore");
 	}
 
 	@Override
@@ -24,7 +23,7 @@ public class ZincDeepslateOreBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}

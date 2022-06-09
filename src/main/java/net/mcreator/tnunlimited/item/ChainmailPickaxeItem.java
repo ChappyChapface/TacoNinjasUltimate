@@ -36,6 +36,5 @@ public class ChainmailPickaxeItem extends PickaxeItem {
 				return Ingredient.of(new ItemStack(Items.IRON_NUGGET), new ItemStack(Items.IRON_INGOT));
 			}
 		}, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-		setRegistryName("chainmail_pickaxe");
 	}
 }

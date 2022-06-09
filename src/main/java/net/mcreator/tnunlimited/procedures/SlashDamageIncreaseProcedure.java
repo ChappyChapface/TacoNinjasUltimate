@@ -27,8 +27,7 @@ public class SlashDamageIncreaseProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
@@ -51,8 +50,8 @@ public class SlashDamageIncreaseProcedure {
 					new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(),
 							null).withSuppressedOutput(),
 					"/attribute @p minecraft:generic.attack_damage modifier remove f81d4fae-7dec-11d0-a765-00a0c91e6bf6");
-		if (ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:slash_weapon"))
-				.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem())) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.is(ItemTags.create(new ResourceLocation("forge:slash_weapon")))) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),

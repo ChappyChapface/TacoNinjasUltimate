@@ -18,8 +18,8 @@ public class GildedBugCheckProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-			if (!((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)instanceof LivingEntity _livEnt
-					? _livEnt.hasEffect(TnunlimitedModMobEffects.GILDED_BUG_BUFF)
+			if (!((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof LivingEntity _livEnt
+					? _livEnt.hasEffect(TnunlimitedModMobEffects.GILDED_BUG_BUFF.get())
 					: false)) {
 				entity.hurt(DamageSource.GENERIC, 9999);
 			}
@@ -29,7 +29,7 @@ public class GildedBugCheckProcedure {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null))instanceof Player _owner)
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _owner)
 				_toTame.tame(_owner);
 		}
 	}

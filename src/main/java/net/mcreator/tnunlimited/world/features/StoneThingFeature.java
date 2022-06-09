@@ -4,6 +4,7 @@ package net.mcreator.tnunlimited.world.features;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
@@ -15,45 +16,60 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
 import java.util.Set;
 import java.util.List;
 
 public class StoneThingFeature extends Feature<NoneFeatureConfiguration> {
-	public static final StoneThingFeature FEATURE = (StoneThingFeature) new StoneThingFeature().setRegistryName("tnunlimited:stone_thing");
-	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE.configured(FeatureConfiguration.NONE);
+	public static StoneThingFeature FEATURE = null;
+	public static Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> CONFIGURED_FEATURE = null;
+	public static Holder<PlacedFeature> PLACED_FEATURE = null;
+
+	public static Feature<?> feature() {
+		FEATURE = new StoneThingFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("tnunlimited:stone_thing", FEATURE, FeatureConfiguration.NONE);
+		PLACED_FEATURE = PlacementUtils.register("tnunlimited:stone_thing", CONFIGURED_FEATURE, List.of());
+		return FEATURE;
+	}
+
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-	private final List<Block> base_blocks = List.of(Blocks.STONE, Blocks.IRON_ORE, Blocks.GOLD_ORE, Blocks.LAPIS_ORE, Blocks.DIAMOND_ORE,
-			Blocks.EMERALD_ORE, Blocks.REDSTONE_ORE);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 
 	public StoneThingFeature() {
 		super(NoneFeatureConfiguration.CODEC);
+		base_blocks = List.of(Blocks.STONE, Blocks.IRON_ORE, Blocks.GOLD_ORE, Blocks.LAPIS_ORE, Blocks.DIAMOND_ORE, Blocks.EMERALD_ORE,
+				Blocks.REDSTONE_ORE);
 	}
 
 	@Override
 	public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
-		boolean dimensionCriteria = false;
-		ResourceKey<Level> dimensionType = context.level().getLevel().dimension();
-		if (dimensionType == Level.OVERWORLD)
-			dimensionCriteria = true;
-		if (!dimensionCriteria)
+		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
 			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("tnunlimited", "stonestructure"));
 		if (template == null)
 			return false;
+		boolean anyPlaced = false;
 		if ((context.random().nextInt(1000000) + 1) <= 5000) {
-			boolean anyPlaced = false;
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k);
-				j = Math.abs(context.random().nextInt(Math.max(1, j)) - 24);
+				j = Mth.nextInt(context.random(), 8 + context.level().getMinBuildHeight(), Math.max(j, 9 + context.level().getMinBuildHeight()));
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
 					continue;
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
@@ -65,8 +81,7 @@ public class StoneThingFeature extends Feature<NoneFeatureConfiguration> {
 					anyPlaced = true;
 				}
 			}
-			return anyPlaced;
 		}
-		return false;
+		return anyPlaced;
 	}
 }

@@ -4,9 +4,9 @@
  */
 package net.mcreator.tnunlimited.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.effect.MobEffect;
 
@@ -14,25 +14,12 @@ import net.mcreator.tnunlimited.potion.GildedBugBuffMobEffect;
 import net.mcreator.tnunlimited.potion.DrowsyMobEffect;
 import net.mcreator.tnunlimited.potion.DecardialMobEffect;
 import net.mcreator.tnunlimited.potion.BleedingMobEffect;
+import net.mcreator.tnunlimited.TnunlimitedMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TnunlimitedModMobEffects {
-	private static final List<MobEffect> REGISTRY = new ArrayList<>();
-	public static final MobEffect DROWSY = register(new DrowsyMobEffect());
-	public static final MobEffect BLEEDING = register(new BleedingMobEffect());
-	public static final MobEffect GILDED_BUG_BUFF = register(new GildedBugBuffMobEffect());
-	public static final MobEffect DECARDIAL = register(new DecardialMobEffect());
-
-	private static MobEffect register(MobEffect effect) {
-		REGISTRY.add(effect);
-		return effect;
-	}
-
-	@SubscribeEvent
-	public static void registerMobEffects(RegistryEvent.Register<MobEffect> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new MobEffect[0]));
-	}
+	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, TnunlimitedMod.MODID);
+	public static final RegistryObject<MobEffect> DROWSY = REGISTRY.register("drowsy", () -> new DrowsyMobEffect());
+	public static final RegistryObject<MobEffect> BLEEDING = REGISTRY.register("bleeding", () -> new BleedingMobEffect());
+	public static final RegistryObject<MobEffect> GILDED_BUG_BUFF = REGISTRY.register("gilded_bug_buff", () -> new GildedBugBuffMobEffect());
+	public static final RegistryObject<MobEffect> DECARDIAL = REGISTRY.register("decardial", () -> new DecardialMobEffect());
 }

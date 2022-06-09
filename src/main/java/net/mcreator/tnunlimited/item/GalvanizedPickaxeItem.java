@@ -34,9 +34,8 @@ public class GalvanizedPickaxeItem extends PickaxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT.get()));
 			}
 		}, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
-		setRegistryName("galvanized_pickaxe");
 	}
 }

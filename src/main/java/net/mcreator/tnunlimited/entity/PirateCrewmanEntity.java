@@ -2,8 +2,8 @@
 package net.mcreator.tnunlimited.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -24,6 +24,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
@@ -36,15 +37,15 @@ import net.mcreator.tnunlimited.init.TnunlimitedModItems;
 import net.mcreator.tnunlimited.init.TnunlimitedModEntities;
 
 public class PirateCrewmanEntity extends Monster {
-	public PirateCrewmanEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(TnunlimitedModEntities.PIRATE_CREWMAN, world);
+	public PirateCrewmanEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(TnunlimitedModEntities.PIRATE_CREWMAN.get(), world);
 	}
 
 	public PirateCrewmanEntity(EntityType<PirateCrewmanEntity> type, Level world) {
 		super(type, world);
 		xpReward = 10;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TnunlimitedModItems.CUTLASS));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TnunlimitedModItems.CUTLASS.get()));
 	}
 
 	@Override
@@ -56,8 +57,13 @@ public class PirateCrewmanEntity extends Monster {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
+		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
+		this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(4, new RestrictSunGoal(this));
 		this.goalSelector.addGoal(5, new FollowMobGoal(this, (float) 1, 10, 5));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));

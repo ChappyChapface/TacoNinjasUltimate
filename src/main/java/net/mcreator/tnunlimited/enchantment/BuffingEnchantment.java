@@ -28,13 +28,13 @@ public class BuffingEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		if (stack.getItem() == TnunlimitedModItems.MIRACLE_RUNE)
+		if (stack.getItem() == TnunlimitedModItems.MIRACLE_RUNE.get())
 			return true;
-		if (stack.getItem() == TnunlimitedModItems.PET_CACTUS)
+		if (stack.getItem() == TnunlimitedModItems.PET_CACTUS.get())
 			return true;
-		if (stack.getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET)
+		if (stack.getItem() == TnunlimitedModItems.GOLDEN_CACTUS_PET.get())
 			return true;
-		if (stack.getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET)
+		if (stack.getItem() == TnunlimitedModItems.ENCHANTED_GOLDEN_CACTUS_PET.get())
 			return true;
 		return false;
 	}

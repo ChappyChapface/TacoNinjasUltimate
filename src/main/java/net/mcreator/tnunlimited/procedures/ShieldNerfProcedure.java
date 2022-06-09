@@ -21,8 +21,7 @@ public class ShieldNerfProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity.level, entity, event.getAmount());
+			execute(event, event.getEntity().level, event.getEntity(), event.getAmount());
 		}
 	}
 

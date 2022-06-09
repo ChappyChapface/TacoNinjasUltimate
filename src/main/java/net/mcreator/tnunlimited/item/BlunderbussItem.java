@@ -31,7 +31,6 @@ import com.google.common.collect.ImmutableMultimap;
 public class BlunderbussItem extends Item {
 	public BlunderbussItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(225));
-		setRegistryName("blunderbuss");
 	}
 
 	@Override
@@ -40,14 +39,14 @@ public class BlunderbussItem extends Item {
 	}
 
 	@Override
-	public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
-		stack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
+		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity sourceentity) {
-		stack.hurtAndBreak(2, sourceentity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
@@ -80,9 +79,9 @@ public class BlunderbussItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7eAmmo: \u00A7BBullets"));
-		list.add(new TextComponent("\u00A7eMax Capacity: \u00A771"));
-		list.add(new TextComponent("\u00A7cReload: \u00A773"));
+		list.add(new TextComponent("\uFFFDeAmmo: \uFFFDBBullets"));
+		list.add(new TextComponent("\uFFFDeMax Capacity: \uFFFD71"));
+		list.add(new TextComponent("\uFFFDcReload: \uFFFD73"));
 	}
 
 	@Override

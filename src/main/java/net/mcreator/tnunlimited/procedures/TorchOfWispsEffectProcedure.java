@@ -25,8 +25,7 @@ public class TorchOfWispsEffectProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
@@ -38,8 +37,9 @@ public class TorchOfWispsEffectProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TnunlimitedModItems.TORCH_OF_GUIDANCE
+				.get()
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.TORCH_OF_GUIDANCE) {
+						.getItem() == TnunlimitedModItems.TORCH_OF_GUIDANCE.get()) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands()
 						.performCommand(

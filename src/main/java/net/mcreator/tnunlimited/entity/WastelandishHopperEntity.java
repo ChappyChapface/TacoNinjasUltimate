@@ -2,8 +2,8 @@
 package net.mcreator.tnunlimited.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -36,18 +36,17 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class WastelandishHopperEntity extends PathfinderMob {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("badlands"), new ResourceLocation("desert_hills"),
-			new ResourceLocation("badlands_plateau"), new ResourceLocation("desert"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("badlands"), new ResourceLocation("desert"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
 			event.getSpawns().getSpawner(MobCategory.AMBIENT)
-					.add(new MobSpawnSettings.SpawnerData(TnunlimitedModEntities.WASTELANDISH_HOPPER, 20, 1, 3));
+					.add(new MobSpawnSettings.SpawnerData(TnunlimitedModEntities.WASTELANDISH_HOPPER.get(), 20, 1, 3));
 	}
 
-	public WastelandishHopperEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(TnunlimitedModEntities.WASTELANDISH_HOPPER, world);
+	public WastelandishHopperEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(TnunlimitedModEntities.WASTELANDISH_HOPPER.get(), world);
 	}
 
 	public WastelandishHopperEntity(EntityType<WastelandishHopperEntity> type, Level world) {
@@ -100,7 +99,7 @@ public class WastelandishHopperEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(TnunlimitedModEntities.WASTELANDISH_HOPPER, SpawnPlacements.Type.NO_RESTRICTIONS,
+		SpawnPlacements.register(TnunlimitedModEntities.WASTELANDISH_HOPPER.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
 				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 	}
 

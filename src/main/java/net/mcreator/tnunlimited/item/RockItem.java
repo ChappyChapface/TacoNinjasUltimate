@@ -27,7 +27,6 @@ import java.util.List;
 public class RockItem extends Item {
 	public RockItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(64));
-		setRegistryName("rock");
 	}
 
 	@Override
@@ -39,9 +38,9 @@ public class RockItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A77When Thrown:"));
-		list.add(new TextComponent("\u00A72 3 Damage"));
-		list.add(new TextComponent("\u00A72 0.75 Attack Speed"));
+		list.add(new TextComponent("\uFFFD7When Thrown:"));
+		list.add(new TextComponent("\uFFFD2 3 Damage"));
+		list.add(new TextComponent("\uFFFD2 0.75 Attack Speed"));
 	}
 
 	@Override
@@ -62,11 +61,11 @@ public class RockItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == TnunlimitedModItems.ROCK);
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == TnunlimitedModItems.ROCK.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == TnunlimitedModItems.ROCK) {
+						if (teststack != null && teststack.getItem() == TnunlimitedModItems.ROCK.get()) {
 							stack = teststack;
 							break;
 						}
@@ -78,7 +77,7 @@ public class RockItem extends Item {
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(TnunlimitedModItems.ROCK).isDamageableItem()) {
+						if (new ItemStack(TnunlimitedModItems.ROCK.get()).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);

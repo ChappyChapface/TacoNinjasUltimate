@@ -2,6 +2,7 @@
 package net.mcreator.tnunlimited.item;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -16,7 +17,11 @@ import java.util.List;
 public class SlothsPillowItem extends Item {
 	public SlothsPillowItem() {
 		super(new Item.Properties().tab(TnunlimitedModTabs.TAB_ACCESSORIES_TAB).stacksTo(1).rarity(Rarity.UNCOMMON));
-		setRegistryName("sloths_pillow");
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 
 	@Override
@@ -32,6 +37,6 @@ public class SlothsPillowItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aWhile Equipped: \u00A77Attacks have a chance to inflict Drowsy"));
+		list.add(new TextComponent("\uFFFDaWhile Equipped: \uFFFD7Attacks have a chance to inflict Drowsy"));
 	}
 }

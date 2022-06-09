@@ -34,9 +34,8 @@ public class AarduimswordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.AARDIUMINGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.AARDIUMINGOT.get()));
 			}
 		}, 3, -2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-		setRegistryName("aarduimsword");
 	}
 }

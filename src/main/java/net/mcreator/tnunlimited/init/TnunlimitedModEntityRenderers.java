@@ -25,18 +25,18 @@ import net.mcreator.tnunlimited.client.renderer.DuneSpiderRenderer;
 public class TnunlimitedModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(TnunlimitedModEntities.SNOWGLOVE, ThrownItemRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.BULLET_PROJECTILE, ThrownItemRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.GALVANIZED_HARPOON, GalvanizedHarpoonRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.ROCK, ThrownItemRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.DUNE_SPIDER, DuneSpiderRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.GILDED_BUG, GildedBugRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.WASTELANDISH_HOPPER, WastelandishHopperRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.PINACATE_BEETLE, PinacateBeetleRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.PIRATE_CAPTAIN, PirateCaptainRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.PIRATE_CREWMAN, PirateCrewmanRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.BUCKSHOT_PELLET_PROJECTILE, ThrownItemRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.PIRATE_DEADEYE, PirateDeadeyeRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.ENDER_PROTECTOR, EnderProtectorRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.SNOWGLOVE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.GALVANIZED_HARPOON.get(), GalvanizedHarpoonRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.ROCK.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.DUNE_SPIDER.get(), DuneSpiderRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.GILDED_BUG.get(), GildedBugRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.WASTELANDISH_HOPPER.get(), WastelandishHopperRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.PINACATE_BEETLE.get(), PinacateBeetleRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.PIRATE_CAPTAIN.get(), PirateCaptainRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.PIRATE_CREWMAN.get(), PirateCrewmanRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.BUCKSHOT_PELLET_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.PIRATE_DEADEYE.get(), PirateDeadeyeRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.ENDER_PROTECTOR.get(), EnderProtectorRenderer::new);
 	}
 }

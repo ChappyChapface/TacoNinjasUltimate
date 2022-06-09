@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "tool",
   "definition": {
     "renderType": 1,
@@ -7,10 +7,10 @@
     "customModelName": "revolver:default",
     "name": "Lead Revolver",
     "specialInfo": [
-      "§eAmmo: §BBullets",
-      "§eMax Capacity: §76",
-      "§cCooldown: §72",
-      "§cReload: §73"
+      "ï¿½eAmmo: ï¿½BBullets",
+      "ï¿½eMax Capacity: ï¿½76",
+      "ï¿½cCooldown: ï¿½72",
+      "ï¿½cReload: ï¿½73"
     ],
     "creativeTab": {
       "value": "COMBAT"

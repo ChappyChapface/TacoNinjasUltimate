@@ -49,7 +49,7 @@ public abstract class LeadArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.LEAD_INGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.LEAD_INGOT.get()));
 			}
 
 			@Override
@@ -72,15 +72,14 @@ public abstract class LeadArmorItem extends ArmorItem {
 	public static class Helmet extends LeadArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("lead_armor_helmet");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
+			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
 		}
 
 		@Override
@@ -97,15 +96,14 @@ public abstract class LeadArmorItem extends ArmorItem {
 	public static class Chestplate extends LeadArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("lead_armor_chestplate");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
+			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
 		}
 
 		@Override
@@ -122,15 +120,14 @@ public abstract class LeadArmorItem extends ArmorItem {
 	public static class Leggings extends LeadArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("lead_armor_leggings");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
+			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
 		}
 
 		@Override
@@ -147,15 +144,14 @@ public abstract class LeadArmorItem extends ArmorItem {
 	public static class Boots extends LeadArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("lead_armor_boots");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
+			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
 		}
 
 		@Override

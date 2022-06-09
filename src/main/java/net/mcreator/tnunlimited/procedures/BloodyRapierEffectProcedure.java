@@ -11,6 +11,6 @@ public class BloodyRapierEffectProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(TnunlimitedModMobEffects.BLEEDING, 120, 0));
+			_entity.addEffect(new MobEffectInstance(TnunlimitedModMobEffects.BLEEDING.get(), 120, 0));
 	}
 }

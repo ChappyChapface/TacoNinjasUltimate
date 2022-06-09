@@ -50,7 +50,6 @@ public class SerenityItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-		setRegistryName("serenity");
 	}
 
 	@Override
@@ -63,8 +62,8 @@ public class SerenityItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aAbility: \u00A77Use while under 3 hearts to heal and gain resistance"));
-		list.add(new TextComponent("\u00A7cCooldown: \u00A775 Minutes"));
+		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Use while under 3 hearts to heal and gain resistance"));
+		list.add(new TextComponent("\uFFFDcCooldown: \uFFFD75 Minutes"));
 	}
 
 	@Override

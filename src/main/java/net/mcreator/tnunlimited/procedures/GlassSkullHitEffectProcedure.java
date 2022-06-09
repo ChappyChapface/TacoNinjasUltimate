@@ -20,8 +20,7 @@ public class GlassSkullHitEffectProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingHurtEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity, event.getSource().getEntity());
+			execute(event, event.getEntity(), event.getSource().getEntity());
 		}
 	}
 
@@ -33,9 +32,9 @@ public class GlassSkullHitEffectProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.GLASS_SKULL_HELMET
+				.getItem() == TnunlimitedModItems.GLASS_SKULL_HELMET.get()
 				|| (sourceentity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.GLASS_SKULL_HELMET) {
+						.getItem() == TnunlimitedModItems.GLASS_SKULL_HELMET.get()) {
 			entity.hurt(DamageSource.GENERIC, 5);
 		}
 	}
