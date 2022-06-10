@@ -19,7 +19,11 @@
     "leggingsName": "Glass Skull Leggings",
     "bootsName": "Glass Skull Boots",
     "helmetSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7Deal and take extra damage"
+=======
+      "§aAbility: §7Deal and take extra damage"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

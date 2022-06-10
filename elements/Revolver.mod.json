@@ -7,10 +7,17 @@
     "customModelName": "revolver:default",
     "name": "Lead Revolver",
     "specialInfo": [
+<<<<<<< HEAD
       "�eAmmo: �BBullets",
       "�eMax Capacity: �76",
       "�cCooldown: �72",
       "�cReload: �73"
+=======
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §76",
+      "§cCooldown: §72",
+      "§cReload: §73"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

@@ -7,9 +7,15 @@
     "customModelName": "Normal",
     "name": "Rock",
     "specialInfo": [
+<<<<<<< HEAD
       "�7When Thrown:",
       "�2 3 Damage",
       "�2 0.75 Attack Speed"
+=======
+      "§7When Thrown:",
+      "§2 3 Damage",
+      "§2 0.75 Attack Speed"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

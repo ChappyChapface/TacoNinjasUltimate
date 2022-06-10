@@ -7,9 +7,15 @@
     "customModelName": "blunderbuss:default",
     "name": "Blunderbuss",
     "specialInfo": [
+<<<<<<< HEAD
       "�eAmmo: �BBullets",
       "�eMax Capacity: �71",
       "�cReload: �73"
+=======
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §71",
+      "§cReload: §73"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

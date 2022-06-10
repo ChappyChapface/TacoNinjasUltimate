@@ -19,24 +19,48 @@
     "leggingsName": "Desert Roach Leggings",
     "bootsName": "Desert Roach Boots",
     "helmetSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7+10% Familiar Damage",
       "�aSet Bonus:",
       "�7Spawns a Gilded Bug familiar"
+=======
+      "§aAbility: §7+10% Familiar Damage",
+      "§aSet Bonus:",
+      "§7Spawns a Gilded Bug familiar"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bodySpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7+10% Familiar Damage",
       "�aSet Bonus:",
       "�7Spawns a Gilded Bug familiar"
+=======
+      "§aAbility: §7+10% Familiar Damage",
+      "§aSet Bonus:",
+      "§7Spawns a Gilded Bug familiar"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "leggingsSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7+10% Familiar Damage",
       "�aSet Bonus:",
       "�7Spawns a Gilded Bug familiar"
+=======
+      "§aAbility: §7+10% Familiar Damage",
+      "§aSet Bonus:",
+      "§7Spawns a Gilded Bug familiar"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bootsSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7+10% Familiar Damage",
       "�aSet Bonus:",
       "�7Spawns a Gilded Bug familiar"
+=======
+      "§aAbility: §7+10% Familiar Damage",
+      "§aSet Bonus:",
+      "§7Spawns a Gilded Bug familiar"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "helmetModelName": "ModelRoachHelmet",
     "helmetModelPart": "Head",

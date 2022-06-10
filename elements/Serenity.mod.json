@@ -7,8 +7,13 @@
     "customModelName": "Normal",
     "name": "Serenity",
     "specialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7Use while under 3 hearts to heal and gain resistance",
       "�cCooldown: �75 Minutes"
+=======
+      "§aAbility: §7Use while under 3 hearts to heal and gain resistance",
+      "§cCooldown: §75 Minutes"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

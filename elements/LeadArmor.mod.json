@@ -31,24 +31,48 @@
     "leggingsName": "Lead Leggings",
     "bootsName": "Lead Boots",
     "helmetSpecialInfo": [
+<<<<<<< HEAD
       "�cDebuff: Sets Maximum Saturation to 5",
       "�aSet Bonus:",
       "�7+15% Blunt Damage"
+=======
+      "§cDebuff: Sets Maximum Saturation to 5",
+      "§aSet Bonus:",
+      "§7+15% Blunt Damage"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bodySpecialInfo": [
+<<<<<<< HEAD
       "�cDebuff: Sets Maximum Saturation to 5",
       "�aSet Bonus:",
       "�7+15% Blunt Damage"
+=======
+      "§cDebuff: Sets Maximum Saturation to 5",
+      "§aSet Bonus:",
+      "§7+15% Blunt Damage"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "leggingsSpecialInfo": [
+<<<<<<< HEAD
       "�cDebuff: Sets Maximum Saturation to 5",
       "�aSet Bonus:",
       "�7+15% Blunt Damage"
+=======
+      "§cDebuff: Sets Maximum Saturation to 5",
+      "§aSet Bonus:",
+      "§7+15% Blunt Damage"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bootsSpecialInfo": [
+<<<<<<< HEAD
       "�cDebuff: Sets Maximum Saturation to 5",
       "�aSet Bonus:",
       "�7+15% Blunt Damage"
+=======
+      "§cDebuff: Sets Maximum Saturation to 5",
+      "§aSet Bonus:",
+      "§7+15% Blunt Damage"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",

@@ -7,15 +7,20 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
+
+import net.mcreator.tnunlimited.init.TnunlimitedModTabs;
 
 import java.util.List;
 
 public class MiracleRuneItem extends Item {
 	public MiracleRuneItem() {
+<<<<<<< HEAD
 		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).fireResistant().rarity(Rarity.UNCOMMON));
+=======
+		super(new Item.Properties().tab(TnunlimitedModTabs.TAB_ACCESSORIES_TAB).stacksTo(1).fireResistant().rarity(Rarity.UNCOMMON));
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 	}
 
 	@Override

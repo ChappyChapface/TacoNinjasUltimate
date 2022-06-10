@@ -56,6 +56,10 @@ public class NubriumAxeItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+<<<<<<< HEAD
 		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Attacks inflict Slowness"));
+=======
+		list.add(new TextComponent("\u00A7aAbility: 7Attacks inflict Slowness"));
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 	}
 }

@@ -7,10 +7,17 @@
     "customModelName": "flintlock:default",
     "name": "Flintlock",
     "specialInfo": [
+<<<<<<< HEAD
       "�eAmmo: �BBullets",
       "�eMax Capacity: �71",
       "�cCooldown: �72",
       "�cReload: �73"
+=======
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §71",
+      "§cCooldown: §72",
+      "§cReload: §73"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

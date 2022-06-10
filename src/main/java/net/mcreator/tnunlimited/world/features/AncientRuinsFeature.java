@@ -13,6 +13,8 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
@@ -43,10 +45,15 @@ public class AncientRuinsFeature extends Feature<NoneFeatureConfiguration> {
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+<<<<<<< HEAD
+=======
+	private final List<Block> base_blocks;
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 	private StructureTemplate template = null;
 
 	public AncientRuinsFeature() {
 		super(NoneFeatureConfiguration.CODEC);
+		base_blocks = List.of(Blocks.STONE, Blocks.GRANITE, Blocks.DIORITE, Blocks.ANDESITE);
 	}
 
 	@Override
@@ -58,14 +65,24 @@ public class AncientRuinsFeature extends Feature<NoneFeatureConfiguration> {
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
+<<<<<<< HEAD
 		if ((context.random().nextInt(1000000) + 1) <= 50000) {
+=======
+		if ((context.random().nextInt(1000000) + 1) <= 25000) {
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k);
 				j = Mth.nextInt(context.random(), 8 + context.level().getMinBuildHeight(), Math.max(j, 9 + context.level().getMinBuildHeight()));
+<<<<<<< HEAD
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
+=======
+				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
+					continue;
+				BlockPos spawnTo = new BlockPos(i + 0, j + -8, k + 0);
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())

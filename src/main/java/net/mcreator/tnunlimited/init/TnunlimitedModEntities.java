@@ -17,14 +17,11 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.tnunlimited.entity.WastelandishHopperEntity;
-import net.mcreator.tnunlimited.entity.SnowgloveEntity;
-import net.mcreator.tnunlimited.entity.RockEntity;
 import net.mcreator.tnunlimited.entity.PirateDeadeyeEntity;
 import net.mcreator.tnunlimited.entity.PirateCrewmanEntity;
 import net.mcreator.tnunlimited.entity.PirateCaptainEntity;
 import net.mcreator.tnunlimited.entity.PinacateBeetleEntity;
 import net.mcreator.tnunlimited.entity.GildedBugEntity;
-import net.mcreator.tnunlimited.entity.GalvanizedHarpoonEntity;
 import net.mcreator.tnunlimited.entity.EnderProtectorEntity;
 import net.mcreator.tnunlimited.entity.DuneSpiderEntity;
 import net.mcreator.tnunlimited.entity.BulletProjectileEntity;
@@ -34,20 +31,10 @@ import net.mcreator.tnunlimited.TnunlimitedMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TnunlimitedModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, TnunlimitedMod.MODID);
-	public static final RegistryObject<EntityType<SnowgloveEntity>> SNOWGLOVE = register("projectile_snowglove",
-			EntityType.Builder.<SnowgloveEntity>of(SnowgloveEntity::new, MobCategory.MISC).setCustomClientFactory(SnowgloveEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<BulletProjectileEntity>> BULLET_PROJECTILE = register("projectile_bullet_projectile",
 			EntityType.Builder.<BulletProjectileEntity>of(BulletProjectileEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(BulletProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<GalvanizedHarpoonEntity>> GALVANIZED_HARPOON = register("projectile_galvanized_harpoon",
-			EntityType.Builder.<GalvanizedHarpoonEntity>of(GalvanizedHarpoonEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(GalvanizedHarpoonEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("projectile_rock",
-			EntityType.Builder.<RockEntity>of(RockEntity::new, MobCategory.MISC).setCustomClientFactory(RockEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<DuneSpiderEntity>> DUNE_SPIDER = register("dune_spider",
 			EntityType.Builder.<DuneSpiderEntity>of(DuneSpiderEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DuneSpiderEntity::new)

@@ -32,8 +32,13 @@ public class DecardialNecklaceItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+<<<<<<< HEAD
 		list.add(new TextComponent("\uFFFDaWhile Equipped: \uFFFD7"));
 		list.add(new TextComponent("-80% Max HP"));
 		list.add(new TextComponent("Grants strong Absorption that regenerates every morning"));
+=======
+		list.add(new TextComponent("\u00A7aWhile Equipped: \u00A77-80% Max HP"));
+		list.add(new TextComponent("\u00A77Grants strong Absorption that regenerates every morning"));
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 	}
 }

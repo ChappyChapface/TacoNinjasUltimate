@@ -22,20 +22,40 @@
     "leggingsName": "Galvanized Leggings",
     "bootsName": "Galvanized Boots",
     "helmetSpecialInfo": [
+<<<<<<< HEAD
       "�aSet Bonus:",
       "�7Increased ability and breathe underwater"
+=======
+      "§aSet Bonus:",
+      "§7Increased ability and breathe underwater"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bodySpecialInfo": [
+<<<<<<< HEAD
       "�aSet Bonus:",
       "�7Increased ability and breathe underwater"
+=======
+      "§aSet Bonus:",
+      "§7Increased ability and breathe underwater"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "leggingsSpecialInfo": [
+<<<<<<< HEAD
       "�aSet Bonus:",
       "�7Increased ability and breathe underwater"
+=======
+      "§aSet Bonus:",
+      "§7Increased ability and breathe underwater"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bootsSpecialInfo": [
+<<<<<<< HEAD
       "�aSet Bonus:",
       "�7Increased ability and breathe underwater"
+=======
+      "§aSet Bonus:",
+      "§7Increased ability and breathe underwater"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",

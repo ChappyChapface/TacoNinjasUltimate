@@ -25,7 +25,11 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
+<<<<<<< HEAD
       "�aAbility:",
+=======
+      "§aAbility:",
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
       "Reveals the location of all nearby creatures when held"
     ],
     "hasGlow": true,
@@ -36,6 +40,12 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+<<<<<<< HEAD
+=======
+    "eatResultItem": {
+      "value": ""
+    },
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

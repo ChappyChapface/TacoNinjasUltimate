@@ -22,7 +22,11 @@
     "leggingsName": "Golden Crown Leggings",
     "bootsName": "Golden Crown Boots",
     "helmetSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7Grants Resistance"
+=======
+      "§aAbility: §7Grants Resistance"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

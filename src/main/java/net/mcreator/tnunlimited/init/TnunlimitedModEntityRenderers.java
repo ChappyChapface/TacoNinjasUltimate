@@ -17,7 +17,6 @@ import net.mcreator.tnunlimited.client.renderer.PirateCrewmanRenderer;
 import net.mcreator.tnunlimited.client.renderer.PirateCaptainRenderer;
 import net.mcreator.tnunlimited.client.renderer.PinacateBeetleRenderer;
 import net.mcreator.tnunlimited.client.renderer.GildedBugRenderer;
-import net.mcreator.tnunlimited.client.renderer.GalvanizedHarpoonRenderer;
 import net.mcreator.tnunlimited.client.renderer.EnderProtectorRenderer;
 import net.mcreator.tnunlimited.client.renderer.DuneSpiderRenderer;
 
@@ -25,10 +24,7 @@ import net.mcreator.tnunlimited.client.renderer.DuneSpiderRenderer;
 public class TnunlimitedModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(TnunlimitedModEntities.SNOWGLOVE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TnunlimitedModEntities.BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.GALVANIZED_HARPOON.get(), GalvanizedHarpoonRenderer::new);
-		event.registerEntityRenderer(TnunlimitedModEntities.ROCK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TnunlimitedModEntities.DUNE_SPIDER.get(), DuneSpiderRenderer::new);
 		event.registerEntityRenderer(TnunlimitedModEntities.GILDED_BUG.get(), GildedBugRenderer::new);
 		event.registerEntityRenderer(TnunlimitedModEntities.WASTELANDISH_HOPPER.get(), WastelandishHopperRenderer::new);

@@ -7,9 +7,15 @@
     "customModelName": "snowglove:default",
     "name": "Snowglove",
     "specialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7Throws damaging snowballs.",
       "�cCooldown: �70.75 Seconds",
       "�eAmmo: �7Snowballs"
+=======
+      "§aAbility: §7Throws damaging snowballs.",
+      "§cCooldown: §70.75 Seconds",
+      "§eAmmo: §7Snowballs"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

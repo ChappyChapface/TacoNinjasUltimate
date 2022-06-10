@@ -7,9 +7,15 @@
     "customModelName": "galvanizedharpoon:default",
     "name": "Galvanized Harpoon",
     "specialInfo": [
+<<<<<<< HEAD
       "�7When Thrown:",
       "�2 9 Damage",
       "�2 0.33 Attack Speed"
+=======
+      "§7When Thrown:",
+      "§2 9 Damage",
+      "§2 0.33 Attack Speed"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

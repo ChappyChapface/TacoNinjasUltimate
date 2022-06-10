@@ -34,6 +34,7 @@ public class CoffeePlantFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new CoffeePlantFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("tnunlimited:coffee_plant", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
+<<<<<<< HEAD
 				new SimpleBlockConfiguration(BlockStateProvider.simple(TnunlimitedModBlocks.COFFEE_PLANT.get().defaultBlockState())), List.of(), 6));
 		PLACED_FEATURE = PlacementUtils.register("tnunlimited:coffee_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(25),
 				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
@@ -46,6 +47,22 @@ public class CoffeePlantFeature extends RandomPatchFeature {
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("bamboo_jungle"), new ResourceLocation("sparse_jungle"),
 			new ResourceLocation("jungle"));
+=======
+				new SimpleBlockConfiguration(BlockStateProvider.simple(TnunlimitedModBlocks.COFFEE_PLANT.get().defaultBlockState())), List.of(), 8));
+		PLACED_FEATURE = PlacementUtils.register("tnunlimited:coffee_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(3),
+				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		return FEATURE;
+	}
+
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("old_growth_birch_forest"),
+			new ResourceLocation("forest"), new ResourceLocation("sunflower_plains"), new ResourceLocation("dark_forest"),
+			new ResourceLocation("plains"), new ResourceLocation("birch_forest"), new ResourceLocation("flower_forest"),
+			new ResourceLocation("windswept_forest"));
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public CoffeePlantFeature() {

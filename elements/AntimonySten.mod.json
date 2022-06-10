@@ -7,10 +7,17 @@
     "customModelName": "sten:default",
     "name": "Antimony Sten",
     "specialInfo": [
+<<<<<<< HEAD
       "�eAmmo: �BBullets",
       "�eMax Capacity: �732",
       "�cCooldown: �71",
       "�cReload: �75"
+=======
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §732",
+      "§cCooldown: §71",
+      "§cReload: §75"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

@@ -7,7 +7,11 @@
     "customModelName": "buckler:default",
     "name": "Buckler",
     "specialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7Propels you forward when used"
+=======
+      "§aAbility: §7Propels you forward when used"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "COMBAT"

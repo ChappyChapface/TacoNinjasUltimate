@@ -19,20 +19,40 @@
     "leggingsName": "Aardium Leggings",
     "bootsName": "Aardium Boots",
     "helmetSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �710% Increased Movement Speed",
       "�7Effect stacks with other pieces"
+=======
+      "§aAbility: §710% Increased Movement Speed",
+      "§7Effect stacks with other pieces"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bodySpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �710% Increased Movement Speed",
       "�7Effect stacks with other pieces"
+=======
+      "§aAbility: §710% Increased Movement Speed",
+      "§7Effect stacks with other pieces"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "leggingsSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �710% Increased Movement Speed",
       "�7Effect stacks with other pieces"
+=======
+      "§aAbility: §710% Increased Movement Speed",
+      "§7Effect stacks with other pieces"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bootsSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �710% Increased Movement Speed",
       "�7Effect stacks with other pieces"
+=======
+      "§aAbility: §710% Increased Movement Speed",
+      "§7Effect stacks with other pieces"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",

@@ -32,7 +32,12 @@ public class CardialCharmItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+<<<<<<< HEAD
 		list.add(new TextComponent("\uFFFDaWhile Equipped: \uFFFD7"));
 		list.add(new TextComponent("+20% Max HP"));
+=======
+		list.add(new TextComponent("\u00A7aWhile Equipped:"));
+		list.add(new TextComponent("\u00A77+20% Max HP"));
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
 	}
 }

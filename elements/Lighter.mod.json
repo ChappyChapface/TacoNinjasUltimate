@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bleedingheartcharm",
+    "texture": "lighter",
     "customModelName": "Normal",
-    "name": "Bleeding Heart Charm",
+    "name": "Lighter",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "COMBAT"
     },
     "stackSize": 1,
-    "enchantability": 20,
+    "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 50,
+    "damageCount": 25,
     "recipeRemainder": {
       "value": ""
     },
@@ -25,31 +25,19 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-<<<<<<< HEAD
-      "�aAbility: Heals 7 HP upon use",
-      "�cCooldown: 30 Seconds"
-=======
-      "§aAbility: Heals 7 HP upon use",
-      "§cCooldown: 30 Seconds"
->>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
+      "§aAbility: §7Use to set entities on fire"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "BleedingHeartCharmUse"
-    },
     "hasDispenseBehavior": false,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
-<<<<<<< HEAD
-=======
     "eatResultItem": {
       "value": ""
     },
->>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

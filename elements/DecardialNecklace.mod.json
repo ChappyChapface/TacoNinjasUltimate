@@ -25,9 +25,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
+<<<<<<< HEAD
       "�aWhile Equipped: �7",
       "-80% Max HP",
       "Grants strong Absorption that regenerates every morning"
+=======
+      "§aWhile Equipped: §7-80% Max HP",
+      "§7Grants strong Absorption that regenerates every morning"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
@@ -37,6 +42,12 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+<<<<<<< HEAD
+=======
+    "eatResultItem": {
+      "value": ""
+    },
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

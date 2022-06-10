@@ -25,7 +25,12 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 2.6999999999999997,
     "specialInfo": [
+<<<<<<< HEAD
       "�aWhile Equipped: �7Attacks have a chance to inflict Drowsy"
+=======
+      "§aWhile Equipped:",
+      "§7Attacks have a chance to inflict Drowsy"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
@@ -35,6 +40,12 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+<<<<<<< HEAD
+=======
+    "eatResultItem": {
+      "value": ""
+    },
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

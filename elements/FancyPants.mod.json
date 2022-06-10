@@ -21,8 +21,13 @@
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility:",
       "�7Can be used for any armor set bonus"
+=======
+      "§aAbility:",
+      "§7Can be used for any armor set bonus"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bootsSpecialInfo": [],
     "helmetModelName": "Default",

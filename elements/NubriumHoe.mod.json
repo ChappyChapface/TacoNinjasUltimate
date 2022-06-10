@@ -7,7 +7,11 @@
     "customModelName": "Normal",
     "name": "Nubrium Hoe",
     "specialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7Attacks inflict Slowness"
+=======
+      "§aAbility: §7Attacks inflict Slowness"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "creativeTab": {
       "value": "TOOLS"

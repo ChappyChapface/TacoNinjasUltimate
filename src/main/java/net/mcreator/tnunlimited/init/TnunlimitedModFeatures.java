@@ -17,7 +17,6 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
-import net.mcreator.tnunlimited.world.features.plants.CoffeePlantFeature;
 import net.mcreator.tnunlimited.world.features.ores.ZincOreFeature;
 import net.mcreator.tnunlimited.world.features.ores.ZincDeepslateOreFeature;
 import net.mcreator.tnunlimited.world.features.ores.NubriumOreFeature;
@@ -50,8 +49,6 @@ public class TnunlimitedModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, ZincOreFeature.GENERATE_BIOMES, ZincOreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> LEAD_ORE = register("lead_ore", LeadOreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, LeadOreFeature.GENERATE_BIOMES, LeadOreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> COFFEE_PLANT = register("coffee_plant", CoffeePlantFeature::feature, new FeatureRegistration(
-			GenerationStep.Decoration.VEGETAL_DECORATION, CoffeePlantFeature.GENERATE_BIOMES, CoffeePlantFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> SIN_CHEST_STRUCTURE = register("sin_chest_structure", SinChestStructureFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_STRUCTURES, SinChestStructureFeature.GENERATE_BIOMES,
 					SinChestStructureFeature::placedFeature));

@@ -22,7 +22,11 @@
     "leggingsName": "Pepperoni Armour Leggings",
     "bootsName": "Pepperoni Armour Boots",
     "helmetSpecialInfo": [
+<<<<<<< HEAD
       "�aAbility: �7Infinite Saturation"
+=======
+      "§aAbility: §7Infinite Saturation"
+>>>>>>> branch 'master' of https://github.com/ChappyChapface/TacoNinjasUltimate
     ],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
