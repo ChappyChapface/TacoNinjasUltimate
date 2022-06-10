@@ -20,18 +20,18 @@ public class CoffeeRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isInput(ItemStack input) {
-		return input.getItem() == TnunlimitedModItems.MUG;
+		return input.getItem() == TnunlimitedModItems.MUG.get();
 	}
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == TnunlimitedModItems.COFFEE_BEANS;
+		return ingredient.getItem() == TnunlimitedModItems.COFFEE_BEANS.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(TnunlimitedModItems.COFFEE);
+			return new ItemStack(TnunlimitedModItems.COFFEE.get());
 		}
 		return ItemStack.EMPTY;
 	}

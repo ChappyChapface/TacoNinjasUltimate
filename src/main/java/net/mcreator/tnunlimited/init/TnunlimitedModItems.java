@@ -4,12 +4,12 @@
  */
 package net.mcreator.tnunlimited.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -127,199 +127,207 @@ import net.mcreator.tnunlimited.item.AardiumingoHoeItem;
 import net.mcreator.tnunlimited.item.AardiumingoAxeItem;
 import net.mcreator.tnunlimited.item.AardiumSickleItem;
 import net.mcreator.tnunlimited.item.AardiumItem;
+import net.mcreator.tnunlimited.TnunlimitedMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TnunlimitedModItems {
-	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item WOODEN_SICKLE = register(new WoodenSickleItem());
-	public static final Item STONE_SICKLE = register(new StoneSickleItem());
-	public static final Item GOLD_SICKLE = register(new GoldSickleItem());
-	public static final Item IRON_SICKLE = register(new IronSickleItem());
-	public static final Item DIAMOND_SICKLE = register(new DiamondSickleItem());
-	public static final Item NETHERITE_SICKLE = register(new NetheriteSickleItem());
-	public static final Item BUCKLER = register(new BucklerItem());
-	public static final Item GLOWINGICE = register(TnunlimitedModBlocks.GLOWINGICE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item AARDIUMORE = register(TnunlimitedModBlocks.AARDIUMORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item ZINC_INGOT = register(new ZincIngotItem());
-	public static final Item PEPPERONI_FOOD = register(new PepperoniFoodItem());
-	public static final Item RAW_AARDIUM = register(new RawAardiumItem());
-	public static final Item ZINC_SHEET = register(new ZincSheetItem());
-	public static final Item PEPPERONI_INGOT = register(new PepperoniIngotItem());
-	public static final Item AARDIUMINGOT = register(new AardiumingotItem());
-	public static final Item ZINC_ORE = register(TnunlimitedModBlocks.ZINC_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item DONE_SWORD = register(new DoneSwordItem());
-	public static final Item BLOCKOF_AARDIUM = register(TnunlimitedModBlocks.BLOCKOF_AARDIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item GALVANIZED_SICKLE = register(new GalvanizedSickleItem());
-	public static final Item GALVANIZED_SWORD = register(new GalvanizedSwordItem());
-	public static final Item DONE_SHOVEL = register(new DoneShovelItem());
-	public static final Item DONE_PICKAXE = register(new DonePickaxeItem());
-	public static final Item GALVANIZED_PICKAXE = register(new GalvanizedPickaxeItem());
-	public static final Item DONE = register(new DoneItem());
-	public static final Item GALVANIZED_AXE = register(new GalvanizedAxeItem());
-	public static final Item GALVANIZED_HOE = register(new GalvanizedHoeItem());
-	public static final Item GALVANIZED_SHOVEL = register(new GalvanizedShovelItem());
-	public static final Item DONE_HOE = register(new DoneHoeItem());
-	public static final Item DONE_AXE = register(new DoneAxeItem());
-	public static final Item DONE_BLOCK = register(TnunlimitedModBlocks.DONE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item SUNRISE = register(new SunriseItem());
-	public static final Item ZINC_BLOCK = register(TnunlimitedModBlocks.ZINC_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item BULLET = register(new BulletItem());
-	public static final Item HOTCHOCOLATE = register(new HotchocolateItem());
-	public static final Item REVOLVER = register(new RevolverItem());
-	public static final Item MUG = register(new MugItem());
-	public static final Item DONE_ARMOUR_HELMET = register(new DoneArmourItem.Helmet());
-	public static final Item DONE_ARMOUR_CHESTPLATE = register(new DoneArmourItem.Chestplate());
-	public static final Item DONE_ARMOUR_LEGGINGS = register(new DoneArmourItem.Leggings());
-	public static final Item DONE_ARMOUR_BOOTS = register(new DoneArmourItem.Boots());
-	public static final Item SNOWGLOVE = register(new SnowgloveItem());
-	public static final Item PEPPERONI_ARMOUR_HELMET = register(new PepperoniArmourItem.Helmet());
-	public static final Item AARDIUM_SICKLE = register(new AardiumSickleItem());
-	public static final Item JAR_OF_INFINITE_JELLYBEANS = register(new JarOfInfiniteJellybeansItem());
-	public static final Item BULLET_PROJECTILE = register(new BulletProjectileItem());
-	public static final Item LEAD_ORE = register(TnunlimitedModBlocks.LEAD_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item GLASS_SKULL_HELMET = register(new GlassSkullItem.Helmet());
-	public static final Item RAW_LEAD = register(new RawLeadItem());
-	public static final Item FLAMERING = register(new FlameringItem());
-	public static final Item LEAD_INGOT = register(new LeadIngotItem());
-	public static final Item COFFEE_FRUIT = register(new CoffeeFruitItem());
-	public static final Item COFFEE_PLANT = register(TnunlimitedModBlocks.COFFEE_PLANT, CreativeModeTab.TAB_DECORATIONS);
-	public static final Item COFFEE_BEANS = register(new CoffeeBeansItem());
-	public static final Item COFFEE = register(new CoffeeItem());
-	public static final Item BLOCKOFRAWLEAD = register(TnunlimitedModBlocks.BLOCKOFRAWLEAD, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item BLOCK_OF_LEAD = register(TnunlimitedModBlocks.BLOCK_OF_LEAD, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item SLOTHS_PILLOW = register(new SlothsPillowItem());
-	public static final Item CONTRACT = register(new ContractItem());
-	public static final Item LEAD_PICKAXE = register(new LeadPickaxeItem());
-	public static final Item AARDIUM_HELMET = register(new AardiumItem.Helmet());
-	public static final Item AARDIUM_CHESTPLATE = register(new AardiumItem.Chestplate());
-	public static final Item AARDIUM_LEGGINGS = register(new AardiumItem.Leggings());
-	public static final Item AARDIUM_BOOTS = register(new AardiumItem.Boots());
-	public static final Item MOCHA = register(new MochaItem());
-	public static final Item LEAD_AXE = register(new LeadAxeItem());
-	public static final Item LEAD_SWORD = register(new LeadSwordItem());
-	public static final Item LEAD_SHOVEL = register(new LeadShovelItem());
-	public static final Item LEAD_HOE = register(new LeadHoeItem());
-	public static final Item BLOODY_RAPIER = register(new BloodyRapierItem());
-	public static final Item CRITICAL_SWORD = register(new CriticalSwordItem());
-	public static final Item LEAD_SICKLE = register(new LeadSickleItem());
-	public static final Item AARDUIMSWORD = register(new AarduimswordItem());
-	public static final Item LEAD_ARMOR_HELMET = register(new LeadArmorItem.Helmet());
-	public static final Item LEAD_ARMOR_CHESTPLATE = register(new LeadArmorItem.Chestplate());
-	public static final Item LEAD_ARMOR_LEGGINGS = register(new LeadArmorItem.Leggings());
-	public static final Item LEAD_ARMOR_BOOTS = register(new LeadArmorItem.Boots());
-	public static final Item BOMAIND_SICKLE = register(new BomaindSickleItem());
-	public static final Item ZINC_ARMOR_HELMET = register(new ZincArmorItem.Helmet());
-	public static final Item ZINC_ARMOR_CHESTPLATE = register(new ZincArmorItem.Chestplate());
-	public static final Item ZINC_ARMOR_LEGGINGS = register(new ZincArmorItem.Leggings());
-	public static final Item ZINC_ARMOR_BOOTS = register(new ZincArmorItem.Boots());
-	public static final Item AARDIUMPICKAXE = register(new AardiumpickaxeItem());
-	public static final Item BLEEDING_HEART_CHARM = register(new BleedingHeartCharmItem());
-	public static final Item ZINC_DEEPSLATE_ORE = register(TnunlimitedModBlocks.ZINC_DEEPSLATE_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item GALVANIZED_HARPOON = register(new GalvanizedHarpoonItem());
-	public static final Item AARDIUMINGO_AXE = register(new AardiumingoAxeItem());
-	public static final Item AARDIUMINGO_SHOVEL = register(new AardiumingoShovelItem());
-	public static final Item DARK_WARHAMMER = register(new DarkWarhammerItem());
-	public static final Item AARDIUMINGO_HOE = register(new AardiumingoHoeItem());
-	public static final Item ROCK = register(new RockItem());
-	public static final Item LEMONSTONE = register(TnunlimitedModBlocks.LEMONSTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item POLISHED_LEMONSTONE = register(TnunlimitedModBlocks.POLISHED_LEMONSTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item CHISELED_LEMONSTONE = register(TnunlimitedModBlocks.CHISELED_LEMONSTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item LEMONSTONE_SLAB = register(TnunlimitedModBlocks.LEMONSTONE_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item LEMONSTONE_STAIRS = register(TnunlimitedModBlocks.LEMONSTONE_STAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item POLISHED_LEMONSTONE_SLAB = register(TnunlimitedModBlocks.POLISHED_LEMONSTONE_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item POLISHED_LEMONSTONE_STAIRS = register(TnunlimitedModBlocks.POLISHED_LEMONSTONE_STAIRS,
+	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, TnunlimitedMod.MODID);
+	public static final RegistryObject<Item> WOODEN_SICKLE = REGISTRY.register("wooden_sickle", () -> new WoodenSickleItem());
+	public static final RegistryObject<Item> STONE_SICKLE = REGISTRY.register("stone_sickle", () -> new StoneSickleItem());
+	public static final RegistryObject<Item> GOLD_SICKLE = REGISTRY.register("gold_sickle", () -> new GoldSickleItem());
+	public static final RegistryObject<Item> IRON_SICKLE = REGISTRY.register("iron_sickle", () -> new IronSickleItem());
+	public static final RegistryObject<Item> DIAMOND_SICKLE = REGISTRY.register("diamond_sickle", () -> new DiamondSickleItem());
+	public static final RegistryObject<Item> NETHERITE_SICKLE = REGISTRY.register("netherite_sickle", () -> new NetheriteSickleItem());
+	public static final RegistryObject<Item> BUCKLER = REGISTRY.register("buckler", () -> new BucklerItem());
+	public static final RegistryObject<Item> GLOWINGICE = block(TnunlimitedModBlocks.GLOWINGICE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AARDIUMORE = block(TnunlimitedModBlocks.AARDIUMORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ZINC_INGOT = REGISTRY.register("zinc_ingot", () -> new ZincIngotItem());
+	public static final RegistryObject<Item> RAW_AARDIUM = REGISTRY.register("raw_aardium", () -> new RawAardiumItem());
+	public static final RegistryObject<Item> ZINC_SHEET = REGISTRY.register("zinc_sheet", () -> new ZincSheetItem());
+	public static final RegistryObject<Item> PEPPERONI_INGOT = REGISTRY.register("pepperoni_ingot", () -> new PepperoniIngotItem());
+	public static final RegistryObject<Item> AARDIUMINGOT = REGISTRY.register("aardiumingot", () -> new AardiumingotItem());
+	public static final RegistryObject<Item> ZINC_ORE = block(TnunlimitedModBlocks.ZINC_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> DONE_SWORD = REGISTRY.register("done_sword", () -> new DoneSwordItem());
+	public static final RegistryObject<Item> BLOCKOF_AARDIUM = block(TnunlimitedModBlocks.BLOCKOF_AARDIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> GALVANIZED_SICKLE = REGISTRY.register("galvanized_sickle", () -> new GalvanizedSickleItem());
+	public static final RegistryObject<Item> GALVANIZED_SWORD = REGISTRY.register("galvanized_sword", () -> new GalvanizedSwordItem());
+	public static final RegistryObject<Item> DONE_SHOVEL = REGISTRY.register("done_shovel", () -> new DoneShovelItem());
+	public static final RegistryObject<Item> DONE_PICKAXE = REGISTRY.register("done_pickaxe", () -> new DonePickaxeItem());
+	public static final RegistryObject<Item> GALVANIZED_PICKAXE = REGISTRY.register("galvanized_pickaxe", () -> new GalvanizedPickaxeItem());
+	public static final RegistryObject<Item> DONE = REGISTRY.register("done", () -> new DoneItem());
+	public static final RegistryObject<Item> GALVANIZED_AXE = REGISTRY.register("galvanized_axe", () -> new GalvanizedAxeItem());
+	public static final RegistryObject<Item> GALVANIZED_HOE = REGISTRY.register("galvanized_hoe", () -> new GalvanizedHoeItem());
+	public static final RegistryObject<Item> GALVANIZED_SHOVEL = REGISTRY.register("galvanized_shovel", () -> new GalvanizedShovelItem());
+	public static final RegistryObject<Item> DONE_HOE = REGISTRY.register("done_hoe", () -> new DoneHoeItem());
+	public static final RegistryObject<Item> DONE_AXE = REGISTRY.register("done_axe", () -> new DoneAxeItem());
+	public static final RegistryObject<Item> DONE_BLOCK = block(TnunlimitedModBlocks.DONE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> SUNRISE = REGISTRY.register("sunrise", () -> new SunriseItem());
+	public static final RegistryObject<Item> ZINC_BLOCK = block(TnunlimitedModBlocks.ZINC_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BULLET = REGISTRY.register("bullet", () -> new BulletItem());
+	public static final RegistryObject<Item> REVOLVER = REGISTRY.register("revolver", () -> new RevolverItem());
+	public static final RegistryObject<Item> MUG = REGISTRY.register("mug", () -> new MugItem());
+	public static final RegistryObject<Item> DONE_ARMOUR_HELMET = REGISTRY.register("done_armour_helmet", () -> new DoneArmourItem.Helmet());
+	public static final RegistryObject<Item> DONE_ARMOUR_CHESTPLATE = REGISTRY.register("done_armour_chestplate",
+			() -> new DoneArmourItem.Chestplate());
+	public static final RegistryObject<Item> DONE_ARMOUR_LEGGINGS = REGISTRY.register("done_armour_leggings", () -> new DoneArmourItem.Leggings());
+	public static final RegistryObject<Item> DONE_ARMOUR_BOOTS = REGISTRY.register("done_armour_boots", () -> new DoneArmourItem.Boots());
+	public static final RegistryObject<Item> SNOWGLOVE = REGISTRY.register("snowglove", () -> new SnowgloveItem());
+	public static final RegistryObject<Item> PEPPERONI_ARMOUR_HELMET = REGISTRY.register("pepperoni_armour_helmet",
+			() -> new PepperoniArmourItem.Helmet());
+	public static final RegistryObject<Item> AARDIUM_SICKLE = REGISTRY.register("aardium_sickle", () -> new AardiumSickleItem());
+	public static final RegistryObject<Item> BULLET_PROJECTILE = REGISTRY.register("bullet_projectile", () -> new BulletProjectileItem());
+	public static final RegistryObject<Item> LEAD_ORE = block(TnunlimitedModBlocks.LEAD_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> GLASS_SKULL_HELMET = REGISTRY.register("glass_skull_helmet", () -> new GlassSkullItem.Helmet());
+	public static final RegistryObject<Item> RAW_LEAD = REGISTRY.register("raw_lead", () -> new RawLeadItem());
+	public static final RegistryObject<Item> FLAMERING = REGISTRY.register("flamering", () -> new FlameringItem());
+	public static final RegistryObject<Item> LEAD_INGOT = REGISTRY.register("lead_ingot", () -> new LeadIngotItem());
+	public static final RegistryObject<Item> COFFEE_PLANT = block(TnunlimitedModBlocks.COFFEE_PLANT, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> COFFEE_BEANS = REGISTRY.register("coffee_beans", () -> new CoffeeBeansItem());
+	public static final RegistryObject<Item> BLOCKOFRAWLEAD = block(TnunlimitedModBlocks.BLOCKOFRAWLEAD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BLOCK_OF_LEAD = block(TnunlimitedModBlocks.BLOCK_OF_LEAD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> SLOTHS_PILLOW = REGISTRY.register("sloths_pillow", () -> new SlothsPillowItem());
+	public static final RegistryObject<Item> CONTRACT = REGISTRY.register("contract", () -> new ContractItem());
+	public static final RegistryObject<Item> LEAD_PICKAXE = REGISTRY.register("lead_pickaxe", () -> new LeadPickaxeItem());
+	public static final RegistryObject<Item> AARDIUM_HELMET = REGISTRY.register("aardium_helmet", () -> new AardiumItem.Helmet());
+	public static final RegistryObject<Item> AARDIUM_CHESTPLATE = REGISTRY.register("aardium_chestplate", () -> new AardiumItem.Chestplate());
+	public static final RegistryObject<Item> AARDIUM_LEGGINGS = REGISTRY.register("aardium_leggings", () -> new AardiumItem.Leggings());
+	public static final RegistryObject<Item> AARDIUM_BOOTS = REGISTRY.register("aardium_boots", () -> new AardiumItem.Boots());
+	public static final RegistryObject<Item> LEAD_AXE = REGISTRY.register("lead_axe", () -> new LeadAxeItem());
+	public static final RegistryObject<Item> LEAD_SWORD = REGISTRY.register("lead_sword", () -> new LeadSwordItem());
+	public static final RegistryObject<Item> LEAD_SHOVEL = REGISTRY.register("lead_shovel", () -> new LeadShovelItem());
+	public static final RegistryObject<Item> LEAD_HOE = REGISTRY.register("lead_hoe", () -> new LeadHoeItem());
+	public static final RegistryObject<Item> BLOODY_RAPIER = REGISTRY.register("bloody_rapier", () -> new BloodyRapierItem());
+	public static final RegistryObject<Item> CRITICAL_SWORD = REGISTRY.register("critical_sword", () -> new CriticalSwordItem());
+	public static final RegistryObject<Item> LEAD_SICKLE = REGISTRY.register("lead_sickle", () -> new LeadSickleItem());
+	public static final RegistryObject<Item> AARDUIMSWORD = REGISTRY.register("aarduimsword", () -> new AarduimswordItem());
+	public static final RegistryObject<Item> LEAD_ARMOR_HELMET = REGISTRY.register("lead_armor_helmet", () -> new LeadArmorItem.Helmet());
+	public static final RegistryObject<Item> LEAD_ARMOR_CHESTPLATE = REGISTRY.register("lead_armor_chestplate", () -> new LeadArmorItem.Chestplate());
+	public static final RegistryObject<Item> LEAD_ARMOR_LEGGINGS = REGISTRY.register("lead_armor_leggings", () -> new LeadArmorItem.Leggings());
+	public static final RegistryObject<Item> LEAD_ARMOR_BOOTS = REGISTRY.register("lead_armor_boots", () -> new LeadArmorItem.Boots());
+	public static final RegistryObject<Item> BOMAIND_SICKLE = REGISTRY.register("bomaind_sickle", () -> new BomaindSickleItem());
+	public static final RegistryObject<Item> ZINC_ARMOR_HELMET = REGISTRY.register("zinc_armor_helmet", () -> new ZincArmorItem.Helmet());
+	public static final RegistryObject<Item> ZINC_ARMOR_CHESTPLATE = REGISTRY.register("zinc_armor_chestplate", () -> new ZincArmorItem.Chestplate());
+	public static final RegistryObject<Item> ZINC_ARMOR_LEGGINGS = REGISTRY.register("zinc_armor_leggings", () -> new ZincArmorItem.Leggings());
+	public static final RegistryObject<Item> ZINC_ARMOR_BOOTS = REGISTRY.register("zinc_armor_boots", () -> new ZincArmorItem.Boots());
+	public static final RegistryObject<Item> AARDIUMPICKAXE = REGISTRY.register("aardiumpickaxe", () -> new AardiumpickaxeItem());
+	public static final RegistryObject<Item> BLEEDING_HEART_CHARM = REGISTRY.register("bleeding_heart_charm", () -> new BleedingHeartCharmItem());
+	public static final RegistryObject<Item> ZINC_DEEPSLATE_ORE = block(TnunlimitedModBlocks.ZINC_DEEPSLATE_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> GALVANIZED_HARPOON = REGISTRY.register("galvanized_harpoon", () -> new GalvanizedHarpoonItem());
+	public static final RegistryObject<Item> AARDIUMINGO_AXE = REGISTRY.register("aardiumingo_axe", () -> new AardiumingoAxeItem());
+	public static final RegistryObject<Item> AARDIUMINGO_SHOVEL = REGISTRY.register("aardiumingo_shovel", () -> new AardiumingoShovelItem());
+	public static final RegistryObject<Item> DARK_WARHAMMER = REGISTRY.register("dark_warhammer", () -> new DarkWarhammerItem());
+	public static final RegistryObject<Item> AARDIUMINGO_HOE = REGISTRY.register("aardiumingo_hoe", () -> new AardiumingoHoeItem());
+	public static final RegistryObject<Item> ROCK = REGISTRY.register("rock", () -> new RockItem());
+	public static final RegistryObject<Item> LEMONSTONE = block(TnunlimitedModBlocks.LEMONSTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> POLISHED_LEMONSTONE = block(TnunlimitedModBlocks.POLISHED_LEMONSTONE,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item HEATWAVE = register(new HeatwaveItem());
-	public static final Item CHAINMAIL_PICKAXE = register(new ChainmailPickaxeItem());
-	public static final Item GILDED_CHAINMAIL_PICKAXE = register(new GildedChainmailPickaxeItem());
-	public static final Item DUNE_SPIDER = register(
-			new SpawnEggItem(TnunlimitedModEntities.DUNE_SPIDER, -8773888, -3127296, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-					.setRegistryName("dune_spider_spawn_egg"));
-	public static final Item DESERT_CHITIN = register(new DesertChitinItem());
-	public static final Item DESERT_INGOT = register(new DesertIngotItem());
-	public static final Item PICKAXE_OF_LUMINESCENCE = register(new PickaxeOfLuminescenceItem());
-	public static final Item SERENITY = register(new SerenityItem());
-	public static final Item TORCH_OF_GUIDANCE = register(new TorchOfGuidanceItem());
-	public static final Item MIRACLE_RUNE = register(new MiracleRuneItem());
-	public static final Item COOKIE_BLOCK = register(TnunlimitedModBlocks.COOKIE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item ANTIMONY = register(new AntimonyItem());
-	public static final Item DESERT_ROACH_ARMOR_HELMET = register(new Desert_RoachArmorItem.Helmet());
-	public static final Item DESERT_ROACH_ARMOR_CHESTPLATE = register(new Desert_RoachArmorItem.Chestplate());
-	public static final Item DESERT_ROACH_ARMOR_LEGGINGS = register(new Desert_RoachArmorItem.Leggings());
-	public static final Item DESERT_ROACH_ARMOR_BOOTS = register(new Desert_RoachArmorItem.Boots());
-	public static final Item ANTIMONY_ARMOR_ARMOR_HELMET = register(new AntimonyArmorArmorItem.Helmet());
-	public static final Item ANTIMONY_ARMOR_ARMOR_CHESTPLATE = register(new AntimonyArmorArmorItem.Chestplate());
-	public static final Item ANTIMONY_ARMOR_ARMOR_LEGGINGS = register(new AntimonyArmorArmorItem.Leggings());
-	public static final Item ANTIMONY_ARMOR_ARMOR_BOOTS = register(new AntimonyArmorArmorItem.Boots());
-	public static final Item HAMBURGER = register(new HamburgerItem());
-	public static final Item GOLDEN_HAMBURGER = register(new GoldenHamburgerItem());
-	public static final Item WASTELANDISH_HOPPER = register(
-			new SpawnEggItem(TnunlimitedModEntities.WASTELANDISH_HOPPER, -14739442, -12504291, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-					.setRegistryName("wastelandish_hopper_spawn_egg"));
-	public static final Item PET_CACTUS = register(new PetCactusItem());
-	public static final Item GOLDEN_CROWN_HELMET = register(new GoldenCrownItem.Helmet());
-	public static final Item PINACATE_BEETLE = register(
-			new SpawnEggItem(TnunlimitedModEntities.PINACATE_BEETLE, -14870249, -3441, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-					.setRegistryName("pinacate_beetle_spawn_egg"));
-	public static final Item GOLDEN_CACTUS_PET = register(new GoldenCactusPetItem());
-	public static final Item ENCHANTED_GOLDEN_CACTUS_PET = register(new EnchantedGoldenCactusPetItem());
-	public static final Item REFORGEDAARDIUM = register(new ReforgedaardiumItem());
-	public static final Item FRENCHTOAST = register(new FrenchtoastItem());
-	public static final Item COOKED_EGG = register(new CookedEggItem());
-	public static final Item PIRATE_HELMET = register(new PirateItem.Helmet());
-	public static final Item PIRATE_CHESTPLATE = register(new PirateItem.Chestplate());
-	public static final Item BLUNDERBUSS = register(new BlunderbussItem());
-	public static final Item CAPTAINS_HAT_HELMET = register(new CaptainsHatItem.Helmet());
-	public static final Item PIRATE_CAPTAIN = register(
-			new SpawnEggItem(TnunlimitedModEntities.PIRATE_CAPTAIN, -15193325, -4512218, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-					.setRegistryName("pirate_captain_spawn_egg"));
-	public static final Item PIRATE_CREWMAN = register(
-			new SpawnEggItem(TnunlimitedModEntities.PIRATE_CREWMAN, -10482419, -13482450, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-					.setRegistryName("pirate_crewman_spawn_egg"));
-	public static final Item BUCKSHOT_PELLET_PROJECTILE = register(new BuckshotPelletProjectileItem());
-	public static final Item FLINTLOCK = register(new FlintlockItem());
-	public static final Item CUTLASS = register(new CutlassItem());
-	public static final Item PIRATE_DEADEYE = register(
-			new SpawnEggItem(TnunlimitedModEntities.PIRATE_DEADEYE, -10482419, -13482450, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
-					.setRegistryName("pirate_deadeye_spawn_egg"));
-	public static final Item BACON = register(new BaconItem());
-	public static final Item NUBRIUM_ARMOUR_HELMET = register(new NubriumArmourItem.Helmet());
-	public static final Item NUBRIUM_ARMOUR_CHESTPLATE = register(new NubriumArmourItem.Chestplate());
-	public static final Item NUBRIUM_ARMOUR_LEGGINGS = register(new NubriumArmourItem.Leggings());
-	public static final Item NUBRIUM_ARMOUR_BOOTS = register(new NubriumArmourItem.Boots());
-	public static final Item COOKEDBACON = register(new CookedbaconItem());
-	public static final Item NUBRIUM_SWORD = register(new NubriumSwordItem());
-	public static final Item NUBRIUM = register(new NubriumItem());
-	public static final Item NUBRIUM_PICKAXE = register(new NubriumPickaxeItem());
-	public static final Item NUBRIUM_SHOVEL = register(new NubriumShovelItem());
-	public static final Item NUBRIUM_AXE = register(new NubriumAxeItem());
-	public static final Item NUBRIUM_HOE = register(new NubriumHoeItem());
-	public static final Item ANTIMONY_STEN = register(new AntimonyStenItem());
-	public static final Item FANCY_PANTS_LEGGINGS = register(new FancyPantsItem.Leggings());
-	public static final Item FLEUR_BAND = register(new FleurBandItem());
-	public static final Item REPULSIVE_FLOWER_REPLICA = register(new RepulsiveFlowerReplicaItem());
-	public static final Item HONEYBEE_IDOL = register(new HoneybeeIdolItem());
-	public static final Item NUBRIUM_ORE = register(TnunlimitedModBlocks.NUBRIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final Item CARDIAL_CHARM = register(new CardialCharmItem());
-	public static final Item HEARTCORE = register(new HeartcoreItem());
-	public static final Item DECARDIAL_NECKLACE = register(new DecardialNecklaceItem());
-	public static final Item IRON_BAND = register(new IronBandItem());
-	public static final Item NUBRIUM_SICKLE = register(new NubriumSickleItem());
+	public static final RegistryObject<Item> CHISELED_LEMONSTONE = block(TnunlimitedModBlocks.CHISELED_LEMONSTONE,
+			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> LEMONSTONE_SLAB = block(TnunlimitedModBlocks.LEMONSTONE_SLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> LEMONSTONE_STAIRS = block(TnunlimitedModBlocks.LEMONSTONE_STAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> POLISHED_LEMONSTONE_SLAB = block(TnunlimitedModBlocks.POLISHED_LEMONSTONE_SLAB,
+			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> POLISHED_LEMONSTONE_STAIRS = block(TnunlimitedModBlocks.POLISHED_LEMONSTONE_STAIRS,
+			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> HEATWAVE = REGISTRY.register("heatwave", () -> new HeatwaveItem());
+	public static final RegistryObject<Item> CHAINMAIL_PICKAXE = REGISTRY.register("chainmail_pickaxe", () -> new ChainmailPickaxeItem());
+	public static final RegistryObject<Item> GILDED_CHAINMAIL_PICKAXE = REGISTRY.register("gilded_chainmail_pickaxe",
+			() -> new GildedChainmailPickaxeItem());
+	public static final RegistryObject<Item> DUNE_SPIDER = REGISTRY.register("dune_spider_spawn_egg",
+			() -> new ForgeSpawnEggItem(TnunlimitedModEntities.DUNE_SPIDER, -8773888, -3127296, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DESERT_CHITIN = REGISTRY.register("desert_chitin", () -> new DesertChitinItem());
+	public static final RegistryObject<Item> DESERT_INGOT = REGISTRY.register("desert_ingot", () -> new DesertIngotItem());
+	public static final RegistryObject<Item> PICKAXE_OF_LUMINESCENCE = REGISTRY.register("pickaxe_of_luminescence",
+			() -> new PickaxeOfLuminescenceItem());
+	public static final RegistryObject<Item> SERENITY = REGISTRY.register("serenity", () -> new SerenityItem());
+	public static final RegistryObject<Item> TORCH_OF_GUIDANCE = REGISTRY.register("torch_of_guidance", () -> new TorchOfGuidanceItem());
+	public static final RegistryObject<Item> MIRACLE_RUNE = REGISTRY.register("miracle_rune", () -> new MiracleRuneItem());
+	public static final RegistryObject<Item> COOKIE_BLOCK = block(TnunlimitedModBlocks.COOKIE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ANTIMONY = REGISTRY.register("antimony", () -> new AntimonyItem());
+	public static final RegistryObject<Item> DESERT_ROACH_ARMOR_HELMET = REGISTRY.register("desert_roach_armor_helmet",
+			() -> new Desert_RoachArmorItem.Helmet());
+	public static final RegistryObject<Item> DESERT_ROACH_ARMOR_CHESTPLATE = REGISTRY.register("desert_roach_armor_chestplate",
+			() -> new Desert_RoachArmorItem.Chestplate());
+	public static final RegistryObject<Item> DESERT_ROACH_ARMOR_LEGGINGS = REGISTRY.register("desert_roach_armor_leggings",
+			() -> new Desert_RoachArmorItem.Leggings());
+	public static final RegistryObject<Item> DESERT_ROACH_ARMOR_BOOTS = REGISTRY.register("desert_roach_armor_boots",
+			() -> new Desert_RoachArmorItem.Boots());
+	public static final RegistryObject<Item> ANTIMONY_ARMOR_ARMOR_HELMET = REGISTRY.register("antimony_armor_armor_helmet",
+			() -> new AntimonyArmorArmorItem.Helmet());
+	public static final RegistryObject<Item> ANTIMONY_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("antimony_armor_armor_chestplate",
+			() -> new AntimonyArmorArmorItem.Chestplate());
+	public static final RegistryObject<Item> ANTIMONY_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("antimony_armor_armor_leggings",
+			() -> new AntimonyArmorArmorItem.Leggings());
+	public static final RegistryObject<Item> ANTIMONY_ARMOR_ARMOR_BOOTS = REGISTRY.register("antimony_armor_armor_boots",
+			() -> new AntimonyArmorArmorItem.Boots());
+	public static final RegistryObject<Item> WASTELANDISH_HOPPER = REGISTRY.register("wastelandish_hopper_spawn_egg",
+			() -> new ForgeSpawnEggItem(TnunlimitedModEntities.WASTELANDISH_HOPPER, -14739442, -12504291,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> PET_CACTUS = REGISTRY.register("pet_cactus", () -> new PetCactusItem());
+	public static final RegistryObject<Item> GOLDEN_CROWN_HELMET = REGISTRY.register("golden_crown_helmet", () -> new GoldenCrownItem.Helmet());
+	public static final RegistryObject<Item> PINACATE_BEETLE = REGISTRY.register("pinacate_beetle_spawn_egg",
+			() -> new ForgeSpawnEggItem(TnunlimitedModEntities.PINACATE_BEETLE, -14870249, -3441,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> GOLDEN_CACTUS_PET = REGISTRY.register("golden_cactus_pet", () -> new GoldenCactusPetItem());
+	public static final RegistryObject<Item> ENCHANTED_GOLDEN_CACTUS_PET = REGISTRY.register("enchanted_golden_cactus_pet",
+			() -> new EnchantedGoldenCactusPetItem());
+	public static final RegistryObject<Item> REFORGEDAARDIUM = REGISTRY.register("reforgedaardium", () -> new ReforgedaardiumItem());
+	public static final RegistryObject<Item> PIRATE_HELMET = REGISTRY.register("pirate_helmet", () -> new PirateItem.Helmet());
+	public static final RegistryObject<Item> PIRATE_CHESTPLATE = REGISTRY.register("pirate_chestplate", () -> new PirateItem.Chestplate());
+	public static final RegistryObject<Item> BLUNDERBUSS = REGISTRY.register("blunderbuss", () -> new BlunderbussItem());
+	public static final RegistryObject<Item> CAPTAINS_HAT_HELMET = REGISTRY.register("captains_hat_helmet", () -> new CaptainsHatItem.Helmet());
+	public static final RegistryObject<Item> PIRATE_CAPTAIN = REGISTRY.register("pirate_captain_spawn_egg",
+			() -> new ForgeSpawnEggItem(TnunlimitedModEntities.PIRATE_CAPTAIN, -15193325, -4512218,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> PIRATE_CREWMAN = REGISTRY.register("pirate_crewman_spawn_egg",
+			() -> new ForgeSpawnEggItem(TnunlimitedModEntities.PIRATE_CREWMAN, -10482419, -13482450,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BUCKSHOT_PELLET_PROJECTILE = REGISTRY.register("buckshot_pellet_projectile",
+			() -> new BuckshotPelletProjectileItem());
+	public static final RegistryObject<Item> FLINTLOCK = REGISTRY.register("flintlock", () -> new FlintlockItem());
+	public static final RegistryObject<Item> CUTLASS = REGISTRY.register("cutlass", () -> new CutlassItem());
+	public static final RegistryObject<Item> PIRATE_DEADEYE = REGISTRY.register("pirate_deadeye_spawn_egg",
+			() -> new ForgeSpawnEggItem(TnunlimitedModEntities.PIRATE_DEADEYE, -10482419, -13482450,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NUBRIUM_ARMOUR_HELMET = REGISTRY.register("nubrium_armour_helmet", () -> new NubriumArmourItem.Helmet());
+	public static final RegistryObject<Item> NUBRIUM_ARMOUR_CHESTPLATE = REGISTRY.register("nubrium_armour_chestplate",
+			() -> new NubriumArmourItem.Chestplate());
+	public static final RegistryObject<Item> NUBRIUM_ARMOUR_LEGGINGS = REGISTRY.register("nubrium_armour_leggings",
+			() -> new NubriumArmourItem.Leggings());
+	public static final RegistryObject<Item> NUBRIUM_ARMOUR_BOOTS = REGISTRY.register("nubrium_armour_boots", () -> new NubriumArmourItem.Boots());
+	public static final RegistryObject<Item> NUBRIUM_SWORD = REGISTRY.register("nubrium_sword", () -> new NubriumSwordItem());
+	public static final RegistryObject<Item> NUBRIUM = REGISTRY.register("nubrium", () -> new NubriumItem());
+	public static final RegistryObject<Item> NUBRIUM_PICKAXE = REGISTRY.register("nubrium_pickaxe", () -> new NubriumPickaxeItem());
+	public static final RegistryObject<Item> NUBRIUM_SHOVEL = REGISTRY.register("nubrium_shovel", () -> new NubriumShovelItem());
+	public static final RegistryObject<Item> NUBRIUM_AXE = REGISTRY.register("nubrium_axe", () -> new NubriumAxeItem());
+	public static final RegistryObject<Item> NUBRIUM_HOE = REGISTRY.register("nubrium_hoe", () -> new NubriumHoeItem());
+	public static final RegistryObject<Item> ANTIMONY_STEN = REGISTRY.register("antimony_sten", () -> new AntimonyStenItem());
+	public static final RegistryObject<Item> FANCY_PANTS_LEGGINGS = REGISTRY.register("fancy_pants_leggings", () -> new FancyPantsItem.Leggings());
+	public static final RegistryObject<Item> FLEUR_BAND = REGISTRY.register("fleur_band", () -> new FleurBandItem());
+	public static final RegistryObject<Item> REPULSIVE_FLOWER_REPLICA = REGISTRY.register("repulsive_flower_replica",
+			() -> new RepulsiveFlowerReplicaItem());
+	public static final RegistryObject<Item> HONEYBEE_IDOL = REGISTRY.register("honeybee_idol", () -> new HoneybeeIdolItem());
+	public static final RegistryObject<Item> NUBRIUM_ORE = block(TnunlimitedModBlocks.NUBRIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> CARDIAL_CHARM = REGISTRY.register("cardial_charm", () -> new CardialCharmItem());
+	public static final RegistryObject<Item> HEARTCORE = REGISTRY.register("heartcore", () -> new HeartcoreItem());
+	public static final RegistryObject<Item> DECARDIAL_NECKLACE = REGISTRY.register("decardial_necklace", () -> new DecardialNecklaceItem());
+	public static final RegistryObject<Item> IRON_BAND = REGISTRY.register("iron_band", () -> new IronBandItem());
+	public static final RegistryObject<Item> NUBRIUM_SICKLE = REGISTRY.register("nubrium_sickle", () -> new NubriumSickleItem());
+	public static final RegistryObject<Item> JAR_OF_INFINITE_JELLYBEANS = REGISTRY.register("jar_of_infinite_jellybeans",
+			() -> new JarOfInfiniteJellybeansItem());
+	public static final RegistryObject<Item> HOTCHOCOLATE = REGISTRY.register("hotchocolate", () -> new HotchocolateItem());
+	public static final RegistryObject<Item> COFFEE = REGISTRY.register("coffee", () -> new CoffeeItem());
+	public static final RegistryObject<Item> COFFEE_FRUIT = REGISTRY.register("coffee_fruit", () -> new CoffeeFruitItem());
+	public static final RegistryObject<Item> MOCHA = REGISTRY.register("mocha", () -> new MochaItem());
+	public static final RegistryObject<Item> PEPPERONI_FOOD = REGISTRY.register("pepperoni_food", () -> new PepperoniFoodItem());
+	public static final RegistryObject<Item> HAMBURGER = REGISTRY.register("hamburger", () -> new HamburgerItem());
+	public static final RegistryObject<Item> GOLDEN_HAMBURGER = REGISTRY.register("golden_hamburger", () -> new GoldenHamburgerItem());
+	public static final RegistryObject<Item> FRENCHTOAST = REGISTRY.register("frenchtoast", () -> new FrenchtoastItem());
+	public static final RegistryObject<Item> COOKED_EGG = REGISTRY.register("cooked_egg", () -> new CookedEggItem());
+	public static final RegistryObject<Item> COOKEDBACON = REGISTRY.register("cookedbacon", () -> new CookedbaconItem());
+	public static final RegistryObject<Item> BACON = REGISTRY.register("bacon", () -> new BaconItem());
+	public static final RegistryObject<Item> APPLE_LEAVES = block(TnunlimitedModBlocks.APPLE_LEAVES, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-	private static Item register(Item item) {
-		REGISTRY.add(item);
-		return item;
-	}
-
-	private static Item register(Block block, CreativeModeTab tab) {
-		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
-	}
-
-	@SubscribeEvent
-	public static void registerItems(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Item[0]));
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
 	}
 }

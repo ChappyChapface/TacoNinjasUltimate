@@ -45,17 +45,11 @@ public class HeatwaveItem extends AxeItem {
 				return Ingredient.of(new ItemStack(Items.BLAZE_POWDER));
 			}
 		}, 1, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-		setRegistryName("heatwave");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
 		HeatwaveSetFireProcedure.execute(entity);
 		return retval;
 	}
@@ -63,6 +57,6 @@ public class HeatwaveItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aAbility: \u00A77Engulfs enemies in flames"));
+		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Engulfs enemies in flames"));
 	}
 }

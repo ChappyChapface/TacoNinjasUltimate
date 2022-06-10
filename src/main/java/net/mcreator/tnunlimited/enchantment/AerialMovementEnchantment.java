@@ -20,7 +20,7 @@ public class AerialMovementEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		if (stack.getItem() == TnunlimitedModItems.BUCKLER)
+		if (stack.getItem() == TnunlimitedModItems.BUCKLER.get())
 			return true;
 		return false;
 	}

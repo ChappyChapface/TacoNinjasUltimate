@@ -29,8 +29,8 @@ import javax.annotation.Nullable;
 public class FamiliarDamageModifierProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		Entity entity = event.getEntityLiving();
-		execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		execute(event, event.getEntityLiving().level, event.getEntityLiving().getX(), event.getEntityLiving().getY(), event.getEntityLiving().getZ(),
+				event.getEntityLiving());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -49,9 +49,9 @@ public class FamiliarDamageModifierProcedure {
 							capability.syncPlayerVariables((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null));
 						});
 			}
-			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)instanceof LivingEntity _entGetArmor
+			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof LivingEntity _entGetArmor
 					? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD)
-					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_HELMET) {
+					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_HELMET.get()) {
 				{
 					double _setval = ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)
 							.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -63,9 +63,9 @@ public class FamiliarDamageModifierProcedure {
 							});
 				}
 			}
-			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)instanceof LivingEntity _entGetArmor
+			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof LivingEntity _entGetArmor
 					? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST)
-					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_CHESTPLATE) {
+					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_CHESTPLATE.get()) {
 				{
 					double _setval = ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)
 							.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -77,9 +77,9 @@ public class FamiliarDamageModifierProcedure {
 							});
 				}
 			}
-			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)instanceof LivingEntity _entGetArmor
+			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof LivingEntity _entGetArmor
 					? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS)
-					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_LEGGINGS) {
+					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_LEGGINGS.get()) {
 				{
 					double _setval = ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)
 							.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -91,9 +91,9 @@ public class FamiliarDamageModifierProcedure {
 							});
 				}
 			}
-			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)instanceof LivingEntity _entGetArmor
+			if (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof LivingEntity _entGetArmor
 					? _entGetArmor.getItemBySlot(EquipmentSlot.FEET)
-					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_BOOTS) {
+					: ItemStack.EMPTY).getItem() == TnunlimitedModItems.DESERT_ROACH_ARMOR_BOOTS.get()) {
 				{
 					double _setval = ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)
 							.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -107,13 +107,13 @@ public class FamiliarDamageModifierProcedure {
 			}
 			if ((((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)
 					.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.HONEYBEE_IDOL
+					.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00).getItem() == TnunlimitedModItems.HONEYBEE_IDOL.get()
 					|| (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)
 							.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.HONEYBEE_IDOL
+							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01).getItem() == TnunlimitedModItems.HONEYBEE_IDOL.get()
 					|| (((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null)
 							.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.HONEYBEE_IDOL) {
+							.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02).getItem() == TnunlimitedModItems.HONEYBEE_IDOL.get()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 20, 0, (false), (false)));
 			}

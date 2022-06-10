@@ -49,7 +49,7 @@ public abstract class PepperoniArmourItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.PEPPERONI_INGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.PEPPERONI_INGOT.get()));
 			}
 
 			@Override
@@ -72,13 +72,12 @@ public abstract class PepperoniArmourItem extends ArmorItem {
 	public static class Helmet extends PepperoniArmourItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-			setRegistryName("pepperoni_armour_helmet");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aAbility: \u00A77Infinite Saturation"));
+			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Infinite Saturation"));
 		}
 
 		@Override

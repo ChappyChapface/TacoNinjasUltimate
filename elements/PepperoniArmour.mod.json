@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -22,7 +22,7 @@
     "leggingsName": "Pepperoni Armour Leggings",
     "bootsName": "Pepperoni Armour Boots",
     "helmetSpecialInfo": [
-      "§aAbility: §7Infinite Saturation"
+      "ï¿½aAbility: ï¿½7Infinite Saturation"
     ],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

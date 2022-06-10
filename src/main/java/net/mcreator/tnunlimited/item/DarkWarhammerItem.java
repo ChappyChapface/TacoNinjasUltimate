@@ -44,17 +44,11 @@ public class DarkWarhammerItem extends PickaxeItem {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-		setRegistryName("dark_warhammer");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
 		DarkWarhammerRecoilProcedure.execute(sourceentity);
 		return retval;
 	}
@@ -62,6 +56,6 @@ public class DarkWarhammerItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7cDebuff: \u00A77Has 4 Recoil Damage"));
+		list.add(new TextComponent("\uFFFDcDebuff: \uFFFD7Has 4 Recoil Damage"));
 	}
 }

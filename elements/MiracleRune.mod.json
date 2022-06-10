@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -25,14 +25,20 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§aWhen Equipped:",
-      "§7Grants Resistance II while sneaking",
-      "§7Also gives Slowness II and Weakness while sneaking"
+      "ï¿½aWhen Equipped:",
+      "ï¿½7Grants Resistance II while sneaking",
+      "ï¿½7Also gives Slowness II and Weakness while sneaking"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "hasDispenseBehavior": false
+    "hasDispenseBehavior": false,
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
   }
 }

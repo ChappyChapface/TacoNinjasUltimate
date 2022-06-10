@@ -58,7 +58,7 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.DESERT_INGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.DESERT_INGOT.get()));
 			}
 
 			@Override
@@ -81,7 +81,6 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 	public static class Helmet extends Desert_RoachArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("desert_roach_armor_helmet");
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -108,9 +107,9 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
 		}
 
 		@Override
@@ -122,7 +121,6 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 	public static class Chestplate extends Desert_RoachArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("desert_roach_armor_chestplate");
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -155,9 +153,9 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
 		}
 
 		@Override
@@ -169,15 +167,14 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 	public static class Leggings extends Desert_RoachArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("desert_roach_armor_leggings");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
 		}
 
 		@Override
@@ -189,15 +186,14 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 	public static class Boots extends Desert_RoachArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("desert_roach_armor_boots");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
-			list.add(new TextComponent("\u00A7aSet Bonus:"));
-			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
+			list.add(new TextComponent("\uFFFDaSet Bonus:"));
+			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
 		}
 
 		@Override

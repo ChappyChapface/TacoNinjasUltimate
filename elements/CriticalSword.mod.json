@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Critical Sword",
     "specialInfo": [
-      "§aAbility: §710% chance to deal extra damage"
+      "ï¿½aAbility: ï¿½710% chance to deal extra damage"
     ],
     "creativeTab": {
       "value": "COMBAT"

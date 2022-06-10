@@ -15,10 +15,13 @@ import net.mcreator.tnunlimited.world.inventory.AccessoriesMenu;
 import net.mcreator.tnunlimited.network.AccessoriesButtonMessage;
 import net.mcreator.tnunlimited.TnunlimitedMod;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class AccessoriesScreen extends AbstractContainerScreen<AccessoriesMenu> {
+	private final static HashMap<String, Object> guistate = AccessoriesMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;

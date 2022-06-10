@@ -21,7 +21,7 @@ public class CrafthcBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isInput(ItemStack input) {
-		return input.getItem() == TnunlimitedModItems.MUG;
+		return input.getItem() == TnunlimitedModItems.MUG.get();
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class CrafthcBrewingRecipe implements IBrewingRecipe {
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(TnunlimitedModItems.HOTCHOCOLATE);
+			return new ItemStack(TnunlimitedModItems.HOTCHOCOLATE.get());
 		}
 		return ItemStack.EMPTY;
 	}

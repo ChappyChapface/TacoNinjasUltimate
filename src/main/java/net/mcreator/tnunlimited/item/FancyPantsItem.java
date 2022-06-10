@@ -68,14 +68,13 @@ public abstract class FancyPantsItem extends ArmorItem {
 	public static class Leggings extends FancyPantsItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("fancy_pants_leggings");
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\u00A7aAbility:"));
-			list.add(new TextComponent("\u00A77Can be used for any armor set bonus"));
+			list.add(new TextComponent("\uFFFDaAbility:"));
+			list.add(new TextComponent("\uFFFD7Can be used for any armor set bonus"));
 		}
 
 		@Override

@@ -9,7 +9,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
-import net.minecraft.world.entity.Entity;
 
 import net.mcreator.tnunlimited.network.TnunlimitedModVariables;
 
@@ -20,8 +19,7 @@ public class DragonKillDetectProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ());
+			execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
 		}
 	}
 

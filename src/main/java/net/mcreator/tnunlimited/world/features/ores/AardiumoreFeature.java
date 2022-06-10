@@ -1,34 +1,62 @@
 
 package net.mcreator.tnunlimited.world.features.ores;
 
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
-import net.minecraft.world.level.levelgen.heightproviders.UniformHeight;
-import net.minecraft.world.level.levelgen.feature.configurations.RangeDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
+import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.OreFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
 
 import net.mcreator.tnunlimited.init.TnunlimitedModBlocks;
 
 import java.util.Set;
 import java.util.Random;
+import java.util.List;
 
 public class AardiumoreFeature extends OreFeature {
-	public static final AardiumoreFeature FEATURE = (AardiumoreFeature) new AardiumoreFeature().setRegistryName("tnunlimited:aardiumore");
-	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
-			.configured(new OreConfiguration(AardiumoreFeatureRuleTest.INSTANCE, TnunlimitedModBlocks.AARDIUMORE.defaultBlockState(), 8))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(10), VerticalAnchor.absolute(56)))).squared().count(4);
+	public static AardiumoreFeature FEATURE = null;
+	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
+	public static Holder<PlacedFeature> PLACED_FEATURE = null;
+
+	public static Feature<?> feature() {
+		FEATURE = new AardiumoreFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("tnunlimited:aardiumore", FEATURE,
+				new OreConfiguration(AardiumoreFeatureRuleTest.INSTANCE, TnunlimitedModBlocks.AARDIUMORE.get().defaultBlockState(), 8));
+		PLACED_FEATURE = PlacementUtils.register("tnunlimited:aardiumore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(56)), BiomeFilter.biome()));
+		return FEATURE;
+	}
+
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public AardiumoreFeature() {
 		super(OreConfiguration.CODEC);
@@ -36,26 +64,29 @@ public class AardiumoreFeature extends OreFeature {
 
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
-		ResourceKey<Level> dimensionType = world.getLevel().dimension();
-		boolean dimensionCriteria = false;
-		if (dimensionType == Level.OVERWORLD)
-			dimensionCriteria = true;
-		if (!dimensionCriteria)
+		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
 		return super.place(context);
 	}
 
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class AardiumoreFeatureRuleTest extends RuleTest {
 		static final AardiumoreFeatureRuleTest INSTANCE = new AardiumoreFeatureRuleTest();
-		static final com.mojang.serialization.Codec<AardiumoreFeatureRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		static final RuleTestType<AardiumoreFeatureRuleTest> CUSTOM_MATCH = Registry.register(Registry.RULE_TEST,
-				new ResourceLocation("tnunlimited:aardiumore_match"), () -> codec);
+		private static final com.mojang.serialization.Codec<AardiumoreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+		private static final RuleTestType<AardiumoreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
+
+		@SubscribeEvent
+		public static void init(FMLCommonSetupEvent event) {
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("tnunlimited:aardiumore_match"), CUSTOM_MATCH);
+		}
+
+		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
-			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.STONE)
-				blockCriteria = true;
-			return blockCriteria;
+			if (base_blocks == null) {
+				base_blocks = List.of(Blocks.STONE);
+			}
+			return base_blocks.contains(blockAt.getBlock());
 		}
 
 		protected RuleTestType<?> getType() {

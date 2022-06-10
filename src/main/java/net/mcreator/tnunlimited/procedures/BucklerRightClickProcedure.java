@@ -1,5 +1,6 @@
 package net.mcreator.tnunlimited.procedures;
 
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
@@ -20,10 +21,11 @@ public class BucklerRightClickProcedure {
 		double d = 0;
 		double n = 0;
 		if (entity.isOnGround()) {
-			n = (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LUNGING, itemstack) + 3) * 0.33;
-			d = n * Math.sin((90 - entity.getXRot()) * 3.14159265 / 180);
-			entity.setDeltaMovement((d * Math.sin((90 - (entity.getYRot() + 90)) * 3.14159265 / 180)),
-					((n * Math.sin((entity.getXRot() + 180) * 3.14159265 / 180)) / 2), (d * Math.sin((entity.getYRot() + 90) * 3.14159265 / 180)));
+			n = (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LUNGING.get(), itemstack) + 3) * 0.33;
+			d = n * Math.sin((90 - entity.getXRot()) * (3.14159265 / 180));
+			entity.setDeltaMovement(new Vec3((d * Math.sin((90 - (entity.getYRot() + 90)) * (3.14159265 / 180))),
+					((n * Math.sin((entity.getXRot() + 180) * (3.14159265 / 180))) / 2),
+					(d * Math.sin((entity.getYRot() + 90) * (3.14159265 / 180)))));
 			entity.fallDistance = 0;
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
@@ -47,12 +49,13 @@ public class BucklerRightClickProcedure {
 				}
 			}
 		} else if (!(entity instanceof LivingEntity _livEnt ? _livEnt.isFallFlying() : false)
-				&& EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.AERIAL_MOVEMENT, itemstack) > 0) {
-			n = (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LUNGING, itemstack) + 3) * 0.066
-					* EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.AERIAL_MOVEMENT, itemstack);
-			d = n * Math.sin((90 - entity.getXRot()) * 3.14159265 / 180);
-			entity.setDeltaMovement((d * Math.sin((90 - (entity.getYRot() + 90)) * 3.14159265 / 180)),
-					((n * Math.sin((entity.getXRot() + 180) * 3.14159265 / 180)) / 2), (d * Math.sin((entity.getYRot() + 90) * 3.14159265 / 180)));
+				&& EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.AERIAL_MOVEMENT.get(), itemstack) > 0) {
+			n = (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LUNGING.get(), itemstack) + 3) * 0.066
+					* EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.AERIAL_MOVEMENT.get(), itemstack);
+			d = n * Math.sin((90 - entity.getXRot()) * (3.14159265 / 180));
+			entity.setDeltaMovement(new Vec3((d * Math.sin((90 - (entity.getYRot() + 90)) * (3.14159265 / 180))),
+					((n * Math.sin((entity.getXRot() + 180) * (3.14159265 / 180))) / 2),
+					(d * Math.sin((entity.getYRot() + 90) * (3.14159265 / 180)))));
 			entity.fallDistance = 0;
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 25);

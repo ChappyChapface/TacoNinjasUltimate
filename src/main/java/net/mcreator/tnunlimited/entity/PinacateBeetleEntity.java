@@ -2,8 +2,8 @@
 package net.mcreator.tnunlimited.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -26,7 +26,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -40,16 +40,17 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class PinacateBeetleEntity extends PathfinderMob {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("desert_hills"), new ResourceLocation("desert"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("desert"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.AMBIENT).add(new MobSpawnSettings.SpawnerData(TnunlimitedModEntities.PINACATE_BEETLE, 15, 1, 4));
+			event.getSpawns().getSpawner(MobCategory.AMBIENT)
+					.add(new MobSpawnSettings.SpawnerData(TnunlimitedModEntities.PINACATE_BEETLE.get(), 15, 1, 4));
 	}
 
-	public PinacateBeetleEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(TnunlimitedModEntities.PINACATE_BEETLE, world);
+	public PinacateBeetleEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(TnunlimitedModEntities.PINACATE_BEETLE.get(), world);
 	}
 
 	public PinacateBeetleEntity(EntityType<PinacateBeetleEntity> type, Level world) {
@@ -90,15 +91,8 @@ public class PinacateBeetleEntity extends PathfinderMob {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		Entity sourceentity = source.getEntity();
-
-		PinacateBeetleStenchProcedure.execute(world, x, y, z);
-		if (source.getDirectEntity() instanceof ThrownPotion)
+		PinacateBeetleStenchProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
 		if (source == DamageSource.CACTUS)
 			return false;
@@ -110,7 +104,7 @@ public class PinacateBeetleEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(TnunlimitedModEntities.PINACATE_BEETLE, SpawnPlacements.Type.NO_RESTRICTIONS,
+		SpawnPlacements.register(TnunlimitedModEntities.PINACATE_BEETLE.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
 				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 					int x = pos.getX();
 					int y = pos.getY();

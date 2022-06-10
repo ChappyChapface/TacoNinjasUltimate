@@ -63,7 +63,6 @@ public abstract class PirateItem extends ArmorItem {
 	public static class Helmet extends PirateItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("pirate_helmet");
 		}
 
 		@Override
@@ -75,7 +74,6 @@ public abstract class PirateItem extends ArmorItem {
 	public static class Chestplate extends PirateItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-			setRegistryName("pirate_chestplate");
 		}
 
 		@Override

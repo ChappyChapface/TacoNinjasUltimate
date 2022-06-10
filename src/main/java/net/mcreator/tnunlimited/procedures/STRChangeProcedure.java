@@ -29,8 +29,7 @@ public class STRChangeProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
@@ -49,15 +48,15 @@ public class STRChangeProcedure {
 			});
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_HELMET
+				.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_HELMET.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_CHESTPLATE
+						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_CHESTPLATE.get()
 				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_LEGGINGS
+						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_LEGGINGS.get()
 						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS)
+								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS.get())
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_BOOTS) {
+						.getItem() == TnunlimitedModItems.NUBRIUM_ARMOUR_BOOTS.get()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).OmniStrengthIncrease + 0.1;
@@ -67,13 +66,13 @@ public class STRChangeProcedure {
 				});
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING,
+		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING.get(),
 				((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00)) != 0) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).OmniStrengthIncrease
-						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING,
+						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING.get(),
 								((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc00))
 								* 0.01;
@@ -83,13 +82,13 @@ public class STRChangeProcedure {
 				});
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING,
+		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING.get(),
 				((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01)) != 0) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).OmniStrengthIncrease
-						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING,
+						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING.get(),
 								((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc01))
 								* 0.01;
@@ -99,13 +98,13 @@ public class STRChangeProcedure {
 				});
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING,
+		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING.get(),
 				((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02)) != 0) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).OmniStrengthIncrease
-						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING,
+						+ EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.BUFFING.get(),
 								((entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new TnunlimitedModVariables.PlayerVariables())).Acc02))
 								* 0.01;

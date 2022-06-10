@@ -1,6 +1,8 @@
 
 package net.mcreator.tnunlimited.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,7 +20,6 @@ import java.util.Collections;
 public class GlowingiceBlock extends Block {
 	public GlowingiceBlock() {
 		super(BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 12));
-		setRegistryName("glowingice");
 	}
 
 	@Override

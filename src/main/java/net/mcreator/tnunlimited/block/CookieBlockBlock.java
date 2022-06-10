@@ -18,7 +18,6 @@ import java.util.Collections;
 public class CookieBlockBlock extends Block {
 	public CookieBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.1f, 0f));
-		setRegistryName("cookie_block");
 	}
 
 	@Override
@@ -31,6 +30,6 @@ public class CookieBlockBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Items.COOKIE, (int) (9)));
+		return Collections.singletonList(new ItemStack(Items.COOKIE, 9));
 	}
 }

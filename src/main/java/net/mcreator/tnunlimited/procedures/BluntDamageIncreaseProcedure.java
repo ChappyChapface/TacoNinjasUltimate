@@ -29,8 +29,7 @@ public class BluntDamageIncreaseProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
@@ -48,18 +47,17 @@ public class BluntDamageIncreaseProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (TnunlimitedModItems.LEAD_ARMOR_HELMET == (entity instanceof LivingEntity _entGetArmor
-				? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD)
-				: ItemStack.EMPTY).getItem()
-				&& TnunlimitedModItems.LEAD_ARMOR_CHESTPLATE == (entity instanceof LivingEntity _entGetArmor
-						? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST)
-						: ItemStack.EMPTY).getItem()
-				&& TnunlimitedModItems.LEAD_ARMOR_LEGGINGS == (entity instanceof LivingEntity _entGetArmor
-						? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS)
-						: ItemStack.EMPTY).getItem()
-				&& TnunlimitedModItems.LEAD_ARMOR_BOOTS == (entity instanceof LivingEntity _entGetArmor
-						? _entGetArmor.getItemBySlot(EquipmentSlot.FEET)
-						: ItemStack.EMPTY).getItem()) {
+		if (TnunlimitedModItems.LEAD_ARMOR_HELMET
+				.get() == (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem()
+				&& TnunlimitedModItems.LEAD_ARMOR_CHESTPLATE
+						.get() == (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
+								.getItem()
+				&& TnunlimitedModItems.LEAD_ARMOR_LEGGINGS
+						.get() == (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
+								.getItem()
+				&& TnunlimitedModItems.LEAD_ARMOR_BOOTS
+						.get() == (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
+								.getItem()) {
 			{
 				double _setval = (entity.getCapability(TnunlimitedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new TnunlimitedModVariables.PlayerVariables())).bluntStrengthIncrease + 0.15;
@@ -83,8 +81,8 @@ public class BluntDamageIncreaseProcedure {
 							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 									_level.getServer(), null).withSuppressedOutput(),
 							"attribute @p minecraft:generic.attack_damage modifier remove 1-2-3-4-5");
-		if (ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:blunt_weapon"))
-				.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem())) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.is(ItemTags.create(new ResourceLocation("forge:blunt_weapon")))) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),

@@ -29,8 +29,7 @@ public class SwimSPDChangeProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			Entity entity = event.player;
-			execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
 		}
 	}
 
@@ -49,15 +48,15 @@ public class SwimSPDChangeProcedure {
 			});
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == TnunlimitedModItems.ZINC_ARMOR_HELMET
+				.getItem() == TnunlimitedModItems.ZINC_ARMOR_HELMET.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.ZINC_ARMOR_CHESTPLATE
+						.getItem() == TnunlimitedModItems.ZINC_ARMOR_CHESTPLATE.get()
 				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.ZINC_ARMOR_LEGGINGS
+						.getItem() == TnunlimitedModItems.ZINC_ARMOR_LEGGINGS.get()
 						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS)
+								.getItem() == TnunlimitedModItems.FANCY_PANTS_LEGGINGS.get())
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-						.getItem() == TnunlimitedModItems.ZINC_ARMOR_BOOTS) {
+						.getItem() == TnunlimitedModItems.ZINC_ARMOR_BOOTS.get()) {
 			if (entity.isInWaterRainOrBubble()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 2, 0, (false), (false)));

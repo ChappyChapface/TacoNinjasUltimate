@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -19,20 +19,20 @@
     "leggingsName": "Bomeen Leggings",
     "bootsName": "Bomeen Boots",
     "helmetSpecialInfo": [
-      "§aSet Bonus:",
-      "§7Grants Haste but lowers Movement Speed"
+      "ï¿½aSet Bonus:",
+      "ï¿½7Grants Haste but lowers Movement Speed"
     ],
     "bodySpecialInfo": [
-      "§aSet Bonus:",
-      "§7Grants Haste but lowers Movement Speed"
+      "ï¿½aSet Bonus:",
+      "ï¿½7Grants Haste but lowers Movement Speed"
     ],
     "leggingsSpecialInfo": [
-      "§aSet Bonus:",
-      "§7Grants Haste but lowers Movement Speed"
+      "ï¿½aSet Bonus:",
+      "ï¿½7Grants Haste but lowers Movement Speed"
     ],
     "bootsSpecialInfo": [
-      "§aSet Bonus:",
-      "§7Grants Haste but lowers Movement Speed"
+      "ï¿½aSet Bonus:",
+      "ï¿½7Grants Haste but lowers Movement Speed"
     ],
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",

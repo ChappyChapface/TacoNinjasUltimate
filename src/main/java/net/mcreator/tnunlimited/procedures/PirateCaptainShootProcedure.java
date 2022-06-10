@@ -27,8 +27,8 @@ import javax.annotation.Nullable;
 public class PirateCaptainShootProcedure {
 	@SubscribeEvent
 	public static void onEntitySetsAttackTarget(LivingSetAttackTargetEvent event) {
-		LivingEntity sourceentity = event.getEntityLiving();
-		execute(event, sourceentity.level, sourceentity.getX(), sourceentity.getY(), sourceentity.getZ(), sourceentity);
+		execute(event, event.getEntityLiving().level, event.getEntityLiving().getX(), event.getEntityLiving().getY(), event.getEntityLiving().getZ(),
+				event.getEntityLiving());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity) {
@@ -47,7 +47,7 @@ public class PirateCaptainShootProcedure {
 			if (sourceentity.getPersistentData().getDouble("timer") == 60) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						_level.playSound(null, new BlockPos(x, y, z),
 								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("tnunlimited:blunderbuss_reload")), SoundSource.PLAYERS, 1,
 								1);
 					} else {
@@ -66,7 +66,7 @@ public class PirateCaptainShootProcedure {
 				yrot = sourceentity.getYRot();
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						_level.playSound(null, new BlockPos(x, y, z),
 								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("tnunlimited:blunderbuss_shoot")), SoundSource.PLAYERS, 1,
 								1);
 					} else {

@@ -19,7 +19,6 @@ import java.util.Collections;
 public class BlockofrawleadBlock extends Block {
 	public BlockofrawleadBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
-		setRegistryName("blockofrawlead");
 	}
 
 	@Override
@@ -29,7 +28,7 @@ public class BlockofrawleadBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 3;
 		return false;
 	}

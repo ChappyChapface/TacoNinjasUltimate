@@ -15,11 +15,11 @@ public class KickbackEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
-		if (stack.getItem() == TnunlimitedModItems.REVOLVER)
+		if (stack.getItem() == TnunlimitedModItems.REVOLVER.get())
 			return true;
-		if (stack.getItem() == TnunlimitedModItems.BLUNDERBUSS)
+		if (stack.getItem() == TnunlimitedModItems.BLUNDERBUSS.get())
 			return true;
-		if (stack.getItem() == TnunlimitedModItems.FLINTLOCK)
+		if (stack.getItem() == TnunlimitedModItems.FLINTLOCK.get())
 			return true;
 		return false;
 	}

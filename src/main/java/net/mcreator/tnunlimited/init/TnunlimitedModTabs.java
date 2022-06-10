@@ -17,7 +17,7 @@ public class TnunlimitedModTabs {
 		TAB_ACCESSORIES_TAB = new CreativeModeTab("tabaccessories_tab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(TnunlimitedModItems.PET_CACTUS);
+				return new ItemStack(TnunlimitedModItems.PET_CACTUS.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

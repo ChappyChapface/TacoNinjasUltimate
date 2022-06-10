@@ -23,8 +23,7 @@ public class LeechingProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity, event.getSource().getEntity(), event.getAmount());
+			execute(event, event.getEntity(), event.getSource().getEntity(), event.getAmount());
 		}
 	}
 
@@ -36,17 +35,12 @@ public class LeechingProcedureProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		double Value = 0;
-		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LEECHING,
+		if (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LEECHING.get(),
 				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			if (sourceentity instanceof LivingEntity _entity)
-				_entity.setHealth(
-						(float) ((sourceentity instanceof LivingEntity _livEnt
-								? _livEnt.getHealth()
-								: -1) + Math
-										.floor(amount
-												* EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LEECHING,
-														(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY))
-												/ 20)));
+				_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
+						+ Math.floor(amount * (EnchantmentHelper.getItemEnchantmentLevel(TnunlimitedModEnchantments.LEECHING.get(),
+								(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) / 20))));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 20, 1, (false), (false)));
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > (sourceentity instanceof LivingEntity _livEnt

@@ -34,9 +34,8 @@ public class AardiumpickaxeItem extends PickaxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.AARDIUMINGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.AARDIUMINGOT.get()));
 			}
 		}, 1, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-		setRegistryName("aardiumpickaxe");
 	}
 }

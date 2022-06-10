@@ -17,7 +17,6 @@ import java.util.Collections;
 public class DoneBlockBlock extends Block {
 	public DoneBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 7f));
-		setRegistryName("done_block");
 	}
 
 	@Override

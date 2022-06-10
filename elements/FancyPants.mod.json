@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -21,8 +21,8 @@
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [
-      "§aAbility:",
-      "§7Can be used for any armor set bonus"
+      "ï¿½aAbility:",
+      "ï¿½7Can be used for any armor set bonus"
     ],
     "bootsSpecialInfo": [],
     "helmetModelName": "Default",

@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -19,24 +19,24 @@
     "leggingsName": "Desert Roach Leggings",
     "bootsName": "Desert Roach Boots",
     "helmetSpecialInfo": [
-      "§aAbility: §7+10% Familiar Damage",
-      "§aSet Bonus:",
-      "§7Spawns a Gilded Bug familiar"
+      "ï¿½aAbility: ï¿½7+10% Familiar Damage",
+      "ï¿½aSet Bonus:",
+      "ï¿½7Spawns a Gilded Bug familiar"
     ],
     "bodySpecialInfo": [
-      "§aAbility: §7+10% Familiar Damage",
-      "§aSet Bonus:",
-      "§7Spawns a Gilded Bug familiar"
+      "ï¿½aAbility: ï¿½7+10% Familiar Damage",
+      "ï¿½aSet Bonus:",
+      "ï¿½7Spawns a Gilded Bug familiar"
     ],
     "leggingsSpecialInfo": [
-      "§aAbility: §7+10% Familiar Damage",
-      "§aSet Bonus:",
-      "§7Spawns a Gilded Bug familiar"
+      "ï¿½aAbility: ï¿½7+10% Familiar Damage",
+      "ï¿½aSet Bonus:",
+      "ï¿½7Spawns a Gilded Bug familiar"
     ],
     "bootsSpecialInfo": [
-      "§aAbility: §7+10% Familiar Damage",
-      "§aSet Bonus:",
-      "§7Spawns a Gilded Bug familiar"
+      "ï¿½aAbility: ï¿½7+10% Familiar Damage",
+      "ï¿½aSet Bonus:",
+      "ï¿½7Spawns a Gilded Bug familiar"
     ],
     "helmetModelName": "ModelRoachHelmet",
     "helmetModelPart": "Head",

@@ -538,14 +538,6 @@
       }
     },
     {
-      "name": "JarOfInfiniteJellybeans",
-      "type": "food",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jar_of_infinite_jellybeans"
-    },
-    {
       "name": "Bullet",
       "type": "item",
       "sortid": 39,
@@ -576,14 +568,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet_projectile"
-    },
-    {
-      "name": "Hotchocolate",
-      "type": "food",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hotchocolate"
     },
     {
       "name": "Crafthc",
@@ -639,7 +623,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "imediatesourceentity",
+            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
@@ -784,14 +768,6 @@
       }
     },
     {
-      "name": "Coffee",
-      "type": "food",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coffee"
-    },
-    {
       "name": "BleedingEffect",
       "type": "procedure",
       "sortid": 76,
@@ -894,14 +870,6 @@
       }
     },
     {
-      "name": "CoffeeFruit",
-      "type": "food",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coffee_fruit"
-    },
-    {
       "name": "BloodyRapierEffect",
       "type": "procedure",
       "sortid": 76,
@@ -945,14 +913,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "coffee_plant"
-    },
-    {
-      "name": "Mocha",
-      "type": "food",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mocha"
     },
     {
       "name": "SinChest",
@@ -1073,14 +1033,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ore_loottable"
-    },
-    {
-      "name": "PepperoniFood",
-      "type": "food",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pepperoni_food"
     },
     {
       "name": "PepperoniIngot",
@@ -2724,14 +2676,6 @@
       "registry_name": "cookie_block"
     },
     {
-      "name": "Hamburger",
-      "type": "food",
-      "sortid": 158,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hamburger"
-    },
-    {
       "name": "CookieBlockRecipe",
       "type": "recipe",
       "sortid": 156,
@@ -2754,14 +2698,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "GoldenHamburger",
-      "type": "food",
-      "sortid": 160,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "golden_hamburger"
     },
     {
       "name": "GoldenHamburgerRecipe",
@@ -3237,28 +3173,12 @@
       "registry_name": "craftfrenchtoast"
     },
     {
-      "name": "Frenchtoast",
-      "type": "food",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "frenchtoast"
-    },
-    {
       "name": "CookedEggRecipe",
       "type": "recipe",
       "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cooked_egg_recipe"
-    },
-    {
-      "name": "CookedEgg",
-      "type": "food",
-      "sortid": 186,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cooked_egg"
     },
     {
       "name": "ShotgunPelletDecay",
@@ -3270,7 +3190,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "imediatesourceentity",
+            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
@@ -3622,28 +3542,12 @@
       "registry_name": "pirate_deadeye"
     },
     {
-      "name": "Cookedbacon",
-      "type": "food",
-      "sortid": 204,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cookedbacon"
-    },
-    {
       "name": "Craftbacon",
       "type": "recipe",
       "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "craftbacon"
-    },
-    {
-      "name": "Bacon",
-      "type": "food",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bacon"
     },
     {
       "name": "NubriumLeggingsRecipe",
@@ -4869,6 +4773,118 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "nubrium_sickle"
+    },
+    {
+      "name": "JarOfInfiniteJellybeans",
+      "type": "item",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_of_infinite_jellybeans"
+    },
+    {
+      "name": "Hotchocolate",
+      "type": "item",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hotchocolate"
+    },
+    {
+      "name": "Coffee",
+      "type": "item",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee"
+    },
+    {
+      "name": "CoffeeFruit",
+      "type": "item",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffee_fruit"
+    },
+    {
+      "name": "Mocha",
+      "type": "item",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mocha"
+    },
+    {
+      "name": "PepperoniFood",
+      "type": "item",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepperoni_food"
+    },
+    {
+      "name": "Hamburger",
+      "type": "item",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hamburger"
+    },
+    {
+      "name": "GoldenHamburger",
+      "type": "item",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hamburger"
+    },
+    {
+      "name": "Frenchtoast",
+      "type": "item",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frenchtoast"
+    },
+    {
+      "name": "CookedEgg",
+      "type": "item",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_egg"
+    },
+    {
+      "name": "Cookedbacon",
+      "type": "item",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedbacon"
+    },
+    {
+      "name": "Bacon",
+      "type": "item",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bacon"
+    },
+    {
+      "name": "AppleLeaves",
+      "type": "block",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apple_leaves"
+    },
+    {
+      "name": "AppleTree",
+      "type": "structure",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apple_tree"
     }
   ],
   "variable_elements": [
@@ -5303,6 +5319,7 @@
       "item.tnunlimited.lead_pickaxe": "Lead Pickaxe",
       "entity.tnunlimited.pirate_deadeye": "Pirate Deadeye",
       "item.tnunlimited.sunrise": "Music Disc",
+      "block.tnunlimited.apple_leaves": "Apple Leaves",
       "item.tnunlimited.critical_sword": "Critical Sword",
       "item.tnunlimited.bullet_projectile": "Bullet Projectile",
       "entity.tnunlimited.pinacate_beetle": "Pinacate Beetle",
@@ -5335,10 +5352,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.17.1",
+    "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.tnunlimited",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100354000
+  "mcreatorVersion": 202200120510
 }

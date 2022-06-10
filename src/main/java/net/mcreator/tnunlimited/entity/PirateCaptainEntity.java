@@ -2,8 +2,8 @@
 package net.mcreator.tnunlimited.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -24,9 +24,9 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -38,8 +38,8 @@ import net.mcreator.tnunlimited.init.TnunlimitedModItems;
 import net.mcreator.tnunlimited.init.TnunlimitedModEntities;
 
 public class PirateCaptainEntity extends Monster {
-	public PirateCaptainEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(TnunlimitedModEntities.PIRATE_CAPTAIN, world);
+	public PirateCaptainEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(TnunlimitedModEntities.PIRATE_CAPTAIN.get(), world);
 	}
 
 	public PirateCaptainEntity(EntityType<PirateCaptainEntity> type, Level world) {
@@ -47,9 +47,9 @@ public class PirateCaptainEntity extends Monster {
 		xpReward = 20;
 		setNoAi(false);
 		setPersistenceRequired();
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TnunlimitedModItems.CUTLASS));
-		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(TnunlimitedModItems.BLUNDERBUSS));
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(TnunlimitedModItems.CAPTAINS_HAT_HELMET));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TnunlimitedModItems.CUTLASS.get()));
+		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(TnunlimitedModItems.BLUNDERBUSS.get()));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(TnunlimitedModItems.CAPTAINS_HAT_HELMET.get()));
 	}
 
 	@Override
@@ -60,10 +60,15 @@ public class PirateCaptainEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
+		this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 6));
 		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false));
+		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
 		this.goalSelector.addGoal(5, new RestrictSunGoal(this));
 		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
@@ -113,14 +118,7 @@ public class PirateCaptainEntity extends Monster {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity sourceentity = source.getEntity();
-		Entity entity = this;
-		Level world = this.level;
-
-		PirateCaptainDiesProcedure.execute(sourceentity);
+		PirateCaptainDiesProcedure.execute(source.getEntity());
 	}
 
 	public static void init() {

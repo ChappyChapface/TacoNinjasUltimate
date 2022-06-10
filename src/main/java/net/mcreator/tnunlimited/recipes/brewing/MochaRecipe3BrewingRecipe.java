@@ -20,18 +20,18 @@ public class MochaRecipe3BrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isInput(ItemStack input) {
-		return input.getItem() == TnunlimitedModItems.HOTCHOCOLATE;
+		return input.getItem() == TnunlimitedModItems.HOTCHOCOLATE.get();
 	}
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == TnunlimitedModItems.COFFEE_BEANS;
+		return ingredient.getItem() == TnunlimitedModItems.COFFEE_BEANS.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(TnunlimitedModItems.MOCHA);
+			return new ItemStack(TnunlimitedModItems.MOCHA.get());
 		}
 		return ItemStack.EMPTY;
 	}

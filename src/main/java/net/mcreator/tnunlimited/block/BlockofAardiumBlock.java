@@ -1,6 +1,8 @@
 
 package net.mcreator.tnunlimited.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,7 +22,6 @@ public class BlockofAardiumBlock extends Block {
 	public BlockofAardiumBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(0.7999999999999999f, 10f).lightLevel(s -> 1)
 				.requiresCorrectToolForDrops());
-		setRegistryName("blockof_aardium");
 	}
 
 	@Override
@@ -30,7 +31,7 @@ public class BlockofAardiumBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 1;
 		return false;
 	}

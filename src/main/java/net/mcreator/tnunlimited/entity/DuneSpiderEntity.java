@@ -2,8 +2,8 @@
 package net.mcreator.tnunlimited.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -30,6 +30,7 @@ import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
@@ -44,17 +45,17 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class DuneSpiderEntity extends PathfinderMob {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("badlands"), new ResourceLocation("desert_hills"),
-			new ResourceLocation("badlands_plateau"), new ResourceLocation("desert"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("badlands"), new ResourceLocation("desert"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.AMBIENT).add(new MobSpawnSettings.SpawnerData(TnunlimitedModEntities.DUNE_SPIDER, 25, 1, 4));
+			event.getSpawns().getSpawner(MobCategory.AMBIENT)
+					.add(new MobSpawnSettings.SpawnerData(TnunlimitedModEntities.DUNE_SPIDER.get(), 25, 1, 4));
 	}
 
-	public DuneSpiderEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
-		this(TnunlimitedModEntities.DUNE_SPIDER, world);
+	public DuneSpiderEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(TnunlimitedModEntities.DUNE_SPIDER.get(), world);
 	}
 
 	public DuneSpiderEntity(EntityType<DuneSpiderEntity> type, Level world) {
@@ -73,7 +74,12 @@ public class DuneSpiderEntity extends PathfinderMob {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new RestrictSunGoal(this));
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true, false));
-		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, true));
+		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, true) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
 		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Llama.class, true, false));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Rabbit.class, true, false));
 		this.goalSelector.addGoal(6, new LeapAtTargetGoal(this, (float) 0.5));
@@ -118,8 +124,8 @@ public class DuneSpiderEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(TnunlimitedModEntities.DUNE_SPIDER, SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> {
+		SpawnPlacements.register(TnunlimitedModEntities.DUNE_SPIDER.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 					int x = pos.getX();
 					int y = pos.getY();
 					int z = pos.getZ();

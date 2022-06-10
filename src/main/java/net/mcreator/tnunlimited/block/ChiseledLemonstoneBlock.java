@@ -17,7 +17,6 @@ import java.util.Collections;
 public class ChiseledLemonstoneBlock extends Block {
 	public ChiseledLemonstoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f));
-		setRegistryName("chiseled_lemonstone");
 	}
 
 	@Override

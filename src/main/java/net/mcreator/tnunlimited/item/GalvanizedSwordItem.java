@@ -34,9 +34,8 @@ public class GalvanizedSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT));
+				return Ingredient.of(new ItemStack(TnunlimitedModItems.ZINC_INGOT.get()));
 			}
 		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
-		setRegistryName("galvanized_sword");
 	}
 }

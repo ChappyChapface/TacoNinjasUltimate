@@ -20,7 +20,6 @@ import net.mcreator.tnunlimited.entity.BuckshotPelletProjectileEntity;
 public class BuckshotPelletProjectileItem extends Item {
 	public BuckshotPelletProjectileItem() {
 		super(new Item.Properties().tab(null).durability(100));
-		setRegistryName("buckshot_pellet_projectile");
 	}
 
 	@Override
@@ -46,11 +45,11 @@ public class BuckshotPelletProjectileItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == TnunlimitedModItems.BULLET);
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == TnunlimitedModItems.BULLET.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == TnunlimitedModItems.BULLET) {
+						if (teststack != null && teststack.getItem() == TnunlimitedModItems.BULLET.get()) {
 							stack = teststack;
 							break;
 						}
@@ -62,7 +61,7 @@ public class BuckshotPelletProjectileItem extends Item {
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(TnunlimitedModItems.BULLET).isDamageableItem()) {
+						if (new ItemStack(TnunlimitedModItems.BULLET.get()).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);

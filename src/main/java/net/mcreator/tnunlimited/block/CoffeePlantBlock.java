@@ -24,7 +24,6 @@ import net.mcreator.tnunlimited.init.TnunlimitedModBlocks;
 public class CoffeePlantBlock extends FlowerBlock {
 	public CoffeePlantBlock() {
 		super(MobEffects.DIG_SPEED, 800, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("coffee_plant");
 	}
 
 	@Override
@@ -44,20 +43,20 @@ public class CoffeePlantBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(TnunlimitedModBlocks.COFFEE_PLANT, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(TnunlimitedModBlocks.COFFEE_PLANT.get(), renderType -> renderType == RenderType.cutout());
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void blockColorLoad(ColorHandlerEvent.Block event) {
 		event.getBlockColors().register((bs, world, pos, index) -> {
 			return world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor();
-		}, TnunlimitedModBlocks.COFFEE_PLANT);
+		}, TnunlimitedModBlocks.COFFEE_PLANT.get());
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void itemColorLoad(ColorHandlerEvent.Item event) {
 		event.getItemColors().register((stack, index) -> {
 			return FoliageColor.getDefaultColor();
-		}, TnunlimitedModBlocks.COFFEE_PLANT);
+		}, TnunlimitedModBlocks.COFFEE_PLANT.get());
 	}
 }

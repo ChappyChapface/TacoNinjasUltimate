@@ -36,6 +36,5 @@ public class CutlassItem extends SwordItem {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
 		}, 3, -2.6f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
-		setRegistryName("cutlass");
 	}
 }

@@ -1,6 +1,7 @@
 
 package net.mcreator.tnunlimited.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -13,11 +14,15 @@ public class HamburgerItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(2.5f)
 
 						.meat().build()));
-		setRegistryName("hamburger");
 	}
 
 	@Override
-	public int getUseDuration(ItemStack stack) {
+	public int getUseDuration(ItemStack itemstack) {
 		return 64;
+	}
+
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
 	}
 }

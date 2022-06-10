@@ -34,6 +34,5 @@ public class DoneHoeItem extends HoeItem {
 				return Ingredient.EMPTY;
 			}
 		}, 0, 0f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-		setRegistryName("done_hoe");
 	}
 }

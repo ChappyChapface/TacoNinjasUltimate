@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -19,20 +19,20 @@
     "leggingsName": "Aardium Leggings",
     "bootsName": "Aardium Boots",
     "helmetSpecialInfo": [
-      "§aAbility: §710% Increased Movement Speed",
-      "§7Effect stacks with other pieces"
+      "ï¿½aAbility: ï¿½710% Increased Movement Speed",
+      "ï¿½7Effect stacks with other pieces"
     ],
     "bodySpecialInfo": [
-      "§aAbility: §710% Increased Movement Speed",
-      "§7Effect stacks with other pieces"
+      "ï¿½aAbility: ï¿½710% Increased Movement Speed",
+      "ï¿½7Effect stacks with other pieces"
     ],
     "leggingsSpecialInfo": [
-      "§aAbility: §710% Increased Movement Speed",
-      "§7Effect stacks with other pieces"
+      "ï¿½aAbility: ï¿½710% Increased Movement Speed",
+      "ï¿½7Effect stacks with other pieces"
     ],
     "bootsSpecialInfo": [
-      "§aAbility: §710% Increased Movement Speed",
-      "§7Effect stacks with other pieces"
+      "ï¿½aAbility: ï¿½710% Increased Movement Speed",
+      "ï¿½7Effect stacks with other pieces"
     ],
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",

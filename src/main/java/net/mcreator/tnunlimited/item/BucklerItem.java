@@ -31,7 +31,6 @@ import com.google.common.collect.ImmutableMultimap;
 public class BucklerItem extends Item {
 	public BucklerItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(100));
-		setRegistryName("buckler");
 	}
 
 	@Override
@@ -40,14 +39,14 @@ public class BucklerItem extends Item {
 	}
 
 	@Override
-	public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
-		stack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
+		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity sourceentity) {
-		stack.hurtAndBreak(2, sourceentity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
@@ -80,7 +79,7 @@ public class BucklerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7aAbility: \u00A77Propels you forward when used"));
+		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Propels you forward when used"));
 	}
 
 	@Override

@@ -21,7 +21,6 @@ import com.google.common.collect.ImmutableMultimap;
 public class DiamondSickleItem extends Item {
 	public DiamondSickleItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(1561));
-		setRegistryName("diamond_sickle");
 	}
 
 	@Override
@@ -30,14 +29,14 @@ public class DiamondSickleItem extends Item {
 	}
 
 	@Override
-	public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
-		stack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
+		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity sourceentity) {
-		stack.hurtAndBreak(2, sourceentity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 

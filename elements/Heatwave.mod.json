@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Heatwave",
     "specialInfo": [
-      "§aAbility: §7Engulfs enemies in flames"
+      "ï¿½aAbility: ï¿½7Engulfs enemies in flames"
     ],
     "creativeTab": {
       "value": "COMBAT"

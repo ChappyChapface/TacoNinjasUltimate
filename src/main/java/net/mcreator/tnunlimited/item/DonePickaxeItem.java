@@ -34,6 +34,5 @@ public class DonePickaxeItem extends PickaxeItem {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-		setRegistryName("done_pickaxe");
 	}
 }

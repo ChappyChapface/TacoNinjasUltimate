@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Lead Shovel",
     "specialInfo": [
-      "§aAbility: §7Attacks inflict Wither"
+      "ï¿½aAbility: ï¿½7Attacks inflict Wither"
     ],
     "creativeTab": {
       "value": "TOOLS"

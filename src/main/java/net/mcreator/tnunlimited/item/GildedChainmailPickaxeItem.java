@@ -36,6 +36,5 @@ public class GildedChainmailPickaxeItem extends PickaxeItem {
 				return Ingredient.of(new ItemStack(Items.GOLD_INGOT), new ItemStack(Items.GOLD_NUGGET));
 			}
 		}, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
-		setRegistryName("gilded_chainmail_pickaxe");
 	}
 }

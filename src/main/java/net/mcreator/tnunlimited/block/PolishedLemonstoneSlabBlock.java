@@ -16,7 +16,6 @@ import java.util.Collections;
 public class PolishedLemonstoneSlabBlock extends SlabBlock {
 	public PolishedLemonstoneSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 10f));
-		setRegistryName("polished_lemonstone_slab");
 	}
 
 	@Override
