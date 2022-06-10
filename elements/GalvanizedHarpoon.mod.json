@@ -7,9 +7,9 @@
     "customModelName": "galvanizedharpoon:default",
     "name": "Galvanized Harpoon",
     "specialInfo": [
-      "�7When Thrown:",
-      "�2 9 Damage",
-      "�2 0.33 Attack Speed"
+      "§7When Thrown:",
+      "§2 9 Damage",
+      "§2 0.33 Attack Speed"
     ],
     "creativeTab": {
       "value": "COMBAT"

@@ -7,9 +7,9 @@
     "customModelName": "snowglove:default",
     "name": "Snowglove",
     "specialInfo": [
-      "�aAbility: �7Throws damaging snowballs.",
-      "�cCooldown: �70.75 Seconds",
-      "�eAmmo: �7Snowballs"
+      "§aAbility: §7Throws damaging snowballs.",
+      "§cCooldown: §70.75 Seconds",
+      "§eAmmo: §7Snowballs"
     ],
     "creativeTab": {
       "value": "COMBAT"

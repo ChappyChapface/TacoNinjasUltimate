@@ -7,9 +7,9 @@
     "customModelName": "blunderbuss:default",
     "name": "Blunderbuss",
     "specialInfo": [
-      "�eAmmo: �BBullets",
-      "�eMax Capacity: �71",
-      "�cReload: �73"
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §71",
+      "§cReload: §73"
     ],
     "creativeTab": {
       "value": "COMBAT"

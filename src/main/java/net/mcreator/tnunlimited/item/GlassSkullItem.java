@@ -73,7 +73,7 @@ public abstract class GlassSkullItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Deal and take extra damage"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A77Deal and take extra damage"));
 		}
 
 		@Override

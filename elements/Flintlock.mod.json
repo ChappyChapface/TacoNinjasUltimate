@@ -7,10 +7,10 @@
     "customModelName": "flintlock:default",
     "name": "Flintlock",
     "specialInfo": [
-      "�eAmmo: �BBullets",
-      "�eMax Capacity: �71",
-      "�cCooldown: �72",
-      "�cReload: �73"
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §71",
+      "§cCooldown: §72",
+      "§cReload: §73"
     ],
     "creativeTab": {
       "value": "COMBAT"

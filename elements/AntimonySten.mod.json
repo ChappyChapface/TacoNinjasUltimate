@@ -7,10 +7,10 @@
     "customModelName": "sten:default",
     "name": "Antimony Sten",
     "specialInfo": [
-      "�eAmmo: �BBullets",
-      "�eMax Capacity: �732",
-      "�cCooldown: �71",
-      "�cReload: �75"
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §732",
+      "§cCooldown: §71",
+      "§cReload: §75"
     ],
     "creativeTab": {
       "value": "COMBAT"

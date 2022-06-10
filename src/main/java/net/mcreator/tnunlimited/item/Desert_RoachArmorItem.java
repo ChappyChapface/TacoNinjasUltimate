@@ -107,9 +107,9 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
 		}
 
 		@Override
@@ -153,9 +153,9 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
 		}
 
 		@Override
@@ -172,9 +172,9 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
 		}
 
 		@Override
@@ -191,9 +191,9 @@ public abstract class Desert_RoachArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD7+10% Familiar Damage"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Spawns a Gilded Bug familiar"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A77+10% Familiar Damage"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Spawns a Gilded Bug familiar"));
 		}
 
 		@Override

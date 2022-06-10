@@ -79,9 +79,9 @@ public class BlunderbussItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDeAmmo: \uFFFDBBullets"));
-		list.add(new TextComponent("\uFFFDeMax Capacity: \uFFFD71"));
-		list.add(new TextComponent("\uFFFDcReload: \uFFFD73"));
+		list.add(new TextComponent("\u00A7eAmmo: \u00A7BBullets"));
+		list.add(new TextComponent("\u00A7eMax Capacity: \u00A771"));
+		list.add(new TextComponent("\u00A7cReload: \u00A773"));
 	}
 
 	@Override

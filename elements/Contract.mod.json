@@ -8,7 +8,7 @@
     "name": "Contract With Greed",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AccessoriesTab"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -25,8 +25,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "�aWhile Equipped: �7",
-      "Gain Luck II",
+      "§aWhile Equipped:",
+      "§7Gain Luck II",
       "Reduced HP"
     ],
     "hasGlow": false,
@@ -40,6 +40,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

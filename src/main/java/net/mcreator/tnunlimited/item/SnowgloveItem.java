@@ -39,9 +39,9 @@ public class SnowgloveItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Throws damaging snowballs."));
-		list.add(new TextComponent("\uFFFDcCooldown: \uFFFD70.75 Seconds"));
-		list.add(new TextComponent("\uFFFDeAmmo: \uFFFD7Snowballs"));
+		list.add(new TextComponent("\u00A7aAbility: \u00A77Throws damaging snowballs."));
+		list.add(new TextComponent("\u00A7cCooldown: \u00A770.75 Seconds"));
+		list.add(new TextComponent("\u00A7eAmmo: \u00A77Snowballs"));
 	}
 
 	@Override

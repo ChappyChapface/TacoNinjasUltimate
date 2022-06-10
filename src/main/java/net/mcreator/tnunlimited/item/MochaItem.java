@@ -46,7 +46,7 @@ public class MochaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaEffect: \uFFFD7 Increased regeneration, resistance, speed, and strength"));
+		list.add(new TextComponent("\u00A7aEffect: \u00A77 Increased regeneration, resistance, speed, and strength"));
 	}
 
 	@Override

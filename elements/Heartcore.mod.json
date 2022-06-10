@@ -25,10 +25,10 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "�aWhile Equipped: �7",
-      "Will heal you before taking damage when below 20% HP",
-      "Also grants temporary Absorption",
-      "�cCooldown: �730 Minutes"
+      "§aWhile Equipped:",
+      "§7Will heal you before taking damage when below 20% HP",
+      "§7Also grants temporary Absorption",
+      "§cCooldown: §730 Minutes"
     ],
     "hasGlow": true,
     "guiBoundTo": "<NONE>",
@@ -38,6 +38,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

@@ -25,7 +25,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 2.6999999999999997,
     "specialInfo": [
-      "�aWhile Equipped: �7Attacks have a chance to inflict Drowsy"
+      "§aWhile Equipped:",
+      "§7Attacks have a chance to inflict Drowsy"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
@@ -35,6 +36,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

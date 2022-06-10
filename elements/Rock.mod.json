@@ -7,9 +7,9 @@
     "customModelName": "Normal",
     "name": "Rock",
     "specialInfo": [
-      "�7When Thrown:",
-      "�2 3 Damage",
-      "�2 0.75 Attack Speed"
+      "§7When Thrown:",
+      "§2 3 Damage",
+      "§2 0.75 Attack Speed"
     ],
     "creativeTab": {
       "value": "COMBAT"

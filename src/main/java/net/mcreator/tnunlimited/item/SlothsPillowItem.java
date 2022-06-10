@@ -37,6 +37,7 @@ public class SlothsPillowItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaWhile Equipped: \uFFFD7Attacks have a chance to inflict Drowsy"));
+		list.add(new TextComponent("\u00A7aWhile Equipped:"));
+		list.add(new TextComponent("\u00A77Attacks have a chance to inflict Drowsy"));
 	}
 }

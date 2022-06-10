@@ -7,18 +7,18 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.tnunlimited.procedures.ContractEffectProcedure;
+import net.mcreator.tnunlimited.init.TnunlimitedModTabs;
 
 import java.util.List;
 
 public class ContractItem extends Item {
 	public ContractItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(TnunlimitedModTabs.TAB_ACCESSORIES_TAB).stacksTo(64).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override
@@ -34,8 +34,8 @@ public class ContractItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaWhile Equipped: \uFFFD7"));
-		list.add(new TextComponent("Gain Luck II"));
+		list.add(new TextComponent("\u00A7aWhile Equipped:"));
+		list.add(new TextComponent("\u00A77Gain Luck II"));
 		list.add(new TextComponent("Reduced HP"));
 	}
 

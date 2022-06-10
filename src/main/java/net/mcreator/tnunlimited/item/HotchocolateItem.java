@@ -46,8 +46,8 @@ public class HotchocolateItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaEffect: \uFFFD7Increased regeneration and resistance"));
-		list.add(new TextComponent("\uFFFD7Decreases speed"));
+		list.add(new TextComponent("\u00A7aEffect: \u00A77Increased regeneration and resistance"));
+		list.add(new TextComponent("\u00A77Decreases speed"));
 	}
 
 	@Override

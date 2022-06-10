@@ -63,8 +63,8 @@ public class PickaxeOfLuminescenceItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Use to blind enemies and grant self night vision."));
-		list.add(new TextComponent("\uFFFDcCooldown: \uFFFD71 Minute"));
+		list.add(new TextComponent("\u00A7aAbility: \u00A77Use to blind enemies and grant self night vision."));
+		list.add(new TextComponent("\u00A7cCooldown: \u00A771 Minute"));
 	}
 
 	@Override

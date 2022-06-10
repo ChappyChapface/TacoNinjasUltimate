@@ -78,34 +78,49 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 25,
+    "frequencyOnChunks": 3,
     "spawnWorldTypes": [
       "Surface"
     ],
     "restrictionBiomes": [
       {
-        "value": "bamboo_jungle"
+        "value": "mutated_plains"
       },
       {
-        "value": "bamboo_jungle_hills"
+        "value": "plains"
       },
       {
-        "value": "jungle"
+        "value": "birch_forest"
       },
       {
-        "value": "jungle_edge"
+        "value": "birch_forest_hills"
       },
       {
-        "value": "jungle_hills"
+        "value": "roofed_forest"
       },
       {
-        "value": "mutated_jungle"
+        "value": "mutated_roofed_forest"
       },
       {
-        "value": "mutated_jungle_edge"
+        "value": "mutated_forest"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "mutated_birch_forest"
+      },
+      {
+        "value": "extreme_hills_with_trees"
       }
     ],
-    "patchSize": 6,
-    "generateAtAnyHeight": false
+    "patchSize": 8,
+    "generateAtAnyHeight": false,
+    "onRightClicked": {
+      "name": "CoffeePlantPlantRightClicked"
+    }
   }
 }

@@ -46,8 +46,8 @@ public class CoffeeItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaEffect: \uFFFD7Increased speed and strength"));
-		list.add(new TextComponent("\uFFFD7Makes you hungry"));
+		list.add(new TextComponent("\u00A7aEffect: \u00A77Increased speed and strength"));
+		list.add(new TextComponent("\u00A77Makes you hungry"));
 	}
 
 	@Override

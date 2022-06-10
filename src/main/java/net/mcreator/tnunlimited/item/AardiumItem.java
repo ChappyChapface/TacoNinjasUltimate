@@ -75,8 +75,8 @@ public abstract class AardiumItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD710% Increased Movement Speed"));
-			list.add(new TextComponent("\uFFFD7Effect stacks with other pieces"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A7710% Increased Movement Speed"));
+			list.add(new TextComponent("\u00A77Effect stacks with other pieces"));
 		}
 
 		@Override
@@ -93,8 +93,8 @@ public abstract class AardiumItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD710% Increased Movement Speed"));
-			list.add(new TextComponent("\uFFFD7Effect stacks with other pieces"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A7710% Increased Movement Speed"));
+			list.add(new TextComponent("\u00A77Effect stacks with other pieces"));
 		}
 
 		@Override
@@ -111,8 +111,8 @@ public abstract class AardiumItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD710% Increased Movement Speed"));
-			list.add(new TextComponent("\uFFFD7Effect stacks with other pieces"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A7710% Increased Movement Speed"));
+			list.add(new TextComponent("\u00A77Effect stacks with other pieces"));
 		}
 
 		@Override
@@ -129,8 +129,8 @@ public abstract class AardiumItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaAbility: \uFFFD710% Increased Movement Speed"));
-			list.add(new TextComponent("\uFFFD7Effect stacks with other pieces"));
+			list.add(new TextComponent("\u00A7aAbility: \u00A7710% Increased Movement Speed"));
+			list.add(new TextComponent("\u00A77Effect stacks with other pieces"));
 		}
 
 		@Override

@@ -7,10 +7,10 @@
     "customModelName": "revolver:default",
     "name": "Lead Revolver",
     "specialInfo": [
-      "�eAmmo: �BBullets",
-      "�eMax Capacity: �76",
-      "�cCooldown: �72",
-      "�cReload: �73"
+      "§eAmmo: §BBullets",
+      "§eMax Capacity: §76",
+      "§cCooldown: §72",
+      "§cReload: §73"
     ],
     "creativeTab": {
       "value": "COMBAT"

@@ -41,9 +41,9 @@ public class HeartcoreItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaWhile Equipped: \uFFFD7"));
-		list.add(new TextComponent("Will heal you before taking damage when below 20% HP"));
-		list.add(new TextComponent("Also grants temporary Absorption"));
-		list.add(new TextComponent("\uFFFDcCooldown: \uFFFD730 Minutes"));
+		list.add(new TextComponent("\u00A7aWhile Equipped:"));
+		list.add(new TextComponent("\u00A77Will heal you before taking damage when below 20% HP"));
+		list.add(new TextComponent("\u00A77Also grants temporary Absorption"));
+		list.add(new TextComponent("\u00A7cCooldown: \u00A7730 Minutes"));
 	}
 }

@@ -8,7 +8,7 @@
     "name": "Miracle Rune",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AccessoriesTab"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -25,9 +25,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "�aWhen Equipped:",
-      "�7Grants Resistance II while sneaking",
-      "�7Also gives Slowness II and Weakness while sneaking"
+      "§aWhen Equipped:",
+      "§7Grants Resistance II while sneaking",
+      "§7Also gives Slowness II and Weakness while sneaking"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
@@ -37,6 +37,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

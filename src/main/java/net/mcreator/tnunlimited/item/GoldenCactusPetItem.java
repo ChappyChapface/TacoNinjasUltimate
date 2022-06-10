@@ -34,8 +34,8 @@ public class GoldenCactusPetItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaWhen Equipped:"));
-		list.add(new TextComponent("\uFFFD7Attackers take full recoil damage"));
+		list.add(new TextComponent("\u00A7aWhen Equipped:"));
+		list.add(new TextComponent("\u00A77Attackers take full recoil damage"));
 	}
 
 	@Override

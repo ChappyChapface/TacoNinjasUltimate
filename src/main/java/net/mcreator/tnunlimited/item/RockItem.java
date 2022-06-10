@@ -38,9 +38,9 @@ public class RockItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFD7When Thrown:"));
-		list.add(new TextComponent("\uFFFD2 3 Damage"));
-		list.add(new TextComponent("\uFFFD2 0.75 Attack Speed"));
+		list.add(new TextComponent("\u00A77When Thrown:"));
+		list.add(new TextComponent("\u00A72 3 Damage"));
+		list.add(new TextComponent("\u00A72 0.75 Attack Speed"));
 	}
 
 	@Override

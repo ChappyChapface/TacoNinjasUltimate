@@ -68,6 +68,6 @@ public class LeadSickleItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Attacks inflict Wither"));
+		list.add(new TextComponent("\u00A7aAbility: \u00A77Attacks inflict Wither"));
 	}
 }

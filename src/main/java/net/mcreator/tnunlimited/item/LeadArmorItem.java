@@ -77,9 +77,9 @@ public abstract class LeadArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
+			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
 		}
 
 		@Override
@@ -101,9 +101,9 @@ public abstract class LeadArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
+			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
 		}
 
 		@Override
@@ -125,9 +125,9 @@ public abstract class LeadArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
+			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
 		}
 
 		@Override
@@ -149,9 +149,9 @@ public abstract class LeadArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDcDebuff: Sets Maximum Saturation to 5"));
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7+15% Blunt Damage"));
+			list.add(new TextComponent("\u00A7cDebuff: Sets Maximum Saturation to 5"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77+15% Blunt Damage"));
 		}
 
 		@Override

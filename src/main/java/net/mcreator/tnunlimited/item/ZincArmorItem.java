@@ -77,8 +77,8 @@ public abstract class ZincArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
 		}
 
 		@Override
@@ -100,8 +100,8 @@ public abstract class ZincArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
 		}
 
 		@Override
@@ -118,8 +118,8 @@ public abstract class ZincArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
 		}
 
 		@Override
@@ -136,8 +136,8 @@ public abstract class ZincArmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("\uFFFDaSet Bonus:"));
-			list.add(new TextComponent("\uFFFD7Increased ability and breathe underwater"));
+			list.add(new TextComponent("\u00A7aSet Bonus:"));
+			list.add(new TextComponent("\u00A77Increased ability and breathe underwater"));
 		}
 
 		@Override

@@ -31,6 +31,6 @@ public class LighterItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaAbility: \uFFFD7Use to set entities on fire"));
+		list.add(new TextComponent("\u00A7aAbility: \u00A77Use to set entities on fire"));
 	}
 }

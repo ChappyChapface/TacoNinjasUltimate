@@ -10,13 +10,13 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 25,
     "recipeRemainder": {
-      "value": "Items.IRON_INGOT"
+      "value": ""
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "�aAbility: �7Use to set entities on fire"
+      "§aAbility: §7Use to set entities on fire"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
@@ -35,6 +35,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

@@ -37,7 +37,7 @@ public class IronBandItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaWhen Equipped:"));
-		list.add(new TextComponent("\uFFFD7+10% Armor"));
+		list.add(new TextComponent("\u00A7aWhen Equipped:"));
+		list.add(new TextComponent("\u00A77+10% Armor"));
 	}
 }

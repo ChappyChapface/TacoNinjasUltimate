@@ -7,7 +7,7 @@
     "customModelName": "dark_warhammer:default",
     "name": "Dark Warhammer",
     "specialInfo": [
-      "�cDebuff: �7Has 4 Recoil Damage"
+      "§cDebuff: §7Has 4 Recoil Damage"
     ],
     "creativeTab": {
       "value": "COMBAT"

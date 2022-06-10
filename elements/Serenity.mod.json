@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "name": "Serenity",
     "specialInfo": [
-      "�aAbility: �7Use while under 3 hearts to heal and gain resistance",
-      "�cCooldown: �75 Minutes"
+      "§aAbility: §7Use while under 3 hearts to heal and gain resistance",
+      "§cCooldown: §75 Minutes"
     ],
     "creativeTab": {
       "value": "COMBAT"

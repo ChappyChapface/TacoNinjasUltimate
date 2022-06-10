@@ -41,8 +41,8 @@ public class BleedingHeartCharmItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDaAbility: Heals 7 HP upon use"));
-		list.add(new TextComponent("\uFFFDcCooldown: 30 Seconds"));
+		list.add(new TextComponent("\u00A7aAbility: Heals 7 HP upon use"));
+		list.add(new TextComponent("\u00A7cCooldown: 30 Seconds"));
 	}
 
 	@Override
